@@ -1,5 +1,0 @@
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Vistas\obj\Debug\Vistas.Login.resources
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Vistas\obj\Debug\Vistas.Properties.Resources.resources
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache

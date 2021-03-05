@@ -1,6 +1,0 @@
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\bin\Debug\Negocios.dll
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\bin\Debug\Negocios.pdb
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\obj\Debug\Negocios.dll
-C:\GitHub\Equipo2_8A_ISC\Ventas_Equipo2\Negocios\obj\Debug\Negocios.pdb
