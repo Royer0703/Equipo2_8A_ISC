@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
-    public class Class1
+    class CRUD_Unidades_de_Transporte
     {
     }
 }
