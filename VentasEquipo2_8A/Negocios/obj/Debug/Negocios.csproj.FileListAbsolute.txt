@@ -1,0 +1,5 @@
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
