@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Vistas
 {
-    public partial class LOGIN : Form
+    public partial class Login : Form
     {
-        public LOGIN()
+        public Login()
         {
             InitializeComponent();
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
