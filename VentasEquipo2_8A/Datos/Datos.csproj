@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Conexion BD.cs" />
     <Compile Include="CRUD-Unidades de Transporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
