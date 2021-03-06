@@ -193,7 +193,7 @@ foreign key(idVenta) references SalesVentas(idVenta)
 go 
 
 alter table SalesOfertasAsociacion add constraint FK_OfertaAsociacion_Asociacion
-foreign key(idAsosiacion) references SalesOfertasAsociacion(idAsosiacion)
+foreign key(idAsosiacion) references SalesAsociaciones(idAsosiacion)
 go 
 
 alter table SalesOfertasAsociacion add constraint FK_OfertaAsociacion_Ofertas
@@ -812,12 +812,12 @@ alter table ProductosProveedor add constraint FK_ProductosProveedor_Presentacion
 foreign key(idPresentacion) references PresentacionesProducto(idPresentacion)
 go 
 
-alter table PedidosDetalle add constraint FK_PedidosDetalle_Pedidos
+alter table PedidoDetalle add constraint FK_PedidosDetalle_Pedidos
 foreign key(idPedido) references Pedidos(idPedido)
 go 
 
-alter table PedidosDetalle add constraint FK_PedidosDetalle_PresentacionesProducto
-foreign key(idPresentacion) references PresentacionesProducto(idPrecentacion)
+alter table PedidoDetalle add constraint FK_PedidosDetalle_PresentacionesProducto
+foreign key(idPresentacion) references PresentacionesProducto(idPresentacion)
 go 
 
 alter table Pedidos add constraint FK_Pedidos_Proveedores
