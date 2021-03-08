@@ -121,7 +121,33 @@ namespace Negocios
             return cn.EliminarCultivos(idAsociacion);
         }
 
+        //********************** TABLA UNIDADES DE  Asociacion **************************
 
+        public DataTable ConsultaAsociacion()
+        {
+            return cn.ConsultarAsociacion();
+        }
+
+        public int insertarAsociacion(string idAsociacion, string nombre, string estatus)
+        {
+
+
+            return cn.InsertarAsociacion(idAsociacion, nombre, estatus);
+
+        }
+
+        public int modificarAsociacion(string idAsociacion, string nombre, string estatus)
+        {
+
+            return cn.ModificarAsociacion(idAsociacion, nombre, estatus);
+
+        }
+
+
+        public int eliminarAsociacion(string idAsociacion)
+        {
+            return cn.EliminarAsociacion(idAsociacion);
+        }
 
 
 
