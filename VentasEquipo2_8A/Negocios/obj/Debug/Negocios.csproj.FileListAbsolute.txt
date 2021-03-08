@@ -12,3 +12,7 @@ C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
