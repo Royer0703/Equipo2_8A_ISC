@@ -25,12 +25,7 @@ namespace Vistas
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            txtidAsociacion.Enabled = true;
-            txtestatus.Enabled = true;
-            txtIncorporacion.Enabled = true;
-            
-            
-            dataGridViewMiembros.DataSource = cn.ConsultaDt();
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -81,11 +76,6 @@ namespace Vistas
         {
 
             dataGridViewMiembros.DataSource = cn.ConsultaDt();
-        }
-
-        private void btnGuardar_Click_1(object sender, EventArgs e)
-        {
-
         }
     }
 }
