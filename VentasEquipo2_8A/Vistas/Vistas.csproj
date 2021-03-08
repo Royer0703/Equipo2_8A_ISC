@@ -57,12 +57,6 @@
     <Compile Include="Cultivos.Designer.cs">
       <DependentUpon>Cultivos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Asociaciones.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Asociaciones.Designer.cs">
-      <DependentUpon>Asociaciones.cs</DependentUpon>
-    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -83,9 +77,6 @@
     <Compile Include="UnidadesTransporte.Designer.cs">
       <DependentUpon>UnidadesTransporte.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Asociaciones.resx">
-      <DependentUpon>Asociaciones.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Cultivos.resx">
       <DependentUpon>Cultivos.cs</DependentUpon>
     </EmbeddedResource>
@@ -121,6 +112,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Datos\Datos.csproj">
+      <Project>{e529192f-3f39-4bf9-af58-6b194a389e53}</Project>
+      <Name>Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Negocios\Negocios.csproj">
       <Project>{331f33b8-728f-4dce-b67e-91723b79f686}</Project>
       <Name>Negocios</Name>
