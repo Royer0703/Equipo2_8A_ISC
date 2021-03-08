@@ -49,7 +49,7 @@ namespace Vistas
 
         private void botonIngresar_Click(object sender, EventArgs e)
         {
-            AbrirFormularios<PaginaPrincipal>();
+            //AbrirFormularios<PaginaPrincipal>();
         }
     }
 }
