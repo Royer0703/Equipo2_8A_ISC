@@ -16,6 +16,7 @@ namespace Vistas
         public Asociaciones()
         {
             InitializeComponent();
+            dataGridView_UnidadesT.DataSource = cn.ConsultaAsociacion();
         }
 
         private void Asociaciones_Load(object sender, EventArgs e)
@@ -43,7 +44,7 @@ namespace Vistas
                 string estatus = txtestatus.Text;
 
                 cn.insertarAsociacion(txtplacas.Text, txtnombre.Text, txtestatus.Text);
-                dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+                dataGridView_UnidadesT.DataSource = cn.ConsultaAsociacion();
 
                 txtplacas.Text = "";
                 txtnombre.Text = "";
@@ -52,11 +53,7 @@ namespace Vistas
 
                 MessageBox.Show("Asociado agregado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            txtplacas.Enabled = false;
-            txtnombre.Enabled = false;
-            txtestatus.Enabled = false;
 
-            dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
@@ -81,15 +78,14 @@ namespace Vistas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            dataGridView_UnidadesT.DataSource = cn.ConsultaCultivosDT();
             if (string.IsNullOrEmpty(txtplacas.Text))
             {
                 MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                cn.eliminarCultivos(txtplacas.Text);
-                dataGridView_UnidadesT.DataSource = cn.ConsultaCultivosDT();
+                cn.eliminarAsociacion(txtplacas.Text);
+                dataGridView_UnidadesT.DataSource = cn.ConsultaAsociacion();
 
 
                 txtplacas.Text = "";
@@ -101,6 +97,11 @@ namespace Vistas
         }
 
         private void txtmarca_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnNuevo_Click(object sender, EventArgs e)
         {
 
         }

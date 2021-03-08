@@ -241,7 +241,7 @@ namespace Datos
             int flag = 0;
             con.Open();
 
-            string query = "insert into SalesAsociacion values('" + idAsociacion + "','" + nombre + "','" + Estatus + "' )";
+            string query = "insert into SalesAsociaciones values('" + idAsociacion + "','" + nombre + "','" + Estatus + "' )";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -254,7 +254,7 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "Update SalesAsociaciones set nombre='" + nombre + "',   estatus='" + Estatus + "'";
+            string query = "Update SalesAsociaciones set idAsosiacion='" + idAsociacion + "', nombre='" + nombre + "',   estatus='" + Estatus + "'where idAsosiacion ='" + idAsociacion + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -268,7 +268,7 @@ namespace Datos
             int flag = 0;
             con.Open();
 
-            string query = "Delete from SalesCultivos where  idAsociacion = '" + idAsociacion + "'";
+            string query = "Delete from SalesAsociaciones where  idAsosiacion = '" + idAsociacion + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -278,7 +278,7 @@ namespace Datos
         //CONSULTAR LOS DATOS DE TABLA SQL  
         public DataTable ConsultarAsociacion()
         {
-            string query = "select * from Sales Asociacion";
+            string query = "select * from SalesAsociaciones";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter data = new SqlDataAdapter(cmd);
             DataTable tabla = new DataTable();
