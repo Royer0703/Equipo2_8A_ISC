@@ -134,7 +134,7 @@ namespace Datos
             int flag = 0;
             con.Open();
 
-            string query = "insert into SalesCultivos values('" + idClien + "','" + nom + "','" + rz + "','" + lm + "','" + rfc + "','" + tel + "','" + email + "','" + tipo + "' )";
+            string query = "insert into SalesClientes values('" + idClien + "','" + nom + "','" + rz + "','" + lm + "','" + rfc + "','" + tel + "','" + email + "','" + tipo + "' )";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -142,12 +142,12 @@ namespace Datos
 
         }
 
-        //METODO PARA MODIFICA NUEVO CULTIVO
+        //METODO PARA MODIFICA NUEVO Cliente
         public int ModificarCliente(string idClien, string nom, string rz, string lm, string rfc, string tel, string email, string tipo)
         {
             int flag = 0;
             con.Open();
-            string query = "Update SalesCultivos set nombre='" + nom + "', razonSocial ='" + rz + "', limiteCredito ='" + lm + "', rfc  ='" + rfc + "', telefono  ='" + tel + "', email   ='" + email + "', tipo   ='" + tipo + "'where idCliente ='" + idClien + "'";
+            string query = "Update SalesClientes set nombre='" + nom + "', razonSocial ='" + rz + "', limiteCredito ='" + lm + "', rfc  ='" + rfc + "', telefono  ='" + tel + "', email   ='" + email + "', tipo   ='" + tipo + "'where idCliente ='" + idClien + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -155,20 +155,20 @@ namespace Datos
 
 
         }
-        //METODO PARA ELIMINAR NUEVO CULTIVO
+        //METODO PARA ELIMINAR NUEVO Cliente
         public int EliminarCliente(string idClien)
         {
             int flag = 0;
             con.Open();
 
-            string query = "Delete from SalesCultivos where idCultivo = '" + idClien + "'";
+            string query = "Delete from SalesClientes where idCliente = '" + idClien + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
             return flag;
         }
 
-        //CONSULTAR LOS DATOS DE TABLA SQL CULTIVOS
+        //CONSULTAR LOS DATOS DE TABLA SQL Cliente
         public DataTable ConsultarCliente()
         {
             string query = "select * from SalesClientes";
@@ -185,7 +185,7 @@ namespace Datos
         //METDOD CONSULTAR
         public DataTable ConsultarMiembros()
         {
-            string query = "Select * from Miembros";
+            string query = "Select * from SalesMiembros";
             SqlCommand cmd = new SqlCommand(query, con);
             SqlDataAdapter data = new SqlDataAdapter(cmd);
             DataTable tabla = new DataTable();
@@ -199,7 +199,7 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "insert into Miembros values('" + idCliente + "','" + idAsociacion + "', '" + estatus + "', '" + Incorporacion + "')";
+            string query = "insert into SalesMiembros values('" + idCliente + "','" + idAsociacion + "', '" + estatus + "', '" + Incorporacion + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -212,7 +212,7 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "Update Miembros set idAsociacion ='" + idAsociacion + "', estatus ='" + estatus + "', Incorporacion ='" + Incorporacion + "', modelo ='";
+            string query = "Update SalesMiembros set idAsociacion ='" + idAsociacion + "', estatus ='" + estatus + "', Incorporacion ='" + Incorporacion + "', modelo ='";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -226,18 +226,12 @@ namespace Datos
             int flag = 0;
             con.Open();
 
-            string query = "Delete from Miembros where idAsociacion  = '" + asociacion + "'";
+            string query = "Delete from SalesMiembros where idAsociacion  = '" + asociacion + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
             return flag;
         }
-
-
-
-
-
-
 
 
     }

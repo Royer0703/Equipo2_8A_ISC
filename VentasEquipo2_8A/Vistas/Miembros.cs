@@ -20,7 +20,7 @@ namespace Vistas
         public Miembros()
         {
             InitializeComponent();
-            dataGridViewMiembros.DataSource = cn.ConsultaDt();
+            dataGridViewMiembros.DataSource = cn.ConsultaMiembros();
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace Vistas
                 
 
                 cn.insertarMiembros(txtCliente.Text,txtidAsociacion.Text, txtestatus.Text, txtIncorporacion.Text);
-                dataGridViewMiembros.DataSource = cn.ConsultaDt();
+                dataGridViewMiembros.DataSource = cn.ConsultaMiembros();
 
                 txtidAsociacion.Text = "";
                 txtestatus.Text = "";
@@ -63,11 +63,6 @@ namespace Vistas
                 MessageBox.Show("Miembro agregado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
-            txtidAsociacion.Enabled = false;
-            txtestatus.Enabled = false;
-            txtIncorporacion.Enabled = false;
-    
-            dataGridViewMiembros.DataSource = cn.ConsultaDt();
         }
 
         private void btnEliminar_Click(object sender, EventArgs e)
@@ -86,6 +81,11 @@ namespace Vistas
         {
 
             dataGridViewMiembros.DataSource = cn.ConsultaDt();
+        }
+
+        private void btnGuardar_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

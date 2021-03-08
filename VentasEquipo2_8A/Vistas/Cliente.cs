@@ -17,6 +17,7 @@ namespace Vistas
         public Clientes()
         {
             InitializeComponent();
+            dataGridView_UnidadesT.DataSource = cn.ConsultaCliente();
         }
 
         private void Asociaciones_Load(object sender, EventArgs e)
@@ -52,7 +53,7 @@ namespace Vistas
             }
             else
             {
-                cn.InsertarCliente(txtidClientes.Text, txtnombre.Text, txtrazonSocial.Text, txtLm.Text, txtRfc.Text, txtTel.Text, txtEmail.Text);
+                cn.InsertarCliente(txtidClientes.Text, txtnombre.Text, txtrazonSocial.Text, txtLm.Text, txtRfc.Text, txtTel.Text, txtEmail.Text,txttipo.Text);
                 dataGridView_UnidadesT.DataSource = cn.ConsultaCliente();
 
                 txtidClientes.Text = "";
@@ -76,7 +77,7 @@ namespace Vistas
             }
             else
             {
-                cn.ModificarClientes(txtidClientes.Text, txtnombre.Text, txtrazonSocial.Text, txtLm.Text, txtRfc.Text, txtTel.Text, txtEmail.Text);
+                cn.ModificarClientes(txtidClientes.Text, txtnombre.Text, txtrazonSocial.Text, txtLm.Text, txtRfc.Text, txtTel.Text, txtEmail.Text,txttipo.Text);
 
                 dataGridView_UnidadesT.DataSource = cn.ConsultaCliente();
 
@@ -105,7 +106,7 @@ namespace Vistas
             else
             {
                 cn.EliminarCliente(txtidClientes.Text);
-                dataGridView_UnidadesT.DataSource = cn.ConsultaCultivosDT();
+                dataGridView_UnidadesT.DataSource = cn.ConsultaCliente();
 
 
                 txtidClientes.Text = "";
