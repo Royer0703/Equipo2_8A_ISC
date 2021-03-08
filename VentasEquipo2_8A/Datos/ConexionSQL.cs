@@ -44,5 +44,73 @@ namespace Datos
 
         }
 
+
+
+        //***********************************TABLA CULTIVOS **************************************************
+        //METODO PARA AGREGAR NUEVO CULTIVO
+        public int InsertarCultivos(string idCulti, string nom, string costoAse, string esta)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "insert into SalesCultivos values('" + idCulti + "','" + nom + "','" + costoAse + "','" + esta + "' )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICA NUEVO CULTIVO
+        public int ModificarCultivos(string idCul, string nom, string costoAse, string esta)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesCultivos set nombre='" + nom + "', costoAsesoria='" + costoAse + "', estatus='" + esta + "'where idCultivo='" + idCul + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+
+        }
+        //METODO PARA ELIMINAR NUEVO CULTIVO
+        public int EliminarCultivos(string idCul)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "Delete from SalesCultivos where idCultivo = '" + idCul + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
+        //CONSULTAR LOS DATOS DE TABLA SQL CULTIVOS
+        public DataTable ConsultarCultivosDG()
+        {
+            string query = "select * from SalesCultivos";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     }
 }

@@ -23,5 +23,43 @@ namespace Negocios
             return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
         }
 
+
+
+        //******************************TABLA CULTIVOS *******************************************
+
+        public DataTable ConsultaCultivosDT()
+        {
+            return cn.ConsultarCultivosDG();
+        }
+
+        public int insertarCultivos(string idCulti, string nom, string costoAse, string esta)
+        {
+
+
+            return cn.InsertarCultivos(idCulti, nom, costoAse, esta);
+
+        }
+
+        public int modificarCultivos(string idCulti, string nom, string costoAse, string esta)
+        {
+
+            return cn.ModificarCultivos(idCulti, nom, costoAse, esta);
+
+        }
+
+
+        public int eliminarCultivos(string idCul)
+        {
+            return cn.EliminarCultivos(idCul);
+        }
+
+
+
+
+
+
+
+
+
     }
 }
