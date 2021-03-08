@@ -16,5 +16,40 @@ namespace Vistas
         {
             InitializeComponent();
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuSeparator2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void botonIngresar_Click(object sender, EventArgs e)
+        {
+            //AbrirFormularios<PaginaPrincipal>();
+        }
     }
 }

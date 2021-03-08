@@ -234,5 +234,58 @@ namespace Datos
         }
 
 
+        //***********************************TABLA Asociacion... **************************************************
+        //METODO PARA AGREGAR NUEVO  Asociacion
+        public int InsertarAsociacion(string idAsociacion, string nombre, string Estatus)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "insert into SalesAsociaciones values('" + idAsociacion + "','" + nombre + "','" + Estatus + "' )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICA NUEVO  
+        public int ModificarAsociacion(string idAsociacion, string nombre, string Estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesAsociaciones set idAsosiacion='" + idAsociacion + "', nombre='" + nombre + "',   estatus='" + Estatus + "'where idAsosiacion ='" + idAsociacion + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+
+        }
+        //METODO PARA ELIMINAR NUEVO  
+        public int EliminarAsociacion(string idAsociacion)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "Delete from SalesAsociaciones where  idAsosiacion = '" + idAsociacion + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
+        //CONSULTAR LOS DATOS DE TABLA SQL  
+        public DataTable ConsultarAsociacion()
+        {
+            string query = "select * from SalesAsociaciones";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
     }
 }
