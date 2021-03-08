@@ -127,6 +127,57 @@ namespace Datos
 
 
 
+        //***********************************TABLA CLIENTES **************************************************
+        //METODO PARA AGREGAR NUEVO Cliente
+        public int InsertarCliente(string idClien, string nom, string rz, string lm, string rfc, string tel, string email, string tipo)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "insert into SalesCultivos values('" + idClien + "','" + nom + "','" + rz + "','" + lm + "','" + rfc + "','" + tel + "','" + email + "','" + tipo + "' )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICA NUEVO CULTIVO
+        public int ModificarCliente(string idClien, string nom, string rz, string lm, string rfc, string tel, string email, string tipo)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesCultivos set nombre='" + nom + "', razonSocial ='" + rz + "', limiteCredito ='" + lm + "', rfc  ='" + rfc + "', telefono  ='" + tel + "', email   ='" + email + "', tipo   ='" + tipo + "'where idCliente ='" + idClien + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+
+        }
+        //METODO PARA ELIMINAR NUEVO CULTIVO
+        public int EliminarCliente(string idClien)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "Delete from SalesCultivos where idCultivo = '" + idClien + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
+        //CONSULTAR LOS DATOS DE TABLA SQL CULTIVOS
+        public DataTable ConsultarCliente()
+        {
+            string query = "select * from SalesClientes";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
 
 
 

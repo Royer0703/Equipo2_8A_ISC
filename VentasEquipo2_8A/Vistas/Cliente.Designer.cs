@@ -34,7 +34,7 @@ namespace Vistas
             this.dataGridView_UnidadesT = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.txtrazonSocial = new System.Windows.Forms.TextBox();
-            this.txtmarca = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtidClientes = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -44,13 +44,13 @@ namespace Vistas
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtLm = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtRfc = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtTel = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).BeginInit();
@@ -61,7 +61,7 @@ namespace Vistas
             // 
             this.pb_cerrar.Image = ((System.Drawing.Image)(resources.GetObject("pb_cerrar.Image")));
             this.pb_cerrar.Location = new System.Drawing.Point(9, 10);
-            this.pb_cerrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pb_cerrar.Margin = new System.Windows.Forms.Padding(2);
             this.pb_cerrar.Name = "pb_cerrar";
             this.pb_cerrar.Size = new System.Drawing.Size(18, 20);
             this.pb_cerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -75,7 +75,7 @@ namespace Vistas
             this.dataGridView_UnidadesT.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.dataGridView_UnidadesT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_UnidadesT.Location = new System.Drawing.Point(9, 46);
-            this.dataGridView_UnidadesT.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_UnidadesT.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_UnidadesT.Name = "dataGridView_UnidadesT";
             this.dataGridView_UnidadesT.ReadOnly = true;
             this.dataGridView_UnidadesT.RowHeadersWidth = 51;
@@ -99,23 +99,23 @@ namespace Vistas
             // txtrazonSocial
             // 
             this.txtrazonSocial.Location = new System.Drawing.Point(396, 143);
-            this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(2);
             this.txtrazonSocial.Name = "txtrazonSocial";
             this.txtrazonSocial.Size = new System.Drawing.Size(146, 20);
             this.txtrazonSocial.TabIndex = 23;
             // 
-            // txtmarca
+            // txtnombre
             // 
-            this.txtmarca.Location = new System.Drawing.Point(396, 85);
-            this.txtmarca.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtmarca.Name = "txtmarca";
-            this.txtmarca.Size = new System.Drawing.Size(146, 20);
-            this.txtmarca.TabIndex = 22;
+            this.txtnombre.Location = new System.Drawing.Point(396, 85);
+            this.txtnombre.Margin = new System.Windows.Forms.Padding(2);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(146, 20);
+            this.txtnombre.TabIndex = 22;
             // 
             // txtidClientes
             // 
             this.txtidClientes.Location = new System.Drawing.Point(396, 33);
-            this.txtidClientes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtidClientes.Margin = new System.Windows.Forms.Padding(2);
             this.txtidClientes.Name = "txtidClientes";
             this.txtidClientes.Size = new System.Drawing.Size(146, 20);
             this.txtidClientes.TabIndex = 21;
@@ -181,7 +181,7 @@ namespace Vistas
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
             this.btnEliminar.Location = new System.Drawing.Point(156, 328);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(6);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -193,6 +193,7 @@ namespace Vistas
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -217,7 +218,7 @@ namespace Vistas
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
             this.btnEditar.Location = new System.Drawing.Point(2, 328);
-            this.btnEditar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(6);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -229,6 +230,7 @@ namespace Vistas
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
             this.btnEditar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnGuardar
             // 
@@ -253,7 +255,7 @@ namespace Vistas
             this.btnGuardar.IconZoom = 50D;
             this.btnGuardar.IsTab = false;
             this.btnGuardar.Location = new System.Drawing.Point(156, 256);
-            this.btnGuardar.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnGuardar.Margin = new System.Windows.Forms.Padding(6);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -265,6 +267,7 @@ namespace Vistas
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -289,7 +292,7 @@ namespace Vistas
             this.btnNuevo.IconZoom = 50D;
             this.btnNuevo.IsTab = false;
             this.btnNuevo.Location = new System.Drawing.Point(2, 255);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(6);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnNuevo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
@@ -301,6 +304,7 @@ namespace Vistas
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
             this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label5
             // 
@@ -314,13 +318,13 @@ namespace Vistas
             this.label5.TabIndex = 28;
             this.label5.Text = "LIMITE CREDITO";
             // 
-            // textBox1
+            // txtLm
             // 
-            this.textBox1.Location = new System.Drawing.Point(396, 195);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(146, 20);
-            this.textBox1.TabIndex = 29;
+            this.txtLm.Location = new System.Drawing.Point(396, 195);
+            this.txtLm.Margin = new System.Windows.Forms.Padding(2);
+            this.txtLm.Name = "txtLm";
+            this.txtLm.Size = new System.Drawing.Size(146, 20);
+            this.txtLm.TabIndex = 29;
             // 
             // label6
             // 
@@ -334,13 +338,13 @@ namespace Vistas
             this.label6.TabIndex = 30;
             this.label6.Text = "RFC";
             // 
-            // textBox2
+            // txtRfc
             // 
-            this.textBox2.Location = new System.Drawing.Point(396, 256);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(146, 20);
-            this.textBox2.TabIndex = 31;
+            this.txtRfc.Location = new System.Drawing.Point(396, 256);
+            this.txtRfc.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRfc.Name = "txtRfc";
+            this.txtRfc.Size = new System.Drawing.Size(146, 20);
+            this.txtRfc.TabIndex = 31;
             // 
             // label7
             // 
@@ -354,13 +358,13 @@ namespace Vistas
             this.label7.TabIndex = 32;
             this.label7.Text = "TELEFONO";
             // 
-            // textBox3
+            // txtTel
             // 
-            this.textBox3.Location = new System.Drawing.Point(396, 311);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(146, 20);
-            this.textBox3.TabIndex = 33;
+            this.txtTel.Location = new System.Drawing.Point(396, 311);
+            this.txtTel.Margin = new System.Windows.Forms.Padding(2);
+            this.txtTel.Name = "txtTel";
+            this.txtTel.Size = new System.Drawing.Size(146, 20);
+            this.txtTel.TabIndex = 33;
             // 
             // label8
             // 
@@ -374,13 +378,13 @@ namespace Vistas
             this.label8.TabIndex = 34;
             this.label8.Text = "EMAIL";
             // 
-            // textBox4
+            // txtEmail
             // 
-            this.textBox4.Location = new System.Drawing.Point(396, 370);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(146, 20);
-            this.textBox4.TabIndex = 35;
+            this.txtEmail.Location = new System.Drawing.Point(396, 370);
+            this.txtEmail.Margin = new System.Windows.Forms.Padding(2);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(146, 20);
+            this.txtEmail.TabIndex = 35;
             // 
             // label9
             // 
@@ -410,20 +414,20 @@ namespace Vistas
             this.ClientSize = new System.Drawing.Size(586, 470);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtTel);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtRfc);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtLm);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtrazonSocial);
-            this.Controls.Add(this.txtmarca);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtidClientes);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -432,7 +436,7 @@ namespace Vistas
             this.Controls.Add(this.dataGridView_UnidadesT);
             this.Controls.Add(this.pb_cerrar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Clientes";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Asociaciones_Load);
@@ -449,7 +453,7 @@ namespace Vistas
         private System.Windows.Forms.DataGridView dataGridView_UnidadesT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtrazonSocial;
-        private System.Windows.Forms.TextBox txtmarca;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtidClientes;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
@@ -459,13 +463,13 @@ namespace Vistas
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtLm;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtRfc;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtTel;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox5;
     }

@@ -63,6 +63,36 @@ namespace Negocios
         }
 
 
+        //******************************TABLA CLIENTES *******************************************
+
+        public DataTable ConsultaCliente()
+        {
+            return cn.ConsultarCliente();
+        }
+
+        public int InsertarCliente(string idClien, string nom, string rz, string lm, string rfc, string tel, string email, string tipo)
+        {
+
+
+            return cn.InsertarCliente(idClien, nom, rz, lm, rfc, tel, email, tipo);
+
+        }
+
+        public int ModificarClientes(string idClien, string nom, string rz, string lm, string rfc, string tel, string email, string tipo)
+        {
+
+            return cn.ModificarCliente(idClien, nom, rz, lm, rfc, tel, email, tipo);
+
+        }
+
+
+        public int EliminarCliente(string idClien)
+        {
+            return cn.EliminarCliente(idClien);
+        }
+
+
+
 
 
 
