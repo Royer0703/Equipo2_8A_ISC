@@ -48,6 +48,8 @@
             this.btnEditar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.txtidunidadest = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UnidadesT)).BeginInit();
             this.SuspendLayout();
@@ -92,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(806, 46);
+            this.label2.Location = new System.Drawing.Point(806, 75);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(70, 24);
             this.label2.TabIndex = 3;
@@ -103,7 +105,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(806, 110);
+            this.label3.Location = new System.Drawing.Point(806, 139);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 24);
             this.label3.TabIndex = 4;
@@ -114,7 +116,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(809, 172);
+            this.label4.Location = new System.Drawing.Point(809, 201);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(74, 24);
             this.label4.TabIndex = 5;
@@ -125,7 +127,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(809, 238);
+            this.label5.Location = new System.Drawing.Point(809, 267);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 24);
             this.label5.TabIndex = 6;
@@ -136,7 +138,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(809, 307);
+            this.label6.Location = new System.Drawing.Point(809, 336);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(100, 24);
             this.label6.TabIndex = 7;
@@ -147,7 +149,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(809, 369);
+            this.label7.Location = new System.Drawing.Point(809, 398);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(48, 24);
             this.label7.TabIndex = 8;
@@ -155,42 +157,48 @@
             // 
             // txtplacas
             // 
-            this.txtplacas.Location = new System.Drawing.Point(810, 73);
+            this.txtplacas.Enabled = false;
+            this.txtplacas.Location = new System.Drawing.Point(810, 102);
             this.txtplacas.Name = "txtplacas";
             this.txtplacas.Size = new System.Drawing.Size(259, 22);
             this.txtplacas.TabIndex = 9;
             // 
             // txtmarca
             // 
-            this.txtmarca.Location = new System.Drawing.Point(810, 137);
+            this.txtmarca.Enabled = false;
+            this.txtmarca.Location = new System.Drawing.Point(810, 166);
             this.txtmarca.Name = "txtmarca";
             this.txtmarca.Size = new System.Drawing.Size(259, 22);
             this.txtmarca.TabIndex = 10;
             // 
             // txtmodelo
             // 
-            this.txtmodelo.Location = new System.Drawing.Point(810, 199);
+            this.txtmodelo.Enabled = false;
+            this.txtmodelo.Location = new System.Drawing.Point(810, 228);
             this.txtmodelo.Name = "txtmodelo";
             this.txtmodelo.Size = new System.Drawing.Size(259, 22);
             this.txtmodelo.TabIndex = 11;
             // 
             // txtanio
             // 
-            this.txtanio.Location = new System.Drawing.Point(810, 272);
+            this.txtanio.Enabled = false;
+            this.txtanio.Location = new System.Drawing.Point(810, 301);
             this.txtanio.Name = "txtanio";
             this.txtanio.Size = new System.Drawing.Size(259, 22);
             this.txtanio.TabIndex = 12;
             // 
             // txtcapacidad
             // 
-            this.txtcapacidad.Location = new System.Drawing.Point(813, 334);
+            this.txtcapacidad.Enabled = false;
+            this.txtcapacidad.Location = new System.Drawing.Point(813, 363);
             this.txtcapacidad.Name = "txtcapacidad";
             this.txtcapacidad.Size = new System.Drawing.Size(256, 22);
             this.txtcapacidad.TabIndex = 13;
             // 
             // txttipo
             // 
-            this.txttipo.Location = new System.Drawing.Point(810, 396);
+            this.txttipo.Enabled = false;
+            this.txttipo.Location = new System.Drawing.Point(810, 425);
             this.txttipo.Name = "txttipo";
             this.txttipo.Size = new System.Drawing.Size(259, 22);
             this.txttipo.TabIndex = 14;
@@ -230,6 +238,7 @@
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -266,6 +275,7 @@
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
             this.btnEditar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnGuardar
             // 
@@ -302,6 +312,7 @@
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -338,6 +349,26 @@
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
             this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // txtidunidadest
+            // 
+            this.txtidunidadest.Enabled = false;
+            this.txtidunidadest.Location = new System.Drawing.Point(810, 37);
+            this.txtidunidadest.Name = "txtidunidadest";
+            this.txtidunidadest.Size = new System.Drawing.Size(259, 22);
+            this.txtidunidadest.TabIndex = 20;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(806, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(196, 24);
+            this.label8.TabIndex = 19;
+            this.label8.Text = "idUnidadesTransporte";
             // 
             // UnidadesTransporte
             // 
@@ -345,6 +376,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1081, 551);
+            this.Controls.Add(this.txtidunidadest);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
@@ -367,6 +400,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "UnidadesTransporte";
             this.Text = "UnidadesTransporte";
+            this.Load += new System.EventHandler(this.UnidadesTransporte_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UnidadesT)).EndInit();
             this.ResumeLayout(false);
@@ -395,5 +429,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEditar;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
+        private System.Windows.Forms.TextBox txtidunidadest;
+        private System.Windows.Forms.Label label8;
     }
 }

@@ -41,15 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConexionBD.cs" />
+    <Compile Include="ConexionSQL.cs" />
     <Compile Include="CRUD-Unidades de Transporte.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Negocios\Negocios.csproj">
-      <Project>{331f33b8-728f-4dce-b67e-91723b79f686}</Project>
-      <Name>Negocios</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
