@@ -43,6 +43,8 @@ namespace Vistas
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEditar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewMiembros)).BeginInit();
             this.SuspendLayout();
@@ -87,7 +89,7 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(468, 58);
+            this.label2.Location = new System.Drawing.Point(468, 126);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 24);
             this.label2.TabIndex = 3;
@@ -98,7 +100,7 @@ namespace Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(468, 123);
+            this.label3.Location = new System.Drawing.Point(468, 178);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(70, 24);
             this.label3.TabIndex = 4;
@@ -109,7 +111,7 @@ namespace Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(468, 190);
+            this.label4.Location = new System.Drawing.Point(468, 239);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(185, 24);
             this.label4.TabIndex = 5;
@@ -117,21 +119,21 @@ namespace Vistas
             // 
             // txtidAsociacion
             // 
-            this.txtidAsociacion.Location = new System.Drawing.Point(472, 86);
+            this.txtidAsociacion.Location = new System.Drawing.Point(472, 153);
             this.txtidAsociacion.Name = "txtidAsociacion";
             this.txtidAsociacion.Size = new System.Drawing.Size(204, 22);
             this.txtidAsociacion.TabIndex = 6;
             // 
             // txtestatus
             // 
-            this.txtestatus.Location = new System.Drawing.Point(472, 150);
+            this.txtestatus.Location = new System.Drawing.Point(472, 214);
             this.txtestatus.Name = "txtestatus";
             this.txtestatus.Size = new System.Drawing.Size(204, 22);
             this.txtestatus.TabIndex = 7;
             // 
             // txtIncorporacion
             // 
-            this.txtIncorporacion.Location = new System.Drawing.Point(472, 217);
+            this.txtIncorporacion.Location = new System.Drawing.Point(472, 266);
             this.txtIncorporacion.Name = "txtIncorporacion";
             this.txtIncorporacion.Size = new System.Drawing.Size(204, 22);
             this.txtIncorporacion.TabIndex = 8;
@@ -171,6 +173,7 @@ namespace Vistas
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
             this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // btnGuardar
             // 
@@ -280,12 +283,32 @@ namespace Vistas
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(468, 58);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(88, 24);
+            this.label5.TabIndex = 16;
+            this.label5.Text = "id Cliente";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(472, 101);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(204, 22);
+            this.txtCliente.TabIndex = 17;
+            // 
             // Miembros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
@@ -324,5 +347,7 @@ namespace Vistas
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditar;
         private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.TextBox txtCliente;
     }
 }

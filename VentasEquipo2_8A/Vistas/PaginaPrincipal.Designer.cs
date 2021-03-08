@@ -46,6 +46,8 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnasociaciones = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btncliente = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnprincipal.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
@@ -146,6 +148,8 @@
             // pnsidebar
             // 
             this.pnsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.pnsidebar.Controls.Add(this.btncliente);
+            this.pnsidebar.Controls.Add(this.btnasociaciones);
             this.pnsidebar.Controls.Add(this.btncultivos);
             this.pnsidebar.Controls.Add(this.btnmienbros);
             this.pnsidebar.Controls.Add(this.btnunidadestransporte);
@@ -309,6 +313,78 @@
             this.bunifuElipse2.ElipseRadius = 15;
             this.bunifuElipse2.TargetControl = this.pncontenedor;
             // 
+            // btnasociaciones
+            // 
+            this.btnasociaciones.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnasociaciones.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnasociaciones.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnasociaciones.BorderRadius = 7;
+            this.btnasociaciones.ButtonText = "Asociaciones";
+            this.btnasociaciones.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnasociaciones.DisabledColor = System.Drawing.Color.Gray;
+            this.btnasociaciones.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnasociaciones.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnasociaciones.Iconimage")));
+            this.btnasociaciones.Iconimage_right = null;
+            this.btnasociaciones.Iconimage_right_Selected = null;
+            this.btnasociaciones.Iconimage_Selected = null;
+            this.btnasociaciones.IconMarginLeft = 0;
+            this.btnasociaciones.IconMarginRight = 0;
+            this.btnasociaciones.IconRightVisible = true;
+            this.btnasociaciones.IconRightZoom = 0D;
+            this.btnasociaciones.IconVisible = true;
+            this.btnasociaciones.IconZoom = 60D;
+            this.btnasociaciones.IsTab = false;
+            this.btnasociaciones.Location = new System.Drawing.Point(2, 371);
+            this.btnasociaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnasociaciones.Name = "btnasociaciones";
+            this.btnasociaciones.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnasociaciones.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnasociaciones.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnasociaciones.selected = false;
+            this.btnasociaciones.Size = new System.Drawing.Size(328, 59);
+            this.btnasociaciones.TabIndex = 10;
+            this.btnasociaciones.Text = "Asociaciones";
+            this.btnasociaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnasociaciones.Textcolor = System.Drawing.Color.White;
+            this.btnasociaciones.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnasociaciones.Click += new System.EventHandler(this.btnasociaciones_Click);
+            // 
+            // btncliente
+            // 
+            this.btncliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncliente.BorderRadius = 7;
+            this.btncliente.ButtonText = "Cliente";
+            this.btncliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btncliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btncliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btncliente.Iconimage")));
+            this.btncliente.Iconimage_right = null;
+            this.btncliente.Iconimage_right_Selected = null;
+            this.btncliente.Iconimage_Selected = null;
+            this.btncliente.IconMarginLeft = 0;
+            this.btncliente.IconMarginRight = 0;
+            this.btncliente.IconRightVisible = true;
+            this.btncliente.IconRightZoom = 0D;
+            this.btncliente.IconVisible = true;
+            this.btncliente.IconZoom = 60D;
+            this.btncliente.IsTab = false;
+            this.btncliente.Location = new System.Drawing.Point(4, 438);
+            this.btncliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncliente.Name = "btncliente";
+            this.btncliente.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btncliente.selected = false;
+            this.btncliente.Size = new System.Drawing.Size(328, 59);
+            this.btncliente.TabIndex = 11;
+            this.btncliente.Text = "Cliente";
+            this.btncliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncliente.Textcolor = System.Drawing.Color.White;
+            this.btncliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncliente.Click += new System.EventHandler(this.btncliente_Click);
+            // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -349,5 +425,7 @@
         private Bunifu.Framework.UI.BunifuFlatButton btncultivos;
         private Bunifu.Framework.UI.BunifuFlatButton btnmienbros;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
+        private Bunifu.Framework.UI.BunifuFlatButton btncliente;
+        private Bunifu.Framework.UI.BunifuFlatButton btnasociaciones;
     }
 }

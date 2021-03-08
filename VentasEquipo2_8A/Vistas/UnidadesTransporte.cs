@@ -74,13 +74,60 @@ namespace Vistas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtidunidadest.Text))
+            {
+                MessageBox.Show("Seleccione una Unidad de Transporte!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string id = txtidunidadest.Text;
+                int idr = Int32.Parse(id);
+
+                cn.eliminarunidadTransporte(idr);
+                dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+
+                txtanio.Text = "";
+                txtcapacidad.Text = "";
+                txtidunidadest.Text = "";
+                txtmarca.Text = "";
+                txtmodelo.Text = "";
+                txtplacas.Text = "";
+                txttipo.Text = "";
+
+                MessageBox.Show("Unidad de transporte eliminada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
 
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(txtanio.Text) || string.IsNullOrEmpty(txtcapacidad.Text) || string.IsNullOrEmpty(txtidunidadest.Text) || string.IsNullOrEmpty(txtmarca.Text) || string.IsNullOrEmpty(txtmodelo.Text) || string.IsNullOrEmpty(txtplacas.Text) || string.IsNullOrEmpty(txttipo.Text))
+            {
+                MessageBox.Show("Seleccione una Unidad de transporte!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                string id = txtidunidadest.Text;
+                int idr = Int32.Parse(id);
+                string anio = txtanio.Text;
+                int anior = Int32.Parse(anio);
+                string capacidad = txtcapacidad.Text;
+                int capacidadr = Int32.Parse(capacidad);
 
+                cn.modificarUnidadTransporte(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text);
+                dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+
+                txtanio.Text = "";
+                txtcapacidad.Text = "";
+                txtidunidadest.Text = "";
+                txtmarca.Text = "";
+                txtmodelo.Text = "";
+                txtplacas.Text = "";
+                txttipo.Text = "";
+
+                MessageBox.Show("Unidad de Transporte modificado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
 

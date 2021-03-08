@@ -77,12 +77,22 @@ namespace Vistas
 
         private void btnmienbros_Click(object sender, EventArgs e)
         {
-            
+            AbrirFormularios<Miembros>();
         }
 
         private void btncultivos_Click(object sender, EventArgs e)
         {
             AbrirFormularios<Cultivos>();
+        }
+
+        private void btnasociaciones_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Asociaciones>();
+        }
+
+        private void btncliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Clientes>();
         }
     }
 }
