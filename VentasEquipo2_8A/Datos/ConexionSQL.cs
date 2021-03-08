@@ -44,6 +44,32 @@ namespace Datos
 
         }
 
+        //METODO PARA MODIFICAR LAS UNIDADES DE TRANSPORTE EN LA BD
+        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesUnidadesTransporte set idUnidadTransporte ='" + idUnidadTransporte + "', placas ='" + placas + "', marca ='" + marca + "', modelo ='" + modelo + "', anio  ='" + anio + "', capacidad   ='" + capacidad + "', tipo   ='" + tipo + "'where idUnidadTransporte ='" + idUnidadTransporte + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA ELIMINAR Unidad de Transporte EN LA BD
+        public int eliminarUnidadTransporte(int curp)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "Delete from SalesUnidadesTransporte where idUnidadTransporte  = '" + curp + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
+
 
 
         //***********************************TABLA CULTIVOS **************************************************
