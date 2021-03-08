@@ -33,8 +33,8 @@ namespace Vistas
             this.pb_cerrar = new System.Windows.Forms.PictureBox();
             this.dataGridView_UnidadesT = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtmodelo = new System.Windows.Forms.TextBox();
-            this.txtmarca = new System.Windows.Forms.TextBox();
+            this.txtestatus = new System.Windows.Forms.TextBox();
+            this.txtnombre = new System.Windows.Forms.TextBox();
             this.txtplacas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,19 +83,20 @@ namespace Vistas
             this.label1.Text = "Listado de Asociaciones";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtmodelo
+            // txtestatus
             // 
-            this.txtmodelo.Location = new System.Drawing.Point(528, 167);
-            this.txtmodelo.Name = "txtmodelo";
-            this.txtmodelo.Size = new System.Drawing.Size(194, 22);
-            this.txtmodelo.TabIndex = 23;
+            this.txtestatus.Location = new System.Drawing.Point(528, 167);
+            this.txtestatus.Name = "txtestatus";
+            this.txtestatus.Size = new System.Drawing.Size(194, 22);
+            this.txtestatus.TabIndex = 23;
             // 
-            // txtmarca
+            // txtnombre
             // 
-            this.txtmarca.Location = new System.Drawing.Point(528, 105);
-            this.txtmarca.Name = "txtmarca";
-            this.txtmarca.Size = new System.Drawing.Size(194, 22);
-            this.txtmarca.TabIndex = 22;
+            this.txtnombre.Location = new System.Drawing.Point(528, 105);
+            this.txtnombre.Name = "txtnombre";
+            this.txtnombre.Size = new System.Drawing.Size(194, 22);
+            this.txtnombre.TabIndex = 22;
+            this.txtnombre.TextChanged += new System.EventHandler(this.txtmarca_TextChanged);
             // 
             // txtplacas
             // 
@@ -172,6 +173,7 @@ namespace Vistas
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnEditar
             // 
@@ -208,6 +210,7 @@ namespace Vistas
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
             this.btnEditar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnGuardar
             // 
@@ -244,6 +247,7 @@ namespace Vistas
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnNuevo
             // 
@@ -291,8 +295,8 @@ namespace Vistas
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnNuevo);
-            this.Controls.Add(this.txtmodelo);
-            this.Controls.Add(this.txtmarca);
+            this.Controls.Add(this.txtestatus);
+            this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtplacas);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -316,8 +320,8 @@ namespace Vistas
         private System.Windows.Forms.PictureBox pb_cerrar;
         private System.Windows.Forms.DataGridView dataGridView_UnidadesT;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtmodelo;
-        private System.Windows.Forms.TextBox txtmarca;
+        private System.Windows.Forms.TextBox txtestatus;
+        private System.Windows.Forms.TextBox txtnombre;
         private System.Windows.Forms.TextBox txtplacas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
