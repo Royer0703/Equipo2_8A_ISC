@@ -93,7 +93,33 @@ namespace Negocios
 
 
 
+        //********************** TABLA UNIDADES DE MIEMBROS **************************
 
+        public DataTable ConsultaMiembros()
+        {
+            return cn.ConsultarMiembros();
+        }
+
+        public int insertarMiembros(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+
+            return cn.insertarMiembros(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+        public int modificarMiembros(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+            return cn.modificarMiembros(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+
+        public int eliminarMiembros(string idAsociacion)
+        {
+            return cn.EliminarCultivos(idAsociacion);
+        }
 
 
 

@@ -181,6 +181,57 @@ namespace Datos
 
 
 
+        //***************************** TABLA MIEMBROS ********************************
+        //METDOD CONSULTAR
+        public DataTable ConsultarMiembros()
+        {
+            string query = "Select * from Miembros";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+
+            return tabla;
+        }
+
+        //METODO PARA INSERTAR MIEMBROS EN LA BD
+        public int insertarMiembros(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into Miembros values('" + idCliente + "','" + idAsociacion + "', '" + estatus + "', '" + Incorporacion + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICAR LOS MIEMBROS EN LA BD
+        public int modificarMiembros(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update Miembros set idAsociacion ='" + idAsociacion + "', estatus ='" + estatus + "', Incorporacion ='" + Incorporacion + "', modelo ='";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA ELIMINAR MIEMBRO EN LA BD
+        public int eliminarMiembros(int asociacion)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "Delete from Miembros where idAsociacion  = '" + asociacion + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
 
 
 
