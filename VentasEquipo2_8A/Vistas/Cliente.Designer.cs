@@ -42,7 +42,6 @@ namespace Vistas
             this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEditar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label5 = new System.Windows.Forms.Label();
             this.txtLm = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -80,7 +79,7 @@ namespace Vistas
             this.dataGridView_UnidadesT.ReadOnly = true;
             this.dataGridView_UnidadesT.RowHeadersWidth = 51;
             this.dataGridView_UnidadesT.RowTemplate.Height = 24;
-            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(489, 249);
+            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(648, 325);
             this.dataGridView_UnidadesT.TabIndex = 3;
             // 
             // label1
@@ -97,26 +96,26 @@ namespace Vistas
             // 
             // txtrazonSocial
             // 
-            this.txtrazonSocial.Location = new System.Drawing.Point(528, 176);
+            this.txtrazonSocial.Location = new System.Drawing.Point(687, 176);
             this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtrazonSocial.Name = "txtrazonSocial";
-            this.txtrazonSocial.Size = new System.Drawing.Size(193, 22);
+            this.txtrazonSocial.Size = new System.Drawing.Size(245, 22);
             this.txtrazonSocial.TabIndex = 23;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(528, 105);
+            this.txtnombre.Location = new System.Drawing.Point(687, 105);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnombre.Name = "txtnombre";
-            this.txtnombre.Size = new System.Drawing.Size(193, 22);
+            this.txtnombre.Size = new System.Drawing.Size(245, 22);
             this.txtnombre.TabIndex = 22;
             // 
             // txtidClientes
             // 
-            this.txtidClientes.Location = new System.Drawing.Point(528, 41);
+            this.txtidClientes.Location = new System.Drawing.Point(687, 41);
             this.txtidClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtidClientes.Name = "txtidClientes";
-            this.txtidClientes.Size = new System.Drawing.Size(193, 22);
+            this.txtidClientes.Size = new System.Drawing.Size(245, 22);
             this.txtidClientes.TabIndex = 21;
             // 
             // label4
@@ -124,7 +123,7 @@ namespace Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(527, 140);
+            this.label4.Location = new System.Drawing.Point(686, 140);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 24);
             this.label4.TabIndex = 17;
@@ -136,7 +135,7 @@ namespace Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(524, 78);
+            this.label3.Location = new System.Drawing.Point(683, 78);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 24);
             this.label3.TabIndex = 16;
@@ -147,7 +146,7 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(524, 14);
+            this.label2.Location = new System.Drawing.Point(683, 14);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 24);
             this.label2.TabIndex = 15;
@@ -176,7 +175,7 @@ namespace Vistas
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(208, 404);
+            this.btnEliminar.Location = new System.Drawing.Point(460, 513);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -186,7 +185,7 @@ namespace Vistas
             this.btnEliminar.Size = new System.Drawing.Size(200, 49);
             this.btnEliminar.TabIndex = 27;
             this.btnEliminar.Text = "ELIMINAR";
-            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
@@ -213,7 +212,7 @@ namespace Vistas
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(3, 404);
+            this.btnEditar.Location = new System.Drawing.Point(243, 513);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -223,7 +222,7 @@ namespace Vistas
             this.btnEditar.Size = new System.Drawing.Size(189, 49);
             this.btnEditar.TabIndex = 26;
             this.btnEditar.Text = "EDITAR";
-            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
             this.btnEditar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
@@ -250,7 +249,7 @@ namespace Vistas
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 50D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(208, 315);
+            this.btnGuardar.Location = new System.Drawing.Point(12, 513);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -260,54 +259,17 @@ namespace Vistas
             this.btnGuardar.Size = new System.Drawing.Size(200, 49);
             this.btnGuardar.TabIndex = 25;
             this.btnGuardar.Text = "GUARDAR";
-            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNuevo.BorderRadius = 3;
-            this.btnNuevo.ButtonText = "NUEVO";
-            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNuevo.DisabledColor = System.Drawing.Color.Gray;
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnNuevo.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Iconimage")));
-            this.btnNuevo.Iconimage_right = null;
-            this.btnNuevo.Iconimage_right_Selected = null;
-            this.btnNuevo.Iconimage_Selected = null;
-            this.btnNuevo.IconMarginLeft = 0;
-            this.btnNuevo.IconMarginRight = 0;
-            this.btnNuevo.IconRightVisible = true;
-            this.btnNuevo.IconRightZoom = 0D;
-            this.btnNuevo.IconVisible = true;
-            this.btnNuevo.IconZoom = 50D;
-            this.btnNuevo.IsTab = false;
-            this.btnNuevo.Location = new System.Drawing.Point(3, 314);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnNuevo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnNuevo.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnNuevo.selected = false;
-            this.btnNuevo.Size = new System.Drawing.Size(189, 49);
-            this.btnNuevo.TabIndex = 24;
-            this.btnNuevo.Text = "NUEVO";
-            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNuevo.Textcolor = System.Drawing.Color.White;
-            this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(527, 215);
+            this.label5.Location = new System.Drawing.Point(686, 215);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 24);
             this.label5.TabIndex = 28;
@@ -315,10 +277,10 @@ namespace Vistas
             // 
             // txtLm
             // 
-            this.txtLm.Location = new System.Drawing.Point(528, 240);
+            this.txtLm.Location = new System.Drawing.Point(687, 240);
             this.txtLm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLm.Name = "txtLm";
-            this.txtLm.Size = new System.Drawing.Size(193, 22);
+            this.txtLm.Size = new System.Drawing.Size(245, 22);
             this.txtLm.TabIndex = 29;
             // 
             // label6
@@ -326,7 +288,7 @@ namespace Vistas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(527, 283);
+            this.label6.Location = new System.Drawing.Point(686, 283);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 24);
             this.label6.TabIndex = 30;
@@ -334,10 +296,10 @@ namespace Vistas
             // 
             // txtRfc
             // 
-            this.txtRfc.Location = new System.Drawing.Point(528, 315);
+            this.txtRfc.Location = new System.Drawing.Point(687, 315);
             this.txtRfc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRfc.Name = "txtRfc";
-            this.txtRfc.Size = new System.Drawing.Size(193, 22);
+            this.txtRfc.Size = new System.Drawing.Size(245, 22);
             this.txtRfc.TabIndex = 31;
             // 
             // label7
@@ -345,7 +307,7 @@ namespace Vistas
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(527, 358);
+            this.label7.Location = new System.Drawing.Point(686, 358);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 24);
             this.label7.TabIndex = 32;
@@ -353,10 +315,10 @@ namespace Vistas
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(528, 383);
+            this.txtTel.Location = new System.Drawing.Point(687, 383);
             this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTel.Name = "txtTel";
-            this.txtTel.Size = new System.Drawing.Size(193, 22);
+            this.txtTel.Size = new System.Drawing.Size(245, 22);
             this.txtTel.TabIndex = 33;
             // 
             // label8
@@ -364,7 +326,7 @@ namespace Vistas
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(527, 431);
+            this.label8.Location = new System.Drawing.Point(686, 431);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 24);
             this.label8.TabIndex = 34;
@@ -372,10 +334,10 @@ namespace Vistas
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(528, 455);
+            this.txtEmail.Location = new System.Drawing.Point(687, 455);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(193, 22);
+            this.txtEmail.Size = new System.Drawing.Size(245, 22);
             this.txtEmail.TabIndex = 35;
             // 
             // label9
@@ -383,7 +345,7 @@ namespace Vistas
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(524, 496);
+            this.label9.Location = new System.Drawing.Point(683, 496);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 24);
             this.label9.TabIndex = 36;
@@ -391,10 +353,10 @@ namespace Vistas
             // 
             // txttipo
             // 
-            this.txttipo.Location = new System.Drawing.Point(528, 521);
+            this.txttipo.Location = new System.Drawing.Point(687, 521);
             this.txttipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttipo.Name = "txttipo";
-            this.txttipo.Size = new System.Drawing.Size(193, 22);
+            this.txttipo.Size = new System.Drawing.Size(245, 22);
             this.txttipo.TabIndex = 37;
             // 
             // Clientes
@@ -402,7 +364,7 @@ namespace Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(781, 578);
+            this.ClientSize = new System.Drawing.Size(962, 578);
             this.Controls.Add(this.txttipo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmail);
@@ -416,7 +378,6 @@ namespace Vistas
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtrazonSocial);
             this.Controls.Add(this.txtnombre);
             this.Controls.Add(this.txtidClientes);
@@ -452,7 +413,6 @@ namespace Vistas
         private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditar;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
-        private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtLm;
         private System.Windows.Forms.Label label6;
