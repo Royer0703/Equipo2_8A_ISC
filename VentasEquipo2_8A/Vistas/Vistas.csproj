@@ -69,10 +69,6 @@
     <Compile Include="Cultivos.Designer.cs">
       <DependentUpon>Cultivos.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs" />
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="Miembros.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -101,9 +97,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cultivos.resx">
       <DependentUpon>Cultivos.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Miembros.resx">
       <DependentUpon>Miembros.cs</DependentUpon>
