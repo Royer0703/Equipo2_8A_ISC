@@ -22,6 +22,15 @@ namespace Negocios
         {
             return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
         }
+        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        {
+            return cn.modificarUnidadTransporte(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
+        }
+
+        public int eliminarunidadTransporte(int idUnidadTransporte)
+        {
+            return cn.eliminarUnidadTransporte(idUnidadTransporte);
+        }
 
 
 
