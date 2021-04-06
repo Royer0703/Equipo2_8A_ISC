@@ -22,14 +22,7 @@ namespace Vistas
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            txtanio.Enabled = true;
-            txtcapacidad.Enabled = true;
-            txtmarca.Enabled = true;
-            txtmodelo.Enabled = true;
-            txtplacas.Enabled = true;
-            txttipo.Enabled = true;
-            txtidunidadest.Enabled = true;
-            dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -147,6 +140,19 @@ namespace Vistas
             txtcapacidad.Text = dataGridView_UnidadesT.CurrentRow.Cells[5].Value.ToString();
             txttipo.Text = dataGridView_UnidadesT.CurrentRow.Cells[6].Value.ToString();
             txtestatus.Text = dataGridView_UnidadesT.CurrentRow.Cells[7].Value.ToString();
+        }
+
+        private void btnNuevo_Click_1(object sender, EventArgs e)
+        {
+            txtanio.Text = "";
+            txtcapacidad.Text = "";
+            txtidunidadest.Text = "";
+            txtmarca.Text = "";
+            txtmodelo.Text = "";
+            txtplacas.Text = "";
+            txttipo.Text = "";
+            txtestatus.Text = "";
+            dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
     }
 }

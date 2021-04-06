@@ -51,6 +51,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.txtestatus = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UnidadesT)).BeginInit();
             this.SuspendLayout();
@@ -221,14 +222,14 @@
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(507, 486);
+            this.btnEliminar.Location = new System.Drawing.Point(413, 486);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminar.selected = false;
-            this.btnEliminar.Size = new System.Drawing.Size(227, 49);
+            this.btnEliminar.Size = new System.Drawing.Size(180, 49);
             this.btnEliminar.TabIndex = 18;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -258,14 +259,14 @@
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(264, 486);
+            this.btnEditar.Location = new System.Drawing.Point(217, 486);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEditar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditar.selected = false;
-            this.btnEditar.Size = new System.Drawing.Size(227, 49);
+            this.btnEditar.Size = new System.Drawing.Size(180, 49);
             this.btnEditar.TabIndex = 17;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -302,7 +303,7 @@
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(227, 49);
+            this.btnGuardar.Size = new System.Drawing.Size(180, 49);
             this.btnGuardar.TabIndex = 16;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -346,12 +347,50 @@
             this.label9.TabIndex = 21;
             this.label9.Text = "Estatus";
             // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNuevo.BorderRadius = 3;
+            this.btnNuevo.ButtonText = "NUEVO";
+            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnNuevo.DisabledColor = System.Drawing.Color.Gray;
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnNuevo.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Iconimage")));
+            this.btnNuevo.Iconimage_right = null;
+            this.btnNuevo.Iconimage_right_Selected = null;
+            this.btnNuevo.Iconimage_Selected = null;
+            this.btnNuevo.IconMarginLeft = 0;
+            this.btnNuevo.IconMarginRight = 0;
+            this.btnNuevo.IconRightVisible = true;
+            this.btnNuevo.IconRightZoom = 0D;
+            this.btnNuevo.IconVisible = true;
+            this.btnNuevo.IconZoom = 50D;
+            this.btnNuevo.IsTab = false;
+            this.btnNuevo.Location = new System.Drawing.Point(609, 486);
+            this.btnNuevo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
+            this.btnNuevo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
+            this.btnNuevo.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnNuevo.selected = false;
+            this.btnNuevo.Size = new System.Drawing.Size(180, 49);
+            this.btnNuevo.TabIndex = 23;
+            this.btnNuevo.Text = "NUEVO";
+            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnNuevo.Textcolor = System.Drawing.Color.White;
+            this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click_1);
+            // 
             // UnidadesTransporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1081, 551);
+            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txtestatus);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtidunidadest);
@@ -409,5 +448,6 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtestatus;
         private System.Windows.Forms.Label label9;
+        private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
     }
 }
