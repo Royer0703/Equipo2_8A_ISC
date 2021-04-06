@@ -68,19 +68,24 @@ namespace Vistas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txtidunidadest.Text))
+            if (string.IsNullOrEmpty(txtanio.Text) || string.IsNullOrEmpty(txtcapacidad.Text) || string.IsNullOrEmpty(txtidunidadest.Text) || string.IsNullOrEmpty(txtmarca.Text) || string.IsNullOrEmpty(txtmodelo.Text) || string.IsNullOrEmpty(txtplacas.Text) || string.IsNullOrEmpty(txttipo.Text))
             {
-                MessageBox.Show("Seleccione una Unidad de Transporte!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Seleccione una Unidad de transporte!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
                 string id = txtidunidadest.Text;
                 int idr = Int32.Parse(id);
+                string anio = txtanio.Text;
+                int anior = Int32.Parse(anio);
+                string capacidad = txtcapacidad.Text;
+                int capacidadr = Int32.Parse(capacidad);
+                txtestatus.Text = "I";
 
-                cn.eliminarunidadTransporte(idr);
+                cn.modificarUnidadTransporte(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text, txtestatus.Text);
                 dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
 
-                MessageBox.Show("Unidad de transporte eliminada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Unidad de Transporte Eliminada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtanio.Text = "";
                 txtcapacidad.Text = "";
@@ -91,7 +96,6 @@ namespace Vistas
                 txttipo.Text = "";
                 txtestatus.Text = "";
             }
-
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
 
