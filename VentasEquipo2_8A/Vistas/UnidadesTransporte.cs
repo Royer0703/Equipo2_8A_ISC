@@ -48,8 +48,10 @@ namespace Vistas
                 string capacidad = txtcapacidad.Text;
                 int capacidadr = Int32.Parse(capacidad);
 
-                cn.insertarUnidad(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text);
+                cn.insertarUnidad(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text, txtestatus.Text);
                 dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+
+                MessageBox.Show("Unidad de Transporte agregada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtanio.Text = "";
                 txtcapacidad.Text = "";
@@ -58,17 +60,9 @@ namespace Vistas
                 txtmodelo.Text = "";
                 txtplacas.Text = "";
                 txttipo.Text = "";
-
-                MessageBox.Show("Unidad de Transporte agregada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtestatus.Text = "";
             }
 
-            txtanio.Enabled = false;
-            txtcapacidad.Enabled = false;
-            txtmarca.Enabled = false;
-            txtmodelo.Enabled = false;
-            txtplacas.Enabled = false;
-            txttipo.Enabled = false;
-            txtidunidadest.Enabled = false;
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
 
@@ -86,6 +80,8 @@ namespace Vistas
                 cn.eliminarunidadTransporte(idr);
                 dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
 
+                MessageBox.Show("Unidad de transporte eliminada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
                 txtanio.Text = "";
                 txtcapacidad.Text = "";
                 txtidunidadest.Text = "";
@@ -93,8 +89,7 @@ namespace Vistas
                 txtmodelo.Text = "";
                 txtplacas.Text = "";
                 txttipo.Text = "";
-
-                MessageBox.Show("Unidad de transporte eliminada correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtestatus.Text = "";
             }
 
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
@@ -115,8 +110,10 @@ namespace Vistas
                 string capacidad = txtcapacidad.Text;
                 int capacidadr = Int32.Parse(capacidad);
 
-                cn.modificarUnidadTransporte(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text);
+                cn.modificarUnidadTransporte(idr, txtplacas.Text, txtmarca.Text, txtmodelo.Text, anior, capacidadr, txttipo.Text, txtestatus.Text);
                 dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+
+                MessageBox.Show("Unidad de Transporte modificado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                 txtanio.Text = "";
                 txtcapacidad.Text = "";
@@ -125,8 +122,7 @@ namespace Vistas
                 txtmodelo.Text = "";
                 txtplacas.Text = "";
                 txttipo.Text = "";
-
-                MessageBox.Show("Unidad de Transporte modificado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtestatus.Text = "";
             }
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
@@ -135,6 +131,18 @@ namespace Vistas
         {
 
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
+        }
+
+        private void dataGridView_UnidadesT_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            txtidunidadest.Text = dataGridView_UnidadesT.CurrentRow.Cells[0].Value.ToString();
+            txtplacas.Text = dataGridView_UnidadesT.CurrentRow.Cells[1].Value.ToString();
+            txtmarca.Text = dataGridView_UnidadesT.CurrentRow.Cells[2].Value.ToString();
+            txtmodelo.Text = dataGridView_UnidadesT.CurrentRow.Cells[3].Value.ToString();
+            txtanio.Text = dataGridView_UnidadesT.CurrentRow.Cells[4].Value.ToString();
+            txtcapacidad.Text = dataGridView_UnidadesT.CurrentRow.Cells[5].Value.ToString();
+            txttipo.Text = dataGridView_UnidadesT.CurrentRow.Cells[6].Value.ToString();
+            txtestatus.Text = dataGridView_UnidadesT.CurrentRow.Cells[7].Value.ToString();
         }
     }
 }

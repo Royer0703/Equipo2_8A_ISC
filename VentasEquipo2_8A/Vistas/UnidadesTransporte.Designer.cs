@@ -47,9 +47,10 @@
             this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnEditar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
             this.txtidunidadest = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.txtestatus = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb_cerrar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_UnidadesT)).BeginInit();
             this.SuspendLayout();
@@ -88,6 +89,7 @@
             this.dataGridView_UnidadesT.RowTemplate.Height = 24;
             this.dataGridView_UnidadesT.Size = new System.Drawing.Size(779, 392);
             this.dataGridView_UnidadesT.TabIndex = 2;
+            this.dataGridView_UnidadesT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView_UnidadesT_CellContentClick);
             // 
             // label2
             // 
@@ -157,7 +159,6 @@
             // 
             // txtplacas
             // 
-            this.txtplacas.Enabled = false;
             this.txtplacas.Location = new System.Drawing.Point(810, 102);
             this.txtplacas.Name = "txtplacas";
             this.txtplacas.Size = new System.Drawing.Size(259, 22);
@@ -165,7 +166,6 @@
             // 
             // txtmarca
             // 
-            this.txtmarca.Enabled = false;
             this.txtmarca.Location = new System.Drawing.Point(810, 166);
             this.txtmarca.Name = "txtmarca";
             this.txtmarca.Size = new System.Drawing.Size(259, 22);
@@ -173,7 +173,6 @@
             // 
             // txtmodelo
             // 
-            this.txtmodelo.Enabled = false;
             this.txtmodelo.Location = new System.Drawing.Point(810, 228);
             this.txtmodelo.Name = "txtmodelo";
             this.txtmodelo.Size = new System.Drawing.Size(259, 22);
@@ -181,7 +180,6 @@
             // 
             // txtanio
             // 
-            this.txtanio.Enabled = false;
             this.txtanio.Location = new System.Drawing.Point(810, 301);
             this.txtanio.Name = "txtanio";
             this.txtanio.Size = new System.Drawing.Size(259, 22);
@@ -189,7 +187,6 @@
             // 
             // txtcapacidad
             // 
-            this.txtcapacidad.Enabled = false;
             this.txtcapacidad.Location = new System.Drawing.Point(813, 363);
             this.txtcapacidad.Name = "txtcapacidad";
             this.txtcapacidad.Size = new System.Drawing.Size(256, 22);
@@ -197,7 +194,6 @@
             // 
             // txttipo
             // 
-            this.txttipo.Enabled = false;
             this.txttipo.Location = new System.Drawing.Point(810, 425);
             this.txttipo.Name = "txttipo";
             this.txttipo.Size = new System.Drawing.Size(259, 22);
@@ -225,7 +221,7 @@
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(750, 486);
+            this.btnEliminar.Location = new System.Drawing.Point(507, 486);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -262,7 +258,7 @@
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(507, 486);
+            this.btnEditar.Location = new System.Drawing.Point(264, 486);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -314,46 +310,8 @@
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
-            // btnNuevo
-            // 
-            this.btnNuevo.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnNuevo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNuevo.BorderRadius = 3;
-            this.btnNuevo.ButtonText = "NUEVO";
-            this.btnNuevo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnNuevo.DisabledColor = System.Drawing.Color.Gray;
-            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnNuevo.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnNuevo.Iconimage")));
-            this.btnNuevo.Iconimage_right = null;
-            this.btnNuevo.Iconimage_right_Selected = null;
-            this.btnNuevo.Iconimage_Selected = null;
-            this.btnNuevo.IconMarginLeft = 0;
-            this.btnNuevo.IconMarginRight = 0;
-            this.btnNuevo.IconRightVisible = true;
-            this.btnNuevo.IconRightZoom = 0D;
-            this.btnNuevo.IconVisible = true;
-            this.btnNuevo.IconZoom = 60D;
-            this.btnNuevo.IsTab = false;
-            this.btnNuevo.Location = new System.Drawing.Point(264, 486);
-            this.btnNuevo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
-            this.btnNuevo.Name = "btnNuevo";
-            this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
-            this.btnNuevo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
-            this.btnNuevo.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnNuevo.selected = false;
-            this.btnNuevo.Size = new System.Drawing.Size(227, 49);
-            this.btnNuevo.TabIndex = 15;
-            this.btnNuevo.Text = "NUEVO";
-            this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnNuevo.Textcolor = System.Drawing.Color.White;
-            this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
-            // 
             // txtidunidadest
             // 
-            this.txtidunidadest.Enabled = false;
             this.txtidunidadest.Location = new System.Drawing.Point(810, 37);
             this.txtidunidadest.Name = "txtidunidadest";
             this.txtidunidadest.Size = new System.Drawing.Size(259, 22);
@@ -370,18 +328,37 @@
             this.label8.TabIndex = 19;
             this.label8.Text = "idUnidadesTransporte";
             // 
+            // txtestatus
+            // 
+            this.txtestatus.Location = new System.Drawing.Point(810, 495);
+            this.txtestatus.Name = "txtestatus";
+            this.txtestatus.Size = new System.Drawing.Size(259, 22);
+            this.txtestatus.TabIndex = 22;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(809, 468);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 24);
+            this.label9.TabIndex = 21;
+            this.label9.Text = "Estatus";
+            // 
             // UnidadesTransporte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1081, 551);
+            this.Controls.Add(this.txtestatus);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtidunidadest);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.txttipo);
             this.Controls.Add(this.txtcapacidad);
             this.Controls.Add(this.txtanio);
@@ -428,8 +405,9 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
         private Bunifu.Framework.UI.BunifuFlatButton btnEditar;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
-        private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
         private System.Windows.Forms.TextBox txtidunidadest;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtestatus;
+        private System.Windows.Forms.Label label9;
     }
 }

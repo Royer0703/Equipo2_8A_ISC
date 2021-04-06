@@ -18,13 +18,13 @@ namespace Negocios
             return cn.ConsultarUnidadesTransporte();
         }
 
-        public int insertarUnidad(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        public int insertarUnidad(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo, string estatus)
         {
-            return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
+            return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo, estatus);
         }
-        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo, string estatus)
         {
-            return cn.modificarUnidadTransporte(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
+            return cn.modificarUnidadTransporte(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo, estatus);
         }
 
         public int eliminarunidadTransporte(int idUnidadTransporte)
