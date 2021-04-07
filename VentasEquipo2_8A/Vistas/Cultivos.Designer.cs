@@ -105,7 +105,6 @@ namespace Vistas
             // 
             // txt_idCultivo
             // 
-            this.txt_idCultivo.Enabled = false;
             this.txt_idCultivo.Location = new System.Drawing.Point(581, 90);
             this.txt_idCultivo.Name = "txt_idCultivo";
             this.txt_idCultivo.Size = new System.Drawing.Size(179, 20);
@@ -113,7 +112,6 @@ namespace Vistas
             // 
             // txt_Nombre
             // 
-            this.txt_Nombre.Enabled = false;
             this.txt_Nombre.Location = new System.Drawing.Point(581, 159);
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(176, 20);
@@ -121,7 +119,6 @@ namespace Vistas
             // 
             // txt_costoAsesoria
             // 
-            this.txt_costoAsesoria.Enabled = false;
             this.txt_costoAsesoria.Location = new System.Drawing.Point(581, 217);
             this.txt_costoAsesoria.Name = "txt_costoAsesoria";
             this.txt_costoAsesoria.Size = new System.Drawing.Size(176, 20);
@@ -129,7 +126,6 @@ namespace Vistas
             // 
             // txt_Estatus
             // 
-            this.txt_Estatus.Enabled = false;
             this.txt_Estatus.Location = new System.Drawing.Point(581, 275);
             this.txt_Estatus.Name = "txt_Estatus";
             this.txt_Estatus.Size = new System.Drawing.Size(179, 20);
@@ -157,7 +153,7 @@ namespace Vistas
             this.btnNuevo.IconVisible = true;
             this.btnNuevo.IconZoom = 50D;
             this.btnNuevo.IsTab = false;
-            this.btnNuevo.Location = new System.Drawing.Point(215, 340);
+            this.btnNuevo.Location = new System.Drawing.Point(581, 340);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -201,7 +197,7 @@ namespace Vistas
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(170, 40);
+            this.btnGuardar.Size = new System.Drawing.Size(142, 40);
             this.btnGuardar.TabIndex = 12;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -231,14 +227,14 @@ namespace Vistas
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(402, 340);
+            this.btnEditar.Location = new System.Drawing.Point(202, 340);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEditar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditar.selected = false;
-            this.btnEditar.Size = new System.Drawing.Size(170, 40);
+            this.btnEditar.Size = new System.Drawing.Size(147, 40);
             this.btnEditar.TabIndex = 13;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -268,14 +264,14 @@ namespace Vistas
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(590, 340);
+            this.btnEliminar.Location = new System.Drawing.Point(385, 340);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminar.selected = false;
-            this.btnEliminar.Size = new System.Drawing.Size(170, 40);
+            this.btnEliminar.Size = new System.Drawing.Size(162, 40);
             this.btnEliminar.TabIndex = 14;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -290,6 +286,7 @@ namespace Vistas
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(533, 223);
             this.dataGridView1.TabIndex = 15;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Cultivos
             // 

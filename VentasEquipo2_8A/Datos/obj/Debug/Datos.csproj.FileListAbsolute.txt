@@ -16,3 +16,9 @@ C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.c
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.dll
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.pdb
