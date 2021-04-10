@@ -152,5 +152,28 @@ namespace Negocios
 
 
 
+        //******************************TABLA PARCELAS *******************************************
+
+        public DataTable ConsultaParcelasDT()
+        {
+            return cn.ConsultarParcelasDG();
+        }
+
+        public int InsertarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
+        {
+
+
+            return cn.InsertarParcelas(idParcela, extension, idCliente, idCultivo, idDireccion, estatus);
+
+        }
+
+        public int ModificarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
+        {
+
+            return cn.ModificarParcelas(idParcela, extension, idCliente, idCultivo, idDireccion, estatus);
+
+        }
+
+
     }
 }
