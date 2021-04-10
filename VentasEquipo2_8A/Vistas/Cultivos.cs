@@ -28,25 +28,11 @@ namespace Vistas
         //METODO PARA AGREGAR NUEVO CULTIVO
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-<<<<<<< Updated upstream
             txt_idCultivo.Text = "";
             txt_Nombre.Text = "";
             txt_costoAsesoria.Text = "";
             txt_Estatus.Text = "";
 
-<<<<<<< Updated upstream
-=======
-=======
-
->>>>>>> Stashed changes
-            txt_idCultivo.Text = "";
-            txt_Nombre.Text = "";
-            txt_costoAsesoria.Text = "";
-            txt_Estatus.Text = "";
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
             dataGridView1.DataSource = cn.ConsultaCultivosDT();
 
 
@@ -54,20 +40,10 @@ namespace Vistas
         //METODO PARA GUARDAR NUEVO CULTIVO
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            int num;
-            
 
             if (string.IsNullOrEmpty(txt_idCultivo.Text) || string.IsNullOrEmpty(txt_Nombre.Text) || string.IsNullOrEmpty(txt_costoAsesoria.Text) || string.IsNullOrEmpty(txt_Estatus.Text))
             {
                 MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!int.TryParse(txt_idCultivo.Text, out num))
-            {
-                MessageBox.Show("Debe ser NUMERO el campo de idCultivo!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            else if (!float.TryParse(txt_costoAsesoria.Text, out float num2))
-            {
-                MessageBox.Show("Debe ser NUMERO CON DECIMAL en el campo de Costo Asesoria!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
@@ -150,7 +126,5 @@ namespace Vistas
             txt_costoAsesoria.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
             txt_Estatus.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
         }
-
     }
-
 }

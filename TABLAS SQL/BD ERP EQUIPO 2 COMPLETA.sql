@@ -87,8 +87,6 @@ tipo char not null,
 idCliente int not null,
 idCiudad int not null,
 )
-insert into SalesDireccionesCliente values (1,'San Francisco','15','Valencia 1 secc','10','A',1,1)
-select * from SalesDireccionesCliente
 
 --SalesParcelas
 create table SalesParcelas(
@@ -98,8 +96,6 @@ idCliente int not null,
 idCultivo int not null,
 idDireccion int not null,
 )
-select * from SalesParcelas
-alter table SalesParcelas add estatus char not null
 
 
 ---SalesTripulacion
@@ -373,17 +369,14 @@ nombre varchar(60) NOT NULL,
 siglas varchar(10) NOT NULL,
 estatus char NOT NULL
 )
-insert into Estados values (1,'Michoacan','MICH','A')
-
 
 Create Table Ciudades(
 idCiudad int primary key NOT NULL,
 nombre varchar(80) NOT NULL,
 idEstado int NOT NULL,
 estatus char NOT NULL,
+
 )
----
-insert into Ciudades values (1,'zamora',1,'A')
 
 Create Table Empleados(
 idEmpleado int primary key NOT NULL,

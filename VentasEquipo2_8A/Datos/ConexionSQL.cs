@@ -12,7 +12,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -285,62 +285,6 @@ namespace Datos
             data.Fill(tabla);
             return tabla;
         }
-
-
-
-
-        //***********************************TABLA PARCELAS **************************************************
-        //METODO PARA AGREGAR NUEVO PARCELAS
-        public int InsertarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
-        {
-            int flag = 0;
-            con.Open();
-
-            string query = "insert into SalesParcelas values('" + idParcela + "','" + extension + "','" + idCliente + "','" + idCultivo + "','" + idDireccion + "','" + estatus + "' )";
-            SqlCommand cmd = new SqlCommand(query, con);
-            flag = cmd.ExecuteNonQuery();
-            con.Close();
-            return flag;
-
-        }
-
-        //METODO PARA MODIFICA NUEVO PARCELAS
-        public int ModificarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
-        {
-            int flag = 0;
-            con.Open();
-            string query = "Update SalesParcelas set extension='" + extension + "', idCliente='" + idCliente + "', idCultivo='" + idCultivo + "', idDireccion='" + idDireccion + "', estatus='" + estatus + "'where idParcela='" + idParcela + "'";
-            SqlCommand cmd = new SqlCommand(query, con);
-            flag = cmd.ExecuteNonQuery();
-            con.Close();
-            return flag;
-
-
-        }
-
-
-        //CONSULTAR LOS DATOS DE TABLA SQL PARCELAS
-        public DataTable ConsultarParcelasDG()
-        {
-            string query = "select * from SalesParcelas";
-            SqlCommand cmd = new SqlCommand(query, con);
-            SqlDataAdapter data = new SqlDataAdapter(cmd);
-            DataTable tabla = new DataTable();
-            data.Fill(tabla);
-            return tabla;
-        }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     }
