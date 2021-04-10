@@ -28,6 +28,7 @@ namespace Vistas
         //METODO PARA AGREGAR NUEVO CULTIVO
         private void btnNuevo_Click(object sender, EventArgs e)
         {
+<<<<<<< Updated upstream
             txt_idCultivo.Text = "";
             txt_Nombre.Text = "";
             txt_costoAsesoria.Text = "";
@@ -35,10 +36,16 @@ namespace Vistas
 
 <<<<<<< Updated upstream
 =======
+=======
+
+>>>>>>> Stashed changes
             txt_idCultivo.Text = "";
             txt_Nombre.Text = "";
             txt_costoAsesoria.Text = "";
             txt_Estatus.Text = "";
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
             dataGridView1.DataSource = cn.ConsultaCultivosDT();
 

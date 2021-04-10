@@ -70,7 +70,13 @@
       <DependentUpon>Cultivos.cs</DependentUpon>
     </Compile>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     <Compile Include="Login.cs" />
+=======
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+>>>>>>> Stashed changes
 =======
     <Compile Include="Login.cs">
       <SubType>Form</SubType>

@@ -35,7 +35,10 @@ C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\N
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
@@ -45,4 +48,7 @@ C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
