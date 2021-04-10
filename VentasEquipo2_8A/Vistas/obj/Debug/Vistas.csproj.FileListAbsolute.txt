@@ -71,7 +71,6 @@ C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
-C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
