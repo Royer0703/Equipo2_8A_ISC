@@ -122,6 +122,6 @@ C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debu
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
-C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
