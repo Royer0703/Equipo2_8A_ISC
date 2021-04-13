@@ -28,11 +28,11 @@ namespace Vistas
         //METODO PARA AGREGAR NUEVO CULTIVO
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            txt_idCultivo.Text = "";
-            txt_Nombre.Text = "";
-            txt_costoAsesoria.Text = "";
-            txt_Estatus.Text = "";
 
+            txt_idCultivo.Enabled = true;
+            txt_Nombre.Enabled = true;
+            txt_costoAsesoria.Enabled = true;
+            txt_Estatus.Enabled = true;
             dataGridView1.DataSource = cn.ConsultaCultivosDT();
 
 
@@ -47,8 +47,6 @@ namespace Vistas
             }
             else
             {
-
-                
                 cn.insertarCultivos(txt_idCultivo.Text, txt_Nombre.Text, txt_costoAsesoria.Text, txt_Estatus.Text);
                 dataGridView1.DataSource = cn.ConsultaCultivosDT();
 
@@ -90,21 +88,17 @@ namespace Vistas
             }
         }
 
-        //METODO PARA ELIMINAR LOGICO NUEVO CULTIVO
+        //METODO PARA ELIMINAR NUEVO CULTIVO
         private void btnEliminar_Click(object sender, EventArgs e)
         {
             dataGridView1.DataSource = cn.ConsultaCultivosDT();
-            if (string.IsNullOrEmpty(txt_idCultivo.Text) || string.IsNullOrEmpty(txt_Nombre.Text) || string.IsNullOrEmpty(txt_costoAsesoria.Text) || string.IsNullOrEmpty(txt_Estatus.Text))
+            if (string.IsNullOrEmpty(txt_idCultivo.Text))
             {
                 MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
             {
-                txt_Estatus.Text = "I";
-                cn.modificarCultivos(txt_idCultivo.Text, txt_Nombre.Text, txt_costoAsesoria.Text, txt_Estatus.Text);
-
-
-
+                cn.eliminarCultivos(txt_idCultivo.Text);
                 dataGridView1.DataSource = cn.ConsultaCultivosDT();
 
 
@@ -117,14 +111,13 @@ namespace Vistas
                 MessageBox.Show("Cultivo eliminado correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
-        }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            txt_idCultivo.Text = dataGridView1.CurrentRow.Cells[0].Value.ToString();
-            txt_Nombre.Text = dataGridView1.CurrentRow.Cells[1].Value.ToString();
-            txt_costoAsesoria.Text = dataGridView1.CurrentRow.Cells[2].Value.ToString();
-            txt_Estatus.Text = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+
+
+
+
+
+
         }
     }
 }

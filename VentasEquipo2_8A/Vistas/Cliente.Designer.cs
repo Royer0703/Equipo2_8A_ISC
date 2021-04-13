@@ -79,7 +79,7 @@ namespace Vistas
             this.dataGridView_UnidadesT.ReadOnly = true;
             this.dataGridView_UnidadesT.RowHeadersWidth = 51;
             this.dataGridView_UnidadesT.RowTemplate.Height = 24;
-            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(648, 325);
+            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(1177, 441);
             this.dataGridView_UnidadesT.TabIndex = 3;
             // 
             // label1
@@ -96,7 +96,7 @@ namespace Vistas
             // 
             // txtrazonSocial
             // 
-            this.txtrazonSocial.Location = new System.Drawing.Point(687, 176);
+            this.txtrazonSocial.Location = new System.Drawing.Point(1208, 219);
             this.txtrazonSocial.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtrazonSocial.Name = "txtrazonSocial";
             this.txtrazonSocial.Size = new System.Drawing.Size(245, 22);
@@ -104,7 +104,7 @@ namespace Vistas
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(687, 105);
+            this.txtnombre.Location = new System.Drawing.Point(1208, 148);
             this.txtnombre.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(245, 22);
@@ -112,7 +112,7 @@ namespace Vistas
             // 
             // txtidClientes
             // 
-            this.txtidClientes.Location = new System.Drawing.Point(687, 41);
+            this.txtidClientes.Location = new System.Drawing.Point(1208, 84);
             this.txtidClientes.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtidClientes.Name = "txtidClientes";
             this.txtidClientes.Size = new System.Drawing.Size(245, 22);
@@ -123,7 +123,7 @@ namespace Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(686, 140);
+            this.label4.Location = new System.Drawing.Point(1207, 183);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(149, 24);
             this.label4.TabIndex = 17;
@@ -135,7 +135,7 @@ namespace Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(683, 78);
+            this.label3.Location = new System.Drawing.Point(1204, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 24);
             this.label3.TabIndex = 16;
@@ -146,7 +146,7 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(683, 14);
+            this.label2.Location = new System.Drawing.Point(1204, 57);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(123, 24);
             this.label2.TabIndex = 15;
@@ -175,14 +175,14 @@ namespace Vistas
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(460, 513);
+            this.btnEliminar.Location = new System.Drawing.Point(677, 564);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminar.selected = false;
-            this.btnEliminar.Size = new System.Drawing.Size(200, 49);
+            this.btnEliminar.Size = new System.Drawing.Size(251, 49);
             this.btnEliminar.TabIndex = 27;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -212,14 +212,14 @@ namespace Vistas
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(243, 513);
+            this.btnEditar.Location = new System.Drawing.Point(348, 564);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEditar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditar.selected = false;
-            this.btnEditar.Size = new System.Drawing.Size(189, 49);
+            this.btnEditar.Size = new System.Drawing.Size(251, 49);
             this.btnEditar.TabIndex = 26;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,14 +249,14 @@ namespace Vistas
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 50D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(12, 513);
+            this.btnGuardar.Location = new System.Drawing.Point(12, 564);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(200, 49);
+            this.btnGuardar.Size = new System.Drawing.Size(251, 49);
             this.btnGuardar.TabIndex = 25;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -269,7 +269,7 @@ namespace Vistas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(686, 215);
+            this.label5.Location = new System.Drawing.Point(1207, 258);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(157, 24);
             this.label5.TabIndex = 28;
@@ -277,7 +277,7 @@ namespace Vistas
             // 
             // txtLm
             // 
-            this.txtLm.Location = new System.Drawing.Point(687, 240);
+            this.txtLm.Location = new System.Drawing.Point(1208, 283);
             this.txtLm.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtLm.Name = "txtLm";
             this.txtLm.Size = new System.Drawing.Size(245, 22);
@@ -288,7 +288,7 @@ namespace Vistas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(686, 283);
+            this.label6.Location = new System.Drawing.Point(1207, 326);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(48, 24);
             this.label6.TabIndex = 30;
@@ -296,7 +296,7 @@ namespace Vistas
             // 
             // txtRfc
             // 
-            this.txtRfc.Location = new System.Drawing.Point(687, 315);
+            this.txtRfc.Location = new System.Drawing.Point(1208, 358);
             this.txtRfc.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtRfc.Name = "txtRfc";
             this.txtRfc.Size = new System.Drawing.Size(245, 22);
@@ -307,7 +307,7 @@ namespace Vistas
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(686, 358);
+            this.label7.Location = new System.Drawing.Point(1207, 401);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(114, 24);
             this.label7.TabIndex = 32;
@@ -315,7 +315,7 @@ namespace Vistas
             // 
             // txtTel
             // 
-            this.txtTel.Location = new System.Drawing.Point(687, 383);
+            this.txtTel.Location = new System.Drawing.Point(1208, 426);
             this.txtTel.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtTel.Name = "txtTel";
             this.txtTel.Size = new System.Drawing.Size(245, 22);
@@ -326,7 +326,7 @@ namespace Vistas
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(686, 431);
+            this.label8.Location = new System.Drawing.Point(1207, 474);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(66, 24);
             this.label8.TabIndex = 34;
@@ -334,7 +334,7 @@ namespace Vistas
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(687, 455);
+            this.txtEmail.Location = new System.Drawing.Point(1208, 498);
             this.txtEmail.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(245, 22);
@@ -345,7 +345,7 @@ namespace Vistas
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(683, 496);
+            this.label9.Location = new System.Drawing.Point(1204, 539);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(53, 24);
             this.label9.TabIndex = 36;
@@ -353,7 +353,7 @@ namespace Vistas
             // 
             // txttipo
             // 
-            this.txttipo.Location = new System.Drawing.Point(687, 521);
+            this.txttipo.Location = new System.Drawing.Point(1208, 564);
             this.txttipo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txttipo.Name = "txttipo";
             this.txttipo.Size = new System.Drawing.Size(245, 22);
@@ -364,7 +364,7 @@ namespace Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(962, 578);
+            this.ClientSize = new System.Drawing.Size(1500, 700);
             this.Controls.Add(this.txttipo);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.txtEmail);

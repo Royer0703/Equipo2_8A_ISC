@@ -154,5 +154,10 @@ namespace Vistas
             txtestatus.Text = "";
             dataGridView_UnidadesT.DataSource = cn.ConsultaDt();
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

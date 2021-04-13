@@ -118,6 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnNuevo.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAVhJREFUaEPt
+        l7FKA1EQRVdBBLHTRrD0E9QiP6JgbQRjIwi2tvoV+gMhgYBFsEnjbwTxA7QQxML1TmaUJdkg72Uf8wj3
+        wIHwsnN3LiFsUhBCyHJRluUuPIHXDp7DfVslHoQcwQ/ozT1ctbXCwKB8EjmU+OXMVgsDg8c6nw1dWy0M
+        DF7ofDaMbLUwMMgiiXAt0octeAW/5WABXIvsWJzkjfQoGtci6xYneV09ioZFWKQCi9TAIixSIfsiPfj3
+        sGsC5G3AjoTPIUmRQ7uscZA91lvMkKTIpV3WKMjdg5+TO8ySpIj8AHyGw39cszjJu5l6b9on+A7nwS87
+        i1RgkRpYhEUqLE2RTYuTvIEeReNapGNZ8sR+m5zE41pEeIVf+nIh3Is0BYuc6nw2DG21MDB4oPPZcGer
+        hYPhB81w5wVu21rhYHgFtqE8zOr+Q6T2Ed7CLVuJEEJIThTFDxi4RDrkh83+AAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="btnEliminar.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAl5JREFUaEPt
@@ -163,17 +174,6 @@
         FALVCf2FQI0OJLd5kzQ1kHuCdxC99mhiIFkX5J6xrrlNn19Y2dqeqqG3Xdelz058cBS/u10+S67AGPT1
         AOUW21Vk2duMlriihyhLt5LIsrP3hpTHK2lhnmmUDuwcQ3mEkRxglUt8h513Jg0KbuFdnDLsJEZLYTxa
         rb8+Qoh8FwuCaQAAAABJRU5ErkJggg==
-</value>
-  </data>
-  <data name="btnNuevo.Iconimage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAVhJREFUaEPt
-        l7FKA1EQRVdBBLHTRrD0E9QiP6JgbQRjIwi2tvoV+gMhgYBFsEnjbwTxA7QQxML1TmaUJdkg72Uf8wj3
-        wIHwsnN3LiFsUhBCyHJRluUuPIHXDp7DfVslHoQcwQ/ozT1ctbXCwKB8EjmU+OXMVgsDg8c6nw1dWy0M
-        DF7ofDaMbLUwMMgiiXAt0octeAW/5WABXIvsWJzkjfQoGtci6xYneV09ioZFWKQCi9TAIixSIfsiPfj3
-        sGsC5G3AjoTPIUmRQ7uscZA91lvMkKTIpV3WKMjdg5+TO8ySpIj8AHyGw39cszjJu5l6b9on+A7nwS87
-        i1RgkRpYhEUqLE2RTYuTvIEeReNapGNZ8sR+m5zE41pEeIVf+nIh3Is0BYuc6nw2DG21MDB4oPPZcGer
-        hYPhB81w5wVu21rhYHgFtqE8zOr+Q6T2Ed7CLVuJEEJIThTFDxi4RDrkh83+AAAAAElFTkSuQmCC
 </value>
   </data>
 </root>

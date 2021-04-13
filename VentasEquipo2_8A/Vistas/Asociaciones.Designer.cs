@@ -67,7 +67,7 @@ namespace Vistas
             this.dataGridView_UnidadesT.ReadOnly = true;
             this.dataGridView_UnidadesT.RowHeadersWidth = 51;
             this.dataGridView_UnidadesT.RowTemplate.Height = 24;
-            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(638, 333);
+            this.dataGridView_UnidadesT.Size = new System.Drawing.Size(1154, 483);
             this.dataGridView_UnidadesT.TabIndex = 3;
             // 
             // label1
@@ -84,14 +84,14 @@ namespace Vistas
             // 
             // txtestatus
             // 
-            this.txtestatus.Location = new System.Drawing.Point(690, 209);
+            this.txtestatus.Location = new System.Drawing.Point(1199, 209);
             this.txtestatus.Name = "txtestatus";
             this.txtestatus.Size = new System.Drawing.Size(242, 22);
             this.txtestatus.TabIndex = 23;
             // 
             // txtnombre
             // 
-            this.txtnombre.Location = new System.Drawing.Point(690, 147);
+            this.txtnombre.Location = new System.Drawing.Point(1199, 147);
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(242, 22);
             this.txtnombre.TabIndex = 22;
@@ -99,7 +99,7 @@ namespace Vistas
             // 
             // txtplacas
             // 
-            this.txtplacas.Location = new System.Drawing.Point(690, 83);
+            this.txtplacas.Location = new System.Drawing.Point(1199, 83);
             this.txtplacas.Name = "txtplacas";
             this.txtplacas.Size = new System.Drawing.Size(242, 22);
             this.txtplacas.TabIndex = 21;
@@ -109,7 +109,7 @@ namespace Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(689, 182);
+            this.label4.Location = new System.Drawing.Point(1198, 182);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 24);
             this.label4.TabIndex = 17;
@@ -120,7 +120,7 @@ namespace Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(686, 120);
+            this.label3.Location = new System.Drawing.Point(1195, 120);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 24);
             this.label3.TabIndex = 16;
@@ -131,7 +131,7 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(686, 56);
+            this.label2.Location = new System.Drawing.Point(1195, 56);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(148, 24);
             this.label2.TabIndex = 15;
@@ -159,14 +159,14 @@ namespace Vistas
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(438, 432);
+            this.btnEliminar.Location = new System.Drawing.Point(643, 582);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEliminar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminar.selected = false;
-            this.btnEliminar.Size = new System.Drawing.Size(187, 49);
+            this.btnEliminar.Size = new System.Drawing.Size(251, 49);
             this.btnEliminar.TabIndex = 27;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -196,14 +196,14 @@ namespace Vistas
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(234, 432);
+            this.btnEditar.Location = new System.Drawing.Point(338, 582);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEditar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditar.selected = false;
-            this.btnEditar.Size = new System.Drawing.Size(178, 49);
+            this.btnEditar.Size = new System.Drawing.Size(251, 49);
             this.btnEditar.TabIndex = 26;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -233,14 +233,14 @@ namespace Vistas
             this.btnGuardar.IconVisible = true;
             this.btnGuardar.IconZoom = 50D;
             this.btnGuardar.IsTab = false;
-            this.btnGuardar.Location = new System.Drawing.Point(12, 432);
+            this.btnGuardar.Location = new System.Drawing.Point(12, 582);
             this.btnGuardar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.btnGuardar.Name = "btnGuardar";
             this.btnGuardar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnGuardar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
-            this.btnGuardar.Size = new System.Drawing.Size(200, 49);
+            this.btnGuardar.Size = new System.Drawing.Size(251, 49);
             this.btnGuardar.TabIndex = 25;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -253,7 +253,7 @@ namespace Vistas
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.ClientSize = new System.Drawing.Size(956, 512);
+            this.ClientSize = new System.Drawing.Size(1500, 700);
             this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnGuardar);
