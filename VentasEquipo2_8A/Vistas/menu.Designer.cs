@@ -50,6 +50,7 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.btnparcelas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnprincipal.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
@@ -68,9 +69,9 @@
             this.pnprincipal.Controls.Add(this.panelsidebar);
             this.pnprincipal.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnprincipal.Location = new System.Drawing.Point(0, 0);
-            this.pnprincipal.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pnprincipal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pnprincipal.Name = "pnprincipal";
-            this.pnprincipal.Size = new System.Drawing.Size(1400, 720);
+            this.pnprincipal.Size = new System.Drawing.Size(1867, 886);
             this.pnprincipal.TabIndex = 0;
             // 
             // panelcontenedor
@@ -79,20 +80,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panelcontenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.panelcontenedor.Location = new System.Drawing.Point(267, 86);
-            this.panelcontenedor.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelcontenedor.Location = new System.Drawing.Point(356, 106);
+            this.panelcontenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelcontenedor.Name = "panelcontenedor";
-            this.panelcontenedor.Size = new System.Drawing.Size(1122, 549);
+            this.panelcontenedor.Size = new System.Drawing.Size(1496, 676);
             this.panelcontenedor.TabIndex = 3;
             // 
             // panelinferior
             // 
             this.panelinferior.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.panelinferior.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panelinferior.Location = new System.Drawing.Point(262, 639);
-            this.panelinferior.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelinferior.Location = new System.Drawing.Point(349, 786);
+            this.panelinferior.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelinferior.Name = "panelinferior";
-            this.panelinferior.Size = new System.Drawing.Size(1138, 81);
+            this.panelinferior.Size = new System.Drawing.Size(1518, 100);
             this.panelinferior.TabIndex = 2;
             // 
             // panel3
@@ -103,10 +104,10 @@
             this.panel3.Controls.Add(this.btnmaximizar);
             this.panel3.Controls.Add(this.btncerrar);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(262, 0);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel3.Location = new System.Drawing.Point(349, 0);
+            this.panel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1138, 81);
+            this.panel3.Size = new System.Drawing.Size(1518, 100);
             this.panel3.TabIndex = 1;
             // 
             // btnminimizar
@@ -116,9 +117,10 @@
             this.btnminimizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnminimizar.Image = ((System.Drawing.Image)(resources.GetObject("btnminimizar.Image")));
             this.btnminimizar.ImageActive = null;
-            this.btnminimizar.Location = new System.Drawing.Point(1028, 3);
+            this.btnminimizar.Location = new System.Drawing.Point(1372, 4);
+            this.btnminimizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnminimizar.Name = "btnminimizar";
-            this.btnminimizar.Size = new System.Drawing.Size(30, 30);
+            this.btnminimizar.Size = new System.Drawing.Size(40, 37);
             this.btnminimizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnminimizar.TabIndex = 3;
             this.btnminimizar.TabStop = false;
@@ -132,9 +134,10 @@
             this.btnrestaurar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnrestaurar.Image = ((System.Drawing.Image)(resources.GetObject("btnrestaurar.Image")));
             this.btnrestaurar.ImageActive = null;
-            this.btnrestaurar.Location = new System.Drawing.Point(1064, 3);
+            this.btnrestaurar.Location = new System.Drawing.Point(1420, 4);
+            this.btnrestaurar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnrestaurar.Name = "btnrestaurar";
-            this.btnrestaurar.Size = new System.Drawing.Size(30, 30);
+            this.btnrestaurar.Size = new System.Drawing.Size(40, 37);
             this.btnrestaurar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnrestaurar.TabIndex = 2;
             this.btnrestaurar.TabStop = false;
@@ -149,9 +152,10 @@
             this.btnmaximizar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnmaximizar.Image = ((System.Drawing.Image)(resources.GetObject("btnmaximizar.Image")));
             this.btnmaximizar.ImageActive = null;
-            this.btnmaximizar.Location = new System.Drawing.Point(1064, 3);
+            this.btnmaximizar.Location = new System.Drawing.Point(1420, 4);
+            this.btnmaximizar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnmaximizar.Name = "btnmaximizar";
-            this.btnmaximizar.Size = new System.Drawing.Size(30, 30);
+            this.btnmaximizar.Size = new System.Drawing.Size(40, 37);
             this.btnmaximizar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btnmaximizar.TabIndex = 1;
             this.btnmaximizar.TabStop = false;
@@ -165,9 +169,10 @@
             this.btncerrar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btncerrar.Image = ((System.Drawing.Image)(resources.GetObject("btncerrar.Image")));
             this.btncerrar.ImageActive = null;
-            this.btncerrar.Location = new System.Drawing.Point(1100, 3);
+            this.btncerrar.Location = new System.Drawing.Point(1468, 4);
+            this.btncerrar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btncerrar.Name = "btncerrar";
-            this.btncerrar.Size = new System.Drawing.Size(30, 30);
+            this.btncerrar.Size = new System.Drawing.Size(40, 37);
             this.btncerrar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.btncerrar.TabIndex = 0;
             this.btncerrar.TabStop = false;
@@ -177,6 +182,7 @@
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelsidebar.Controls.Add(this.btnparcelas);
             this.panelsidebar.Controls.Add(this.btndireccionescliente);
             this.panelsidebar.Controls.Add(this.btncliente);
             this.panelsidebar.Controls.Add(this.btnasociaciones);
@@ -187,9 +193,9 @@
             this.panelsidebar.Controls.Add(this.bunifuImageButton5);
             this.panelsidebar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelsidebar.Location = new System.Drawing.Point(0, 0);
-            this.panelsidebar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panelsidebar.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelsidebar.Name = "panelsidebar";
-            this.panelsidebar.Size = new System.Drawing.Size(262, 720);
+            this.panelsidebar.Size = new System.Drawing.Size(349, 886);
             this.panelsidebar.TabIndex = 0;
             // 
             // btndireccionescliente
@@ -213,14 +219,14 @@
             this.btndireccionescliente.IconVisible = true;
             this.btndireccionescliente.IconZoom = 60D;
             this.btndireccionescliente.IsTab = false;
-            this.btndireccionescliente.Location = new System.Drawing.Point(3, 418);
-            this.btndireccionescliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btndireccionescliente.Location = new System.Drawing.Point(4, 514);
+            this.btndireccionescliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btndireccionescliente.Name = "btndireccionescliente";
             this.btndireccionescliente.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btndireccionescliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btndireccionescliente.OnHoverTextColor = System.Drawing.Color.White;
             this.btndireccionescliente.selected = false;
-            this.btndireccionescliente.Size = new System.Drawing.Size(256, 48);
+            this.btndireccionescliente.Size = new System.Drawing.Size(341, 59);
             this.btndireccionescliente.TabIndex = 17;
             this.btndireccionescliente.Text = "Direcciones Clientes";
             this.btndireccionescliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -249,14 +255,14 @@
             this.btncliente.IconVisible = true;
             this.btncliente.IconZoom = 60D;
             this.btncliente.IsTab = false;
-            this.btncliente.Location = new System.Drawing.Point(3, 362);
-            this.btncliente.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncliente.Location = new System.Drawing.Point(4, 446);
+            this.btncliente.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btncliente.Name = "btncliente";
             this.btncliente.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btncliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btncliente.OnHoverTextColor = System.Drawing.Color.White;
             this.btncliente.selected = false;
-            this.btncliente.Size = new System.Drawing.Size(256, 48);
+            this.btncliente.Size = new System.Drawing.Size(341, 59);
             this.btncliente.TabIndex = 16;
             this.btncliente.Text = "Cliente";
             this.btncliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -285,14 +291,14 @@
             this.btnasociaciones.IconVisible = true;
             this.btnasociaciones.IconZoom = 60D;
             this.btnasociaciones.IsTab = false;
-            this.btnasociaciones.Location = new System.Drawing.Point(2, 307);
-            this.btnasociaciones.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnasociaciones.Location = new System.Drawing.Point(3, 378);
+            this.btnasociaciones.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnasociaciones.Name = "btnasociaciones";
             this.btnasociaciones.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btnasociaciones.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnasociaciones.OnHoverTextColor = System.Drawing.Color.White;
             this.btnasociaciones.selected = false;
-            this.btnasociaciones.Size = new System.Drawing.Size(256, 48);
+            this.btnasociaciones.Size = new System.Drawing.Size(341, 59);
             this.btnasociaciones.TabIndex = 15;
             this.btnasociaciones.Text = "Asociaciones";
             this.btnasociaciones.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -321,14 +327,14 @@
             this.btncultivos.IconVisible = true;
             this.btncultivos.IconZoom = 60D;
             this.btncultivos.IsTab = false;
-            this.btncultivos.Location = new System.Drawing.Point(3, 248);
-            this.btncultivos.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btncultivos.Location = new System.Drawing.Point(4, 305);
+            this.btncultivos.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btncultivos.Name = "btncultivos";
             this.btncultivos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btncultivos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btncultivos.OnHoverTextColor = System.Drawing.Color.White;
             this.btncultivos.selected = false;
-            this.btncultivos.Size = new System.Drawing.Size(256, 48);
+            this.btncultivos.Size = new System.Drawing.Size(341, 59);
             this.btncultivos.TabIndex = 14;
             this.btncultivos.Text = "Cultivos";
             this.btncultivos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -357,14 +363,14 @@
             this.btnmienbros.IconVisible = true;
             this.btnmienbros.IconZoom = 60D;
             this.btnmienbros.IsTab = false;
-            this.btnmienbros.Location = new System.Drawing.Point(3, 194);
-            this.btnmienbros.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnmienbros.Location = new System.Drawing.Point(4, 239);
+            this.btnmienbros.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnmienbros.Name = "btnmienbros";
             this.btnmienbros.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btnmienbros.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnmienbros.OnHoverTextColor = System.Drawing.Color.White;
             this.btnmienbros.selected = false;
-            this.btnmienbros.Size = new System.Drawing.Size(256, 48);
+            this.btnmienbros.Size = new System.Drawing.Size(341, 59);
             this.btnmienbros.TabIndex = 13;
             this.btnmienbros.Text = "Miembros";
             this.btnmienbros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -393,14 +399,14 @@
             this.btnunidadestransporte.IconVisible = true;
             this.btnunidadestransporte.IconZoom = 60D;
             this.btnunidadestransporte.IsTab = false;
-            this.btnunidadestransporte.Location = new System.Drawing.Point(3, 139);
-            this.btnunidadestransporte.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnunidadestransporte.Location = new System.Drawing.Point(4, 171);
+            this.btnunidadestransporte.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.btnunidadestransporte.Name = "btnunidadestransporte";
             this.btnunidadestransporte.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
             this.btnunidadestransporte.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.btnunidadestransporte.OnHoverTextColor = System.Drawing.Color.White;
             this.btnunidadestransporte.selected = false;
-            this.btnunidadestransporte.Size = new System.Drawing.Size(256, 48);
+            this.btnunidadestransporte.Size = new System.Drawing.Size(341, 59);
             this.btnunidadestransporte.TabIndex = 12;
             this.btnunidadestransporte.Text = "Unidades de Transporte";
             this.btnunidadestransporte.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -413,10 +419,10 @@
             this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuSeparator1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
             this.bunifuSeparator1.LineThickness = 1;
-            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 109);
-            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuSeparator1.Location = new System.Drawing.Point(0, 134);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.bunifuSeparator1.Name = "bunifuSeparator1";
-            this.bunifuSeparator1.Size = new System.Drawing.Size(259, 35);
+            this.bunifuSeparator1.Size = new System.Drawing.Size(345, 43);
             this.bunifuSeparator1.TabIndex = 5;
             this.bunifuSeparator1.Transparency = 255;
             this.bunifuSeparator1.Vertical = false;
@@ -428,9 +434,10 @@
             this.bunifuImageButton5.Cursor = System.Windows.Forms.Cursors.Hand;
             this.bunifuImageButton5.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton5.Image")));
             this.bunifuImageButton5.ImageActive = null;
-            this.bunifuImageButton5.Location = new System.Drawing.Point(3, 3);
+            this.bunifuImageButton5.Location = new System.Drawing.Point(4, 4);
+            this.bunifuImageButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.bunifuImageButton5.Name = "bunifuImageButton5";
-            this.bunifuImageButton5.Size = new System.Drawing.Size(82, 100);
+            this.bunifuImageButton5.Size = new System.Drawing.Size(109, 123);
             this.bunifuImageButton5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bunifuImageButton5.TabIndex = 4;
             this.bunifuImageButton5.TabStop = false;
@@ -453,15 +460,51 @@
             this.bunifuElipse2.ElipseRadius = 15;
             this.bunifuElipse2.TargetControl = this.panelcontenedor;
             // 
+            // btnparcelas
+            // 
+            this.btnparcelas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnparcelas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnparcelas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnparcelas.BorderRadius = 7;
+            this.btnparcelas.ButtonText = "Parcelas";
+            this.btnparcelas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnparcelas.DisabledColor = System.Drawing.Color.Gray;
+            this.btnparcelas.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnparcelas.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnparcelas.Iconimage")));
+            this.btnparcelas.Iconimage_right = null;
+            this.btnparcelas.Iconimage_right_Selected = null;
+            this.btnparcelas.Iconimage_Selected = null;
+            this.btnparcelas.IconMarginLeft = 0;
+            this.btnparcelas.IconMarginRight = 0;
+            this.btnparcelas.IconRightVisible = true;
+            this.btnparcelas.IconRightZoom = 0D;
+            this.btnparcelas.IconVisible = true;
+            this.btnparcelas.IconZoom = 60D;
+            this.btnparcelas.IsTab = false;
+            this.btnparcelas.Location = new System.Drawing.Point(3, 572);
+            this.btnparcelas.Margin = new System.Windows.Forms.Padding(5);
+            this.btnparcelas.Name = "btnparcelas";
+            this.btnparcelas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnparcelas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnparcelas.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnparcelas.selected = false;
+            this.btnparcelas.Size = new System.Drawing.Size(341, 59);
+            this.btnparcelas.TabIndex = 18;
+            this.btnparcelas.Text = "Parcelas";
+            this.btnparcelas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnparcelas.Textcolor = System.Drawing.Color.White;
+            this.btnparcelas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnparcelas.Click += new System.EventHandler(this.btnparcelas_Click);
+            // 
             // menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 720);
+            this.ClientSize = new System.Drawing.Size(1867, 886);
             this.Controls.Add(this.pnprincipal);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.MinimumSize = new System.Drawing.Size(960, 500);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(1280, 615);
             this.Name = "menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
@@ -499,5 +542,6 @@
         private Bunifu.Framework.UI.BunifuFlatButton btnunidadestransporte;
         private Bunifu.Framework.UI.BunifuElipse bunifuElipse2;
         private Bunifu.Framework.UI.BunifuFlatButton btndireccionescliente;
+        private Bunifu.Framework.UI.BunifuFlatButton btnparcelas;
     }
 }

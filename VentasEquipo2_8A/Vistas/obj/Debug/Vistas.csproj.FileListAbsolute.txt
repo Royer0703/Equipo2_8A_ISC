@@ -98,3 +98,4 @@ C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources

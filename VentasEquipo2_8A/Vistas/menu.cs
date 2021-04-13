@@ -132,6 +132,11 @@ namespace Vistas
             AbrirFormularios<DireccionesCliente>();
         }
 
+        private void btnparcelas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Parcelas>();
+        }
+
         private void btnunidadestransporte_Click(object sender, EventArgs e)
         {
             AbrirFormularios<UnidadesTransporte>();
