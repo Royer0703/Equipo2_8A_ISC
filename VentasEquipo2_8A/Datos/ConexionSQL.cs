@@ -12,7 +12,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -332,19 +332,57 @@ namespace Datos
         }
 
 
+        //***************************** TABLA SALESDIRECCIONESCLIENTE ********************************
+        //METDOD CONSULTAR
+        public DataTable ConsultarDireccionCliente()
+        {
+            string query = "Select * from SalesDireccionesCliente";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
 
+            return tabla;
+        }
 
+        //METODO PARA INSERTAR LAS DIRECCIONES CLIENTE EN LA BD
+        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into SalesDireccionesCliente values('" + idDireccion + "', '" + calle + "', '" + numero + "', '" + colonia + "', '" + codigoPostal + "', '" + tipo + "', '" + idCliente + "', '" + idCiudad + "', '" + estatus + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
 
+        }
 
+        //METODO PARA MODIFICAR LAS DIRECCIONES CLIENTE EN LA BD
+        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesDireccionesCliente set idDireccion ='" + idDireccion + "', calle='" + calle + "', numero='" + numero + "', colonia='" + colonia + "', codigoPostal='" + codigoPostal + "', tipo='" + tipo + "', idCliente='" + idCliente + "', idCiudad='" + idCiudad + "', estatus='" + estatus + "' where idDireccion ='" + idDireccion + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
 
+        }
 
+        //METODO PARA ELIMINAR LAS DIRECCIONES CLIENTE EN LA BD
+        public int eliminarDireccionCliente(string curp)
+        {
+            int flag = 0;
+            con.Open();
 
-
-
-
-
-
-
+            string query = "Delete from SalesDireccionesCliente where idDireccion  = '" + curp + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+        }
 
     }
 }

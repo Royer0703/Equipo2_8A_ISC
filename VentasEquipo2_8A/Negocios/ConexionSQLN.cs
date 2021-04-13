@@ -174,5 +174,24 @@ namespace Negocios
         }
 
 
+        //********************** TABLA DIRECCIONES CLIENTES **************************
+        public DataTable ConsultaDireccionCliente()
+        {
+            return cn.ConsultarDireccionCliente();
+        }
+
+        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            return cn.insertarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+        }
+        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            return cn.modificarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+        }
+
+        public int eliminarDireccionCliente(string idDireccion)
+        {
+            return cn.eliminarDireccionCliente(idDireccion);
+        }
     }
 }
