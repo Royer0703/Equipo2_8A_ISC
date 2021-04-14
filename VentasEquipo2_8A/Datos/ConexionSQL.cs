@@ -12,7 +12,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
+         static string conexionstring = "server = LAPTOP-F9L9LB1B\\SQLEXPRESS; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -383,6 +383,93 @@ namespace Datos
             con.Close();
             return flag;
         }
+
+
+        //***************************** TABLA MIEMBROS ********************************
+        //METDOD CONSULTAR
+        public DataTable ConsultarMiembrosDG()
+        {
+            string query = "Select * from SalesMiembros";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+
+            return tabla;
+        }
+
+        //METODO PARA INSERTAR MIEMBROS EN LA BD
+        public int insertarMiembrosDG(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into SalesMiembros values('" + idCliente + "','" + idAsociacion + "', '" + estatus + "', '" + Incorporacion + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICAR LOS MIEMBROS EN LA BD
+        public int modificarMiembrosDG(string idCliente, string idAsosiacion, string estatus, string fechaIncorporacion)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesMiembros set idAsosiacion='" + idAsosiacion + "', estatus='" + estatus + "', fechaIncorporacion='" + fechaIncorporacion + "'where idCliente='" + idCliente + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+
+
+        //***********************************TABLA MANTENIMIENTO **************************************************
+        //METODO PARA AGREGAR NUEVO MANTENIMIENTO
+        public int InsertarMantenimientoDG(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+
+            string query = "insert into SalesMantenimiento values('" + idMantenimiento + "','" + fechaInicio + "','" + fechaFin + "','" + taller + "','" + costo + "','" + comentarios + "','" + tipo + "','" + idUnidadTransporte + "','" + estatus + "' )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICA NUEVO MANTENIMIENTO
+        public int ModificarMantenimientoDG(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesMantenimiento set fechaInicio='" + fechaInicio + "', fechaFin ='" + fechaFin + "', taller ='" + taller + "', costo  ='" + costo + "', comentarios  ='" + comentarios + "', tipo   ='" + tipo + "', idUnidadTransporte   ='" + idUnidadTransporte + "', estatus   ='" + estatus + "'where idMantenimiento ='" + idMantenimiento + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+
+        }
+
+
+        //CONSULTAR LOS DATOS DE TABLA SQL MANTENIMIENTO
+        public DataTable ConsultarMantenimientoDG()
+        {
+            string query = "select * from SalesMantenimiento";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
+
 
     }
 }

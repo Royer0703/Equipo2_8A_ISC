@@ -43,3 +43,12 @@ C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\De
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb

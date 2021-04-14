@@ -119,7 +119,7 @@ namespace Vistas
 
         private void btnmienbros_Click(object sender, EventArgs e)
         {
-            //AbrirFormularios<Miembros>();
+            AbrirFormularios<Miembros>();
         }
 
         private void btncliente_Click(object sender, EventArgs e)

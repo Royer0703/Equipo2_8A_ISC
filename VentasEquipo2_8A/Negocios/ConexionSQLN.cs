@@ -193,5 +193,52 @@ namespace Negocios
         {
             return cn.eliminarDireccionCliente(idDireccion);
         }
+
+
+        //********************** TABLA UNIDADES DE MIEMBROS **************************
+
+        public DataTable ConsultaMiembrosDT()
+        {
+            return cn.ConsultarMiembrosDG();
+        }
+
+        public int insertarMiembrosDT(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+
+            return cn.insertarMiembrosDG(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+        public int modificarMiembrosDT(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+            return cn.modificarMiembrosDG(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+
+
+        //******************************TABLA MANTENIMIENTO *******************************************
+        public DataTable ConsultaMantenimientoDT()
+        {
+            return cn.ConsultarMantenimientoDG();
+        }
+
+        public int InsertarMantenimientoDT(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+
+
+            return cn.InsertarMantenimientoDG(idMantenimiento, fechaInicio, fechaFin, taller, costo, comentarios, tipo, idUnidadTransporte, estatus);
+
+        }
+
+        public int ModificarMantenimientoDT(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+
+            return cn.ModificarMantenimientoDG(idMantenimiento, fechaInicio, fechaFin, taller, costo, comentarios, tipo, idUnidadTransporte, estatus);
+
+        }
+
     }
 }
