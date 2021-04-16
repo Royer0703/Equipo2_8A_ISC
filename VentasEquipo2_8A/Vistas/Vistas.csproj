@@ -75,8 +75,10 @@
     <Compile Include="DireccionesCliente.Designer.cs">
       <DependentUpon>DireccionesCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs" />
-    <Compile Include="Login.Designer.cs">
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
       <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Mantenimiento.cs">
