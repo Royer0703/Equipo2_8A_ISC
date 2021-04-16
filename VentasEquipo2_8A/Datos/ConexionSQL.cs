@@ -14,11 +14,15 @@ namespace Datos
     {
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
          static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
 =======
          static string conexionstring = "server = LAPTOP-PL6HHPH9; database = ERP;" +
 >>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1
+=======
+         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+>>>>>>> Stashed changes
 =======
          static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
 >>>>>>> Stashed changes

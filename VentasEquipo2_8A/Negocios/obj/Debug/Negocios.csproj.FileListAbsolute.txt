@@ -64,7 +64,10 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negoci
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
@@ -77,8 +80,11 @@ C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 >>>>>>> 8c8211ee72b5ac62b0b97d64aa3c528ebe8834c6
 >>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes

@@ -143,7 +143,10 @@ C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debu
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <<<<<<< HEAD
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
@@ -173,8 +176,11 @@ C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\o
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
 >>>>>>> 8c8211ee72b5ac62b0b97d64aa3c528ebe8834c6
 >>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
