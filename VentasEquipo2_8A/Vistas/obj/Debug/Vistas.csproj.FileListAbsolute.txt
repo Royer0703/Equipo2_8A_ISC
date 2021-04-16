@@ -73,6 +73,30 @@ C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.r
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+<<<<<<< HEAD
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+=======
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
@@ -118,6 +142,7 @@ C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debu
 C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+<<<<<<< HEAD
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
@@ -144,3 +169,6 @@ C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\o
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+=======
+>>>>>>> 8c8211ee72b5ac62b0b97d64aa3c528ebe8834c6
+>>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1

@@ -16,6 +16,17 @@ C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+<<<<<<< HEAD
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+=======
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
 C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
@@ -52,6 +63,7 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negoci
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+<<<<<<< HEAD
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
@@ -61,3 +73,6 @@ C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+=======
+>>>>>>> 8c8211ee72b5ac62b0b97d64aa3c528ebe8834c6
+>>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1

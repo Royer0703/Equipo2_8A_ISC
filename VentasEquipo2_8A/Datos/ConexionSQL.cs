@@ -13,7 +13,11 @@ namespace Datos
     public class ConexionSQL
     {
 
+<<<<<<< HEAD
          static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+=======
+         static string conexionstring = "server = LAPTOP-PL6HHPH9; database = ERP;" +
+>>>>>>> 7ec56d09ca090d592858d449d68b05fe30b17ab1
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -102,7 +106,7 @@ namespace Datos
             con.Close();
             return flag;
 
-        }
+        //}
 
         //METODO PARA MODIFICA NUEVO CULTIVO
         public int ModificarCultivos(string idCul, string nom, string costoAse, string esta)
