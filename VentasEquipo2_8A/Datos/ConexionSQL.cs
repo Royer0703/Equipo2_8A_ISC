@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Datos
 {
+
     //METODO PARA LA CONEXION CON LA BD 
     public class ConexionSQL
     {
@@ -16,6 +17,22 @@ namespace Datos
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
+
+        //METODO PARA VALIDAR EL LOGIN CON LA BD 
+        public int consultalogin(string Usuario, string Contrasena)
+        {
+            int count;
+            con.Open();
+            string Query = "Select Count(*) From Usuarios where usuario = '" + Usuario + "'" +
+                "and contrasena = '" + Contrasena + "'";
+
+            SqlCommand cmd = new SqlCommand(Query, con);
+            count = Convert.ToInt32(cmd.ExecuteScalar());
+
+            con.Close();
+            return count;
+        }
+
 
 
         //***************************** TABLA SALESUNIDADESTRANSPORTE ********************************

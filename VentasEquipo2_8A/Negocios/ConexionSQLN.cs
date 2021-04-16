@@ -12,6 +12,12 @@ namespace Negocios
     {
         ConexionSQL cn = new ConexionSQL();
 
+        //*************LOGIN**************
+        public int conSQL(string user, string pass)
+        {
+            return cn.consultalogin(user, pass);
+        }
+
         //********************** TABLA UNIDADES DE TRANSPORTE **************************
         public DataTable ConsultaDt()
         {
