@@ -12,19 +12,25 @@ namespace Negocios
     {
         ConexionSQL cn = new ConexionSQL();
 
+        //*************LOGIN**************
+        public int conSQL(string user, string pass)
+        {
+            return cn.consultalogin(user, pass);
+        }
+
         //********************** TABLA UNIDADES DE TRANSPORTE **************************
         public DataTable ConsultaDt()
         {
             return cn.ConsultarUnidadesTransporte();
         }
 
-        public int insertarUnidad(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        public int insertarUnidad(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo, string estatus)
         {
-            return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
+            return cn.insertarUnidad(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo, estatus);
         }
-        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo)
+        public int modificarUnidadTransporte(int idUnidadTransporte, string placas, string marca, string modelo, int anio, int capacidad, string tipo, string estatus)
         {
-            return cn.modificarUnidadTransporte(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo);
+            return cn.modificarUnidadTransporte(idUnidadTransporte, placas, marca, modelo, anio, capacidad, tipo, estatus);
         }
 
         public int eliminarunidadTransporte(int idUnidadTransporte)
@@ -149,6 +155,118 @@ namespace Negocios
             return cn.EliminarAsociacion(idAsociacion);
         }
 
+
+
+        //******************************TABLA PARCELAS *******************************************
+
+        public DataTable ConsultaParcelasDT()
+        {
+            return cn.ConsultarParcelasDG();
+        }
+
+        public int InsertarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
+        {
+
+
+            return cn.InsertarParcelas(idParcela, extension, idCliente, idCultivo, idDireccion, estatus);
+
+        }
+
+        public int ModificarParcelas(string idParcela, string extension, string idCliente, string idCultivo, string idDireccion, string estatus)
+        {
+
+            return cn.ModificarParcelas(idParcela, extension, idCliente, idCultivo, idDireccion, estatus);
+
+        }
+
+
+        //********************** TABLA DIRECCIONES CLIENTES **************************
+        public DataTable ConsultaDireccionCliente()
+        {
+            return cn.ConsultarDireccionCliente();
+        }
+
+        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            return cn.insertarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+        }
+        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        {
+            return cn.modificarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+        }
+
+        public int eliminarDireccionCliente(string idDireccion)
+        {
+            return cn.eliminarDireccionCliente(idDireccion);
+        }
+
+
+        //********************** TABLA UNIDADES DE MIEMBROS **************************
+
+        public DataTable ConsultaMiembrosDT()
+        {
+            return cn.ConsultarMiembrosDG();
+        }
+
+        public int insertarMiembrosDT(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+
+            return cn.insertarMiembrosDG(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+        public int modificarMiembrosDT(string idCliente, string idAsociacion, string estatus, string Incorporacion)
+        {
+
+            return cn.modificarMiembrosDG(idCliente, idAsociacion, estatus, Incorporacion);
+
+        }
+
+
+
+        //******************************TABLA MANTENIMIENTO *******************************************
+        public DataTable ConsultaMantenimientoDT()
+        {
+            return cn.ConsultarMantenimientoDG();
+        }
+
+        public int InsertarMantenimientoDT(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+
+
+            return cn.InsertarMantenimientoDG(idMantenimiento, fechaInicio, fechaFin, taller, costo, comentarios, tipo, idUnidadTransporte, estatus);
+
+        }
+
+        public int ModificarMantenimientoDT(string idMantenimiento, string fechaInicio, string fechaFin, string taller, string costo, string comentarios, string tipo, string idUnidadTransporte, string estatus)
+        {
+
+            return cn.ModificarMantenimientoDG(idMantenimiento, fechaInicio, fechaFin, taller, costo, comentarios, tipo, idUnidadTransporte, estatus);
+
+        }
+
+
+        //******************************TABLA CONTACTOCLIENTE *******************************************
+        public DataTable ConsultaContactoClienteDT()
+        {
+            return cn.ConsultarContactoClienteDG();
+        }
+
+        public int InsertarContactoClienteDT(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+
+
+            return cn.InsertarContactoClienteDG(idContacto, nombre, telefono, email, idCliente, estatus);
+
+        }
+
+        public int ModificarContactoClienteDT(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+
+            return cn.ModificarContactoClienteDG(idContacto, nombre, telefono, email, idCliente, estatus);
+
+        }
 
 
 

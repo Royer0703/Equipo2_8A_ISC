@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Negocios;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,6 +13,8 @@ namespace Vistas
 {
     public partial class Login : Form
     {
+
+        ConexionSQLN cn = new ConexionSQLN();
         public Login()
         {
             InitializeComponent();
@@ -49,7 +52,19 @@ namespace Vistas
 
         private void botonIngresar_Click(object sender, EventArgs e)
         {
-            //AbrirFormularios<PaginaPrincipal>();
+            if (cn.conSQL(textUsuario.Text, textContra.Text) == 1)
+            {
+                MessageBox.Show("Usuario encontrado", "Informacion!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                this.Hide();
+
+                menu v = new menu();
+                v.Show();
+            }
+            else
+            {
+                MessageBox.Show("Usiario no encontrdao", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

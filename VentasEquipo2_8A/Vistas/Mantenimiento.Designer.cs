@@ -1,7 +1,7 @@
 ﻿
 namespace Vistas
 {
-    partial class Miembros
+    partial class Mantenimiento
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Vistas
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Miembros));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mantenimiento));
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -37,12 +37,22 @@ namespace Vistas
             this.btnEliminar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnNuevo = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_idCliente = new System.Windows.Forms.TextBox();
+            this.txt_idMantenimiento = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.txt_idAsosiacion = new System.Windows.Forms.TextBox();
+            this.txt_fechaInicio = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.txt_fechaFin = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.txt_fechaIncorporacion = new System.Windows.Forms.TextBox();
+            this.txt_taller = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_costo = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_comentarios = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txt_tipo = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.txt_idUnidadTransporte = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.Cb_Estatus = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -54,9 +64,9 @@ namespace Vistas
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(38, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 20);
+            this.label1.Size = new System.Drawing.Size(195, 20);
             this.label1.TabIndex = 2;
-            this.label1.Text = "Listado De Miembros";
+            this.label1.Text = "Listado De Mantenimiento";
             // 
             // dataGridView1
             // 
@@ -97,7 +107,7 @@ namespace Vistas
             this.btnGuardar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnGuardar.selected = false;
             this.btnGuardar.Size = new System.Drawing.Size(142, 40);
-            this.btnGuardar.TabIndex = 21;
+            this.btnGuardar.TabIndex = 17;
             this.btnGuardar.Text = "GUARDAR";
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
@@ -126,15 +136,15 @@ namespace Vistas
             this.btnEditar.IconVisible = true;
             this.btnEditar.IconZoom = 50D;
             this.btnEditar.IsTab = false;
-            this.btnEditar.Location = new System.Drawing.Point(202, 340);
+            this.btnEditar.Location = new System.Drawing.Point(224, 340);
             this.btnEditar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEditar.Name = "btnEditar";
             this.btnEditar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnEditar.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnEditar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEditar.selected = false;
-            this.btnEditar.Size = new System.Drawing.Size(147, 40);
-            this.btnEditar.TabIndex = 22;
+            this.btnEditar.Size = new System.Drawing.Size(162, 40);
+            this.btnEditar.TabIndex = 18;
             this.btnEditar.Text = "EDITAR";
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
@@ -163,7 +173,7 @@ namespace Vistas
             this.btnEliminar.IconVisible = true;
             this.btnEliminar.IconZoom = 50D;
             this.btnEliminar.IsTab = false;
-            this.btnEliminar.Location = new System.Drawing.Point(385, 340);
+            this.btnEliminar.Location = new System.Drawing.Point(224, 396);
             this.btnEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
@@ -171,7 +181,7 @@ namespace Vistas
             this.btnEliminar.OnHoverTextColor = System.Drawing.Color.White;
             this.btnEliminar.selected = false;
             this.btnEliminar.Size = new System.Drawing.Size(162, 40);
-            this.btnEliminar.TabIndex = 23;
+            this.btnEliminar.TabIndex = 19;
             this.btnEliminar.Text = "ELIMINAR";
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
@@ -200,15 +210,15 @@ namespace Vistas
             this.btnNuevo.IconVisible = true;
             this.btnNuevo.IconZoom = 50D;
             this.btnNuevo.IsTab = false;
-            this.btnNuevo.Location = new System.Drawing.Point(581, 340);
+            this.btnNuevo.Location = new System.Drawing.Point(27, 396);
             this.btnNuevo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btnNuevo.Name = "btnNuevo";
             this.btnNuevo.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnNuevo.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(39)))), ((int)(((byte)(41)))), ((int)(((byte)(61)))));
             this.btnNuevo.OnHoverTextColor = System.Drawing.Color.White;
             this.btnNuevo.selected = false;
-            this.btnNuevo.Size = new System.Drawing.Size(170, 40);
-            this.btnNuevo.TabIndex = 24;
+            this.btnNuevo.Size = new System.Drawing.Size(142, 40);
+            this.btnNuevo.TabIndex = 20;
             this.btnNuevo.Text = "NUEVO";
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
@@ -220,67 +230,161 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(577, 72);
+            this.label2.Location = new System.Drawing.Point(577, 24);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 20);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "IdCliente";
+            this.label2.Size = new System.Drawing.Size(126, 20);
+            this.label2.TabIndex = 21;
+            this.label2.Text = "idMantenimiento";
             // 
-            // txt_idCliente
+            // txt_idMantenimiento
             // 
-            this.txt_idCliente.Location = new System.Drawing.Point(581, 104);
-            this.txt_idCliente.Name = "txt_idCliente";
-            this.txt_idCliente.Size = new System.Drawing.Size(179, 20);
-            this.txt_idCliente.TabIndex = 26;
-            this.txt_idCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idCliente_KeyPress);
+            this.txt_idMantenimiento.Location = new System.Drawing.Point(581, 47);
+            this.txt_idMantenimiento.Name = "txt_idMantenimiento";
+            this.txt_idMantenimiento.Size = new System.Drawing.Size(179, 20);
+            this.txt_idMantenimiento.TabIndex = 22;
+            this.txt_idMantenimiento.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idMantenimiento_KeyPress);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.White;
-            this.label3.Location = new System.Drawing.Point(577, 140);
+            this.label3.Location = new System.Drawing.Point(577, 72);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(100, 20);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "IdAsosiacion";
+            this.label3.Size = new System.Drawing.Size(91, 20);
+            this.label3.TabIndex = 23;
+            this.label3.Text = "FechaInicio";
             // 
-            // txt_idAsosiacion
+            // txt_fechaInicio
             // 
-            this.txt_idAsosiacion.Location = new System.Drawing.Point(581, 163);
-            this.txt_idAsosiacion.Name = "txt_idAsosiacion";
-            this.txt_idAsosiacion.Size = new System.Drawing.Size(179, 20);
-            this.txt_idAsosiacion.TabIndex = 28;
-            this.txt_idAsosiacion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idAsosiacion_KeyPress);
+            this.txt_fechaInicio.Location = new System.Drawing.Point(581, 95);
+            this.txt_fechaInicio.Name = "txt_fechaInicio";
+            this.txt_fechaInicio.Size = new System.Drawing.Size(179, 20);
+            this.txt_fechaInicio.TabIndex = 24;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(577, 202);
+            this.label4.Location = new System.Drawing.Point(577, 118);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 20);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Estatus";
+            this.label4.Size = new System.Drawing.Size(76, 20);
+            this.label4.TabIndex = 25;
+            this.label4.Text = "FechaFin";
+            // 
+            // txt_fechaFin
+            // 
+            this.txt_fechaFin.Location = new System.Drawing.Point(581, 141);
+            this.txt_fechaFin.Name = "txt_fechaFin";
+            this.txt_fechaFin.Size = new System.Drawing.Size(179, 20);
+            this.txt_fechaFin.TabIndex = 26;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(578, 262);
+            this.label5.Location = new System.Drawing.Point(577, 164);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(180, 20);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Fecha De Incorporacion";
+            this.label5.Size = new System.Drawing.Size(47, 20);
+            this.label5.TabIndex = 27;
+            this.label5.Text = "Taller";
             // 
-            // txt_fechaIncorporacion
+            // txt_taller
             // 
-            this.txt_fechaIncorporacion.Location = new System.Drawing.Point(581, 285);
-            this.txt_fechaIncorporacion.Name = "txt_fechaIncorporacion";
-            this.txt_fechaIncorporacion.Size = new System.Drawing.Size(179, 20);
-            this.txt_fechaIncorporacion.TabIndex = 32;
+            this.txt_taller.Location = new System.Drawing.Point(581, 187);
+            this.txt_taller.Name = "txt_taller";
+            this.txt_taller.Size = new System.Drawing.Size(179, 20);
+            this.txt_taller.TabIndex = 28;
+            this.txt_taller.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_taller_KeyPress);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(577, 210);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(51, 20);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Costo";
+            // 
+            // txt_costo
+            // 
+            this.txt_costo.Location = new System.Drawing.Point(581, 233);
+            this.txt_costo.Name = "txt_costo";
+            this.txt_costo.Size = new System.Drawing.Size(179, 20);
+            this.txt_costo.TabIndex = 30;
+            this.txt_costo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_costo_KeyPress);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(577, 256);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 20);
+            this.label7.TabIndex = 31;
+            this.label7.Text = "Comentarios";
+            // 
+            // txt_comentarios
+            // 
+            this.txt_comentarios.Location = new System.Drawing.Point(581, 275);
+            this.txt_comentarios.Name = "txt_comentarios";
+            this.txt_comentarios.Size = new System.Drawing.Size(179, 20);
+            this.txt_comentarios.TabIndex = 32;
+            this.txt_comentarios.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_comentarios_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.White;
+            this.label8.Location = new System.Drawing.Point(577, 298);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 20);
+            this.label8.TabIndex = 33;
+            this.label8.Text = "Tipo";
+            // 
+            // txt_tipo
+            // 
+            this.txt_tipo.Location = new System.Drawing.Point(581, 321);
+            this.txt_tipo.Name = "txt_tipo";
+            this.txt_tipo.Size = new System.Drawing.Size(179, 20);
+            this.txt_tipo.TabIndex = 34;
+            this.txt_tipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_tipo_KeyPress);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.White;
+            this.label9.Location = new System.Drawing.Point(577, 344);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(149, 20);
+            this.label9.TabIndex = 35;
+            this.label9.Text = "idUnidadTransporte";
+            // 
+            // txt_idUnidadTransporte
+            // 
+            this.txt_idUnidadTransporte.Location = new System.Drawing.Point(581, 367);
+            this.txt_idUnidadTransporte.Name = "txt_idUnidadTransporte";
+            this.txt_idUnidadTransporte.Size = new System.Drawing.Size(179, 20);
+            this.txt_idUnidadTransporte.TabIndex = 36;
+            this.txt_idUnidadTransporte.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idUnidadTransporte_KeyPress);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.White;
+            this.label10.Location = new System.Drawing.Point(577, 390);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(64, 20);
+            this.label10.TabIndex = 37;
+            this.label10.Text = "Estatus";
             // 
             // Cb_Estatus
             // 
@@ -289,24 +393,34 @@ namespace Vistas
             this.Cb_Estatus.Items.AddRange(new object[] {
             "A",
             "I"});
-            this.Cb_Estatus.Location = new System.Drawing.Point(579, 225);
+            this.Cb_Estatus.Location = new System.Drawing.Point(581, 413);
             this.Cb_Estatus.Name = "Cb_Estatus";
             this.Cb_Estatus.Size = new System.Drawing.Size(181, 21);
-            this.Cb_Estatus.TabIndex = 33;
+            this.Cb_Estatus.TabIndex = 38;
             // 
-            // Miembros
+            // Mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.Cb_Estatus);
-            this.Controls.Add(this.txt_fechaIncorporacion);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txt_idUnidadTransporte);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txt_tipo);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txt_comentarios);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.txt_costo);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txt_taller);
             this.Controls.Add(this.label5);
+            this.Controls.Add(this.txt_fechaFin);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.txt_idAsosiacion);
+            this.Controls.Add(this.txt_fechaInicio);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_idCliente);
+            this.Controls.Add(this.txt_idMantenimiento);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btnNuevo);
             this.Controls.Add(this.btnEliminar);
@@ -315,8 +429,8 @@ namespace Vistas
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Miembros";
-            this.Text = "Miembros";
+            this.Name = "Mantenimiento";
+            this.Text = "Mantenimiento";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -332,12 +446,22 @@ namespace Vistas
         private Bunifu.Framework.UI.BunifuFlatButton btnEliminar;
         private Bunifu.Framework.UI.BunifuFlatButton btnNuevo;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_idCliente;
+        private System.Windows.Forms.TextBox txt_idMantenimiento;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_idAsosiacion;
+        private System.Windows.Forms.TextBox txt_fechaInicio;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox txt_fechaFin;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txt_fechaIncorporacion;
+        private System.Windows.Forms.TextBox txt_taller;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_costo;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_comentarios;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txt_tipo;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txt_idUnidadTransporte;
+        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox Cb_Estatus;
     }
 }
