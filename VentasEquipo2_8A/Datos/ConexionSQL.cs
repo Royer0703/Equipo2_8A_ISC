@@ -486,6 +486,33 @@ namespace Datos
 
 
 
+        //***********************************TABLA CONTACTOCLIENTE **************************************************
+        //METODO PARA AGREGAR NUEVO CONTACTO CLIENTE
+        public int InsertarContactoClienteDG(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into SalesContactosCliente values('" + idContacto + "','" + nombre + "','" + telefono + "','" + email + "','" + idCliente + "','" + estatus + "' )";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICA CONTACTO CLIENTE
+        public int ModificarContactoClienteDG(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesContactosCliente set nombre='" + nombre + "', telefono='" + telefono + "', email='" + email + "', idCliente='" + idCliente + "', estatus='" + estatus + "'where idContacto='" + idContacto + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+
+        }
 
 
     }

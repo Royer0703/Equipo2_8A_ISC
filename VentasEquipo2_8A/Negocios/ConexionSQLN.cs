@@ -246,5 +246,28 @@ namespace Negocios
 
         }
 
+
+        //******************************TABLA CONTACTOCLIENTE *******************************************
+        public DataTable ConsultaContactoClienteDT()
+        {
+            return cn.ConsultarContactoClienteDG();
+        }
+
+        public int InsertarContactoClienteDT(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+
+
+            return cn.InsertarContactoClienteDG(idContacto, nombre, telefono, email, idCliente, estatus);
+
+        }
+
+        public int ModificarContactoClienteDT(string idContacto, string nombre, string telefono, string email, string idCliente, string estatus)
+        {
+
+            return cn.ModificarContactoClienteDG(idContacto, nombre, telefono, email, idCliente, estatus);
+
+        }
+
+
     }
 }
