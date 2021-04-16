@@ -514,6 +514,16 @@ namespace Datos
 
         }
 
+        public DataTable ConsultarContactoClienteDG()
+        {
+            string query = "select * from SalesContactosCliente";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
 
     }
 }
