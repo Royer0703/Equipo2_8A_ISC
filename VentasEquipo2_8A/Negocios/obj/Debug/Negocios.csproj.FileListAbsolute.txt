@@ -16,3 +16,12 @@ C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
 C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
+D:\ERP\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb

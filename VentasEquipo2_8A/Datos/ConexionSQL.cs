@@ -12,7 +12,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
+         static string conexionstring = "server = LAPTOP-PL6HHPH9; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -85,7 +85,7 @@ namespace Datos
             con.Close();
             return flag;
 
-        }
+        //}
 
         //METODO PARA MODIFICA NUEVO CULTIVO
         public int ModificarCultivos(string idCul, string nom, string costoAse, string esta)
