@@ -92,10 +92,7 @@ namespace Negocios
         }
 
 
-        public int EliminarCliente(string idClien)
-        {
-            return cn.EliminarCliente(idClien);
-        }
+      
 
 
 
