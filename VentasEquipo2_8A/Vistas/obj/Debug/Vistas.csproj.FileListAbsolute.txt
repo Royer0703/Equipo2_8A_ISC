@@ -104,3 +104,15 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
