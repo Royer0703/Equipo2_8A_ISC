@@ -12,6 +12,13 @@ create table SalesVentaDetalle(
    idVenta int not null,
 )
 
+create table Usuarios(
+usuario varchar(20) not null,
+contrasena varchar(20) not null 
+)
+select * from Usuarios
+insert into Usuarios values('royer', 123)
+
 ---SalesOfertasAsociacion
 create table SalesOfertasAsociacion(
 idAsosiacion int not null,
@@ -28,6 +35,8 @@ nombre varchar(100) not null,
 estatus char not null,
 )
 
+select * from SalesAsociaciones
+
 ---SalesMiembros
 create table SalesMiembros(
 idCliente int not null,
@@ -36,6 +45,9 @@ estatus char not null,
 fechaIncorporacion date not null,
 CONSTRAINT PK_Miembros PRIMARY KEY (idAsosiacion,idCliente),
 )
+
+select * from SalesMiembros
+delete from SalesMiembros where idCliente = 1
 
 ---SalesCultivos
 create table SalesCultivos(
@@ -56,6 +68,10 @@ telefono char(12) not null,
 email varchar(100) not null,
 tipo char not null,
 )
+delete from SalesClientes where idCliente = 2
+select * from SalesClientes
+
+
 
 
 ---SalesVentas
@@ -87,6 +103,8 @@ tipo char not null,
 idCliente int not null,
 idCiudad int not null,
 )
+select * from SalesDireccionesCliente
+delete SalesDireccionesCliente where idDireccion = 1
 
 --SalesParcelas
 create table SalesParcelas(
@@ -96,6 +114,8 @@ idCliente int not null,
 idCultivo int not null,
 idDireccion int not null,
 )
+select * from SalesParcelas
+delete SalesParcelas where idParcela = 2
 
 
 ---SalesTripulacion
@@ -148,6 +168,13 @@ email varchar(100) not null,
 idCliente int not null,
 )
 
+select * from SalesContactosCliente
+alter table SalesContactosCliente add estatus char not null
+delete SalesContactosCliente where idContacto = 1
+
+
+
+
 
 ---SalesAsesorias
 create table SalesAsesorias(
@@ -184,6 +211,7 @@ comentarios varchar(200),
 tipo varchar(30) not null,
 idUnidadTransporte int not null,
 )
+select * from SalesMantenimiento
 
 
 ------FK DE VENTAS-----------

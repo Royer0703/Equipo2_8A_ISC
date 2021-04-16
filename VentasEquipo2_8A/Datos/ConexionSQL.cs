@@ -13,7 +13,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
+         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -172,18 +172,8 @@ namespace Datos
 
 
         }
-        //METODO PARA ELIMINAR NUEVO Cliente
-        public int EliminarCliente(string idClien)
-        {
-            int flag = 0;
-            con.Open();
-
-            string query = "Delete from SalesClientes where idCliente = '" + idClien + "'";
-            SqlCommand cmd = new SqlCommand(query, con);
-            flag = cmd.ExecuteNonQuery();
-            con.Close();
-            return flag;
-        }
+       
+       
 
         //CONSULTAR LOS DATOS DE TABLA SQL Cliente
         public DataTable ConsultarCliente()
