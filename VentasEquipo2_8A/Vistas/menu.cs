@@ -15,6 +15,7 @@ namespace Vistas
         public menu()
         {
             InitializeComponent();
+            
         }
 
 
@@ -135,6 +136,17 @@ namespace Vistas
         private void btnparcelas_Click(object sender, EventArgs e)
         {
             AbrirFormularios<Parcelas>();
+        }
+
+        private void panelsidebar_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            txttime.Text = DateTime.Now.ToShortDateString();
+            label1.Text = DateTime.Now.ToShortTimeString();
         }
 
         private void btnunidadestransporte_Click(object sender, EventArgs e)
