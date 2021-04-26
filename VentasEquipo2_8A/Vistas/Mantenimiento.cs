@@ -8,23 +8,70 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocios;
+using System.Data.SqlClient;//new 
+using Entidad;//new
 
 namespace Vistas
 {
     public partial class Mantenimiento : Form
     {
-        ConexionSQLN cn = new ConexionSQLN();
+        ConexionSQLN cn = new ConexionSQLN();//negocios
+        Class_Entidad obje = new Class_Entidad();//entidad
+        DataSet dsTabla;
+
+        int VarPagInicio = 1;
+        int VarPagIndice = 0;
+        int TotalFilasAMostrar = 10;
+        int VarPagFinal;
+
+
+        void Mostrar_datos()
+        {
+            obje.varDatoInicio = VarPagInicio;
+            obje.varDatoFinal = VarPagFinal;
+            dsTabla = cn.N_listar_Mantenimiento(obje);
+
+            dataGridView1.DataSource = dsTabla.Tables[1];
+            txtCantidadTotal.Text = dsTabla.Tables[0].Rows[0][0].ToString();
+
+            int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / TotalFilasAMostrar;
+            comboBox2.Items.Clear();
+
+            if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % TotalFilasAMostrar > 0)
+            {
+                cantidad += 1;
+            }
+
+            textBox3.Text = cantidad.ToString();
+            comboBox2.Items.Clear();
+
+            for (int x = 1; x <= cantidad; x++)
+            {
+                comboBox2.Items.Add(x.ToString());
+            }
+
+            comboBox2.SelectedIndex = VarPagIndice;
+        }
+
+
+
+
         public Mantenimiento()
         {
             InitializeComponent();
-            dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+            //dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
+            dataGridView2.DataSource = cn.ConsultaDt();
 
 
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+            //dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
             txt_idMantenimiento.Text = "";
             txt_fechaInicio.Text = " ";
             txt_fechaFin.Text = "";
@@ -53,7 +100,9 @@ namespace Vistas
             {
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
                 cn.InsertarMantenimientoDT(txt_idMantenimiento.Text, txt_fechaInicio.Text, txt_fechaFin.Text, txt_taller.Text, txt_costo.Text, txt_comentarios.Text, txt_tipo.Text, txt_idUnidadTransporte.Text, Estatus);
-                dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                //dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idMantenimiento.Text = "";
                 txt_fechaInicio.Text = " ";
@@ -101,7 +150,9 @@ namespace Vistas
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
 
                 cn.ModificarMantenimientoDT(txt_idMantenimiento.Text, txt_fechaInicio.Text, txt_fechaFin.Text, txt_taller.Text, txt_costo.Text, txt_comentarios.Text, txt_tipo.Text, txt_idUnidadTransporte.Text, Estatus);
-                dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                //dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idMantenimiento.Text = "";
                 txt_fechaInicio.Text = " ";
@@ -151,7 +202,9 @@ namespace Vistas
 
                 Cb_Estatus.Text = "I";
                 cn.ModificarMantenimientoDT(txt_idMantenimiento.Text, txt_fechaInicio.Text, txt_fechaFin.Text, txt_taller.Text, txt_costo.Text, txt_comentarios.Text, txt_tipo.Text, txt_idUnidadTransporte.Text, Cb_Estatus.Text);
-                dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                //dataGridView1.DataSource = cn.ConsultaMantenimientoDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idMantenimiento.Text = "";
                 txt_fechaInicio.Text = " ";
@@ -249,6 +302,38 @@ namespace Vistas
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+               SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
+            con.Open();
+            SqlDataAdapter datos = new SqlDataAdapter("Select idMantenimiento,fechaInicio,fechaFin,taller,costo,comentarios,tipo,idUnidadTransporte,estatus from SalesMantenimiento where " + this.comboBox1.Text+ " like '%" + this.textBox1.Text + "%'", con);
+            DataSet ds = new DataSet();
+            datos.Fill(ds, "SalesMantenimiento");
+            this.dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void Mantenimiento_MouseMove(object sender, MouseEventArgs e)
+        {
+            dataGridView2.DataSource = cn.ConsultaDt();
+        }
+
+        private void Mantenimiento_MouseClick(object sender, MouseEventArgs e)
+        {
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
+            dataGridView2.DataSource = cn.ConsultaDt();
+
+        }
+
+        private void comboBox2_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int pagina = Convert.ToInt32(comboBox2.Text);
+            VarPagIndice = pagina - 1;
+            VarPagInicio = (pagina - 1) * TotalFilasAMostrar + 1;
+            VarPagFinal = pagina * TotalFilasAMostrar;
+            Mostrar_datos();
         }
     }
 }

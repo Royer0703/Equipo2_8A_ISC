@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data;
+using System.Data;//
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Datos;
+using Datos;//
+using Entidad;//
 
 namespace Negocios
 {
@@ -17,6 +18,18 @@ namespace Negocios
         {
             return cn.consultalogin(user, pass);
         }
+
+
+
+        //********************** TABLA CIUDADES **************************
+        public DataTable ConsultaCiudadesDT()
+        {
+            return cn.ConsultarCiudadesDG();
+        }
+
+
+
+
 
         //********************** TABLA UNIDADES DE TRANSPORTE **************************
         public DataTable ConsultaDt()
@@ -176,6 +189,12 @@ namespace Negocios
 
         }
 
+        //-*******************************JOIN DE LA TABLA CLIENTE Y IRECCIONES CLIENTES****************
+        public DataTable ConsultarClienteYDireClienteDT()
+        {
+            return cn.ConsultarClienteYDireClienteDG();
+        }
+
 
         //********************** TABLA DIRECCIONES CLIENTES **************************
         public DataTable ConsultaDireccionCliente()
@@ -183,13 +202,13 @@ namespace Negocios
             return cn.ConsultarDireccionCliente();
         }
 
-        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad)
         {
-            return cn.insertarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+            return cn.insertarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad);
         }
-        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad)
         {
-            return cn.modificarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad, estatus);
+            return cn.modificarDireccionCliente(idDireccion, calle, numero, colonia, codigoPostal, tipo, idCliente, idCiudad);
         }
 
         public int eliminarDireccionCliente(string idDireccion)
@@ -263,6 +282,108 @@ namespace Negocios
 
             return cn.ModificarContactoClienteDG(idContacto, nombre, telefono, email, idCliente, estatus);
 
+        }
+
+
+
+        //******************************TABLA SalesAsesorias *******************************************
+        public DataTable ConsultarSalesAsesoriasDT()
+        {
+            return cn.ConsultarSalesAsesoriasDG();
+        }
+
+        public int InsertarSalesAsesoriasDT(string idAsesoria, string fecha, string comentarios, string estatus, string costo, string idParcela, string idEmpleado, string idUnidadTransporte)
+        {
+
+
+            return cn.insertarSalesAsesoriasDG(idAsesoria, fecha, comentarios, estatus, costo, idParcela, idEmpleado, idUnidadTransporte);
+
+        }
+
+        public int ModificarSalesAsesoriasDT(string idAsesoria, string fecha, string comentarios, string estatus, string costo, string idParcela, string idEmpleado, string idUnidadTransporte)
+        {
+
+            return cn.modificarSalesAsesoriasDG(idAsesoria, fecha, comentarios, estatus, costo, idParcela, idEmpleado, idUnidadTransporte);
+
+        }
+
+       
+        //-----select de empleados
+            public DataTable ConsultarEmpleadosDT()
+        {
+            return cn.ConsultarEmpleadosDG();
+        }
+
+
+
+
+
+        ////////////////////Paginacion_Parcelas/////////////
+        ///
+        ConexionSQL objd = new ConexionSQL();
+        public DataSet N_listar_Parcelas(Class_Entidad obje)
+        {
+            return objd.Lista_Parcelas(obje);
+        }
+
+        ////////////////////Paginacion_Cultivos/////////////
+        public DataSet N_listar_Cultivos(Class_Entidad obje)
+        {
+            return objd.Lista_Cultivos(obje);
+        }
+
+
+
+        ////////////////////Paginacion_Miembros/////////////
+        public DataSet N_listar_Miembros(Class_Entidad obje)
+        {
+            return objd.Lista_Miembros(obje);
+        }
+
+        ////////////////////Paginacion_Miembros/////////////
+        public DataSet N_listar_Mantenimiento(Class_Entidad obje)
+        {
+            return objd.Lista_Mantenimiento(obje);
+        }
+
+
+        ////////////////////Paginacion_Asociaciones/////////////
+        public DataSet N_listar_SalesAsociaciones(Class_Entidad obje)
+        {
+            return objd.Lista_Asociaciones(obje);
+        }
+
+        ////////////////////Paginacion_CONTACTO_CLIENTE/////////////
+        public DataSet N_listar_CONTACTOCLIENTE(Class_Entidad obje)
+        {
+            return objd.Lista_ContactosCliente(obje);
+        }
+
+
+
+        ////////////////////Paginacion_SalesUnidadesTransporte/////////////
+        public DataSet N_listar_SalesUnidadesTransporte(Class_Entidad obje)
+        {
+            return objd.Lista_SalesUnidadesTransporte(obje);
+        }
+
+
+        ////////////////////Paginacion_SalesDireccionesCliente/////////////
+        public DataSet N_listar_SalesDireccionesCliente(Class_Entidad obje)
+        {
+            return objd.Lista_SalesDireccionesCliente(obje);
+        }
+
+        ////////////////////Paginacion_Cliente/////////////
+        public DataSet N_listar_Cliente(Class_Entidad obje)
+        {
+            return objd.Lista_Cliente(obje);
+        }
+
+        ////////////////////Paginacion_SalesAsesorias/////////////
+        public DataSet N_listar_SalesAsesorias(Class_Entidad obje)
+        {
+            return objd.Lista_SalesAsesorias(obje);
         }
 
 

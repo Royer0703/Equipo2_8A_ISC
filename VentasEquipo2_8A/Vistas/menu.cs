@@ -8,14 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace Vistas
 {
     public partial class menu : Form
     {
+        
         public menu()
         {
             InitializeComponent();
-            
+           
+
+
         }
 
 

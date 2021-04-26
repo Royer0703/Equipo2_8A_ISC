@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Configuration;//new
+using Entidad;//new 
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -13,7 +15,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
+         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -353,11 +355,11 @@ namespace Datos
         }
 
         //METODO PARA INSERTAR LAS DIRECCIONES CLIENTE EN LA BD
-        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        public int insertarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad)
         {
             int flag = 0;
             con.Open();
-            string query = "insert into SalesDireccionesCliente values('" + idDireccion + "', '" + calle + "', '" + numero + "', '" + colonia + "', '" + codigoPostal + "', '" + tipo + "', '" + idCliente + "', '" + idCiudad + "', '" + estatus + "')";
+            string query = "insert into SalesDireccionesCliente values('" + idDireccion + "', '" + calle + "', '" + numero + "', '" + colonia + "', '" + codigoPostal + "', '" + tipo + "', '" + idCliente + "', '" + idCiudad + "')";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -366,11 +368,11 @@ namespace Datos
         }
 
         //METODO PARA MODIFICAR LAS DIRECCIONES CLIENTE EN LA BD
-        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad, string estatus)
+        public int modificarDireccionCliente(string idDireccion, string calle, string numero, string colonia, string codigoPostal, string tipo, string idCliente, string idCiudad)
         {
             int flag = 0;
             con.Open();
-            string query = "Update SalesDireccionesCliente set idDireccion ='" + idDireccion + "', calle='" + calle + "', numero='" + numero + "', colonia='" + colonia + "', codigoPostal='" + codigoPostal + "', tipo='" + tipo + "', idCliente='" + idCliente + "', idCiudad='" + idCiudad + "', estatus='" + estatus + "' where idDireccion ='" + idDireccion + "'";
+            string query = "Update SalesDireccionesCliente set idDireccion ='" + idDireccion + "', calle='" + calle + "', numero='" + numero + "', colonia='" + colonia + "', codigoPostal='" + codigoPostal + "', tipo='" + tipo + "', idCliente='" + idCliente + "', idCiudad='" + idCiudad + "' where idDireccion ='" + idDireccion + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();
@@ -513,6 +515,230 @@ namespace Datos
             data.Fill(tabla);
             return tabla;
         }
+
+
+
+        //***********************************TABLA SalesAsesorias **************************************************
+        //METODO PARA AGREGAR NUEVO CONTACTO CLIENTE
+        public int insertarSalesAsesoriasDG(string idAsesoria, string fecha, string comentarios, string estatus, string costo, string idParcela, string idEmpleado, string idUnidadTransporte)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "insert into SalesAsesorias values('" + idAsesoria + "', '" + fecha + "', '" + comentarios + "', '" + estatus + "', '" + costo + "', '" + idParcela + "', '" + idEmpleado + "', '" + idUnidadTransporte + "')";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        //METODO PARA MODIFICAR LAS UNIDADES DE TRANSPORTE EN LA BD
+        public int modificarSalesAsesoriasDG(string idAsesoria, string fecha, string comentarios, string estatus, string costo, string idParcela, string idEmpleado, string idUnidadTransporte)
+        {
+            int flag = 0;
+            con.Open();
+            string query = "Update SalesAsesorias set fecha ='" + fecha + "', comentarios ='" + comentarios + "', estatus ='" + estatus + "', costo ='" + costo + "', idParcela  ='" + idParcela + "', idEmpleado   ='" + idEmpleado + "', idUnidadTransporte   ='" + idUnidadTransporte + "'where idAsesoria ='" + idAsesoria + "'";
+            SqlCommand cmd = new SqlCommand(query, con);
+            flag = cmd.ExecuteNonQuery();
+            con.Close();
+            return flag;
+
+        }
+
+        public DataTable ConsultarSalesAsesoriasDG()
+        {
+            string query = "select * from SalesAsesorias";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+        //METODO SELECT DE CIUDADES
+        public DataTable ConsultarCiudadesDG()
+        {
+            string query = "select * from Ciudades";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+        //METODO SELECT DE EMPLEADOSS
+        public DataTable ConsultarEmpleadosDG()
+        {
+            string query = "select * from empleadoss";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
+
+        //////////////////TABLAS JOIN CLIENTES Y DIRECCIONES_CLIENTE////////////////////////////////////////
+
+        public DataTable ConsultarClienteYDireClienteDG()
+        {
+            string query = "select  SalesClientes.idCliente, SalesDireccionesCliente.idDireccion, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia from SalesDireccionesCliente INNER JOIN SalesClientes ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
+
+        /////////////PAGINACION DE PARCELAS /////////////////////////////////////////////////
+       
+        public DataSet Lista_Parcelas(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesParcelas", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+        ////////////////PAGINACION DE CULTIVOS////////////////////
+        ///
+        public DataSet Lista_Cultivos(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesCultivos", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+
+        ////////////////PAGINACION DE Miembros////////////////////
+        ///
+        public DataSet Lista_Miembros(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesMiembros", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+        ////////////////PAGINACION DE Miembros////////////////////
+        ///
+        public DataSet Lista_Mantenimiento(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesMantenimiento", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+        ////////////////PAGINACION DE SalesAsociaciones ////////////////////
+        ///
+        public DataSet Lista_Asociaciones(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesAsociaciones", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
+        ////////////////PAGINACION DE SalesContactosCliente ////////////////////
+        ///
+        public DataSet Lista_ContactosCliente(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesContactosCliente", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        ////////////////PAGINACION DE SalesUnidadesTransporte ////////////////////
+        public DataSet Lista_SalesUnidadesTransporte(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesUnidadesTransporte", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        ////////////////PAGINACION DE SalesDireccionesCliente ////////////////////
+        public DataSet Lista_SalesDireccionesCliente(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesDireccionesCliente", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        ////////////////PAGINACION DE Clientes ////////////////////
+        public DataSet Lista_Cliente(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesClientes", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+        ////////////////PAGINACION DE SalesAsesorias ////////////////////
+        public DataSet Lista_SalesAsesorias(Class_Entidad obje)
+        {
+            SqlCommand cmd = new SqlCommand("sp_listar_SalesAsesorias", con);
+            cmd.CommandType = CommandType.StoredProcedure;
+            cmd.Parameters.AddWithValue("@tab_inicio", obje.varDatoInicio);
+            cmd.Parameters.AddWithValue("@tab_final", obje.varDatoFinal);
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+            DataSet dt = new DataSet();
+            da.Fill(dt);
+            return dt;
+        }
+
+
 
 
     }

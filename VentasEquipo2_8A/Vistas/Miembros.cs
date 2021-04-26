@@ -2,23 +2,79 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Negocios;
+using Entidad;//new 
 
 namespace Vistas
 {
     public partial class Miembros : Form
     {
-        ConexionSQLN cn = new ConexionSQLN();
+        
+        ConexionSQLN cn = new ConexionSQLN();//negocios
+        Class_Entidad obje = new Class_Entidad();//entidad
+        DataSet dsTabla;
+
+        int VarPagInicio = 1;
+        int VarPagIndice = 0;
+        int TotalFilasAMostrar = 10;
+        int VarPagFinal;
+
+
+        void Mostrar_datos()
+        {
+            obje.varDatoInicio = VarPagInicio;
+            obje.varDatoFinal = VarPagFinal;
+            dsTabla = cn.N_listar_Miembros(obje);
+
+            dataGridView1.DataSource = dsTabla.Tables[1];
+            txtCantidadTotal.Text = dsTabla.Tables[0].Rows[0][0].ToString();
+
+            int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / TotalFilasAMostrar;
+            comboBox2.Items.Clear();
+
+            if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % TotalFilasAMostrar > 0)
+            {
+                cantidad += 1;
+            }
+
+            textBox3.Text = cantidad.ToString();
+            comboBox2.Items.Clear();
+
+            for (int x = 1; x <= cantidad; x++)
+            {
+                comboBox2.Items.Add(x.ToString());
+            }
+
+            comboBox2.SelectedIndex = VarPagIndice;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
         public Miembros()
         {
             InitializeComponent();
-            dataGridView1.DataSource = cn.ConsultaMiembrosDT();
-           
+            //dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
+            dataGridView2.DataSource = cn.ConsultaCliente();
+            dataGridView3.DataSource = cn.ConsultaAsociacion();
+
+
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
@@ -47,7 +103,9 @@ namespace Vistas
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
 
                 cn.insertarMiembrosDT(txt_idCliente.Text, txt_idAsosiacion.Text, Estatus, txt_fechaIncorporacion.Text);
-                dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                //dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idCliente.Text = "";
                 txt_idAsosiacion.Text = "";
@@ -89,7 +147,9 @@ namespace Vistas
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
 
                 cn.modificarMiembrosDT(txt_idCliente.Text, txt_idAsosiacion.Text, Estatus, txt_fechaIncorporacion.Text);
-                dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                //dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idCliente.Text = "";
                 txt_idAsosiacion.Text = "";
@@ -132,7 +192,9 @@ namespace Vistas
 
                 Cb_Estatus.Text = "I";
                 cn.modificarMiembrosDT(txt_idCliente.Text, txt_idAsosiacion.Text, Cb_Estatus.Text, txt_fechaIncorporacion.Text);
-                dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                //dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+                VarPagFinal = TotalFilasAMostrar;
+                Mostrar_datos();
 
                 txt_idCliente.Text = "";
                 txt_idAsosiacion.Text = "";
@@ -183,6 +245,40 @@ namespace Vistas
                 e.Handled = true;
                 return;
             }
+        }
+
+        private void Miembros_MouseMove(object sender, MouseEventArgs e)
+        {
+            dataGridView2.DataSource = cn.ConsultaCliente();
+            dataGridView3.DataSource = cn.ConsultaAsociacion();
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
+            con.Open();
+            SqlDataAdapter datos = new SqlDataAdapter("Select idCliente,idAsosiacion,estatus,fechaIncorporacion from SalesMiembros where " + this.comboBox1.Text + " like '%" + this.textBox1.Text + "%'", con);
+            DataSet ds = new DataSet();
+            datos.Fill(ds, "SalesMiembros");
+            this.dataGridView1.DataSource = ds.Tables[0];
+        }
+
+        private void Miembros_MouseClick(object sender, MouseEventArgs e)
+        {
+            //dataGridView1.DataSource = cn.ConsultaMiembrosDT();
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
+            dataGridView2.DataSource = cn.ConsultaCliente();
+            dataGridView3.DataSource = cn.ConsultaAsociacion();
+        }
+
+        private void comboBox2_SelectionChangeCommitted(object sender, EventArgs e)
+        {
+            int pagina = Convert.ToInt32(comboBox2.Text);
+            VarPagIndice = pagina - 1;
+            VarPagInicio = (pagina - 1) * TotalFilasAMostrar + 1;
+            VarPagFinal = pagina * TotalFilasAMostrar;
+            Mostrar_datos();
         }
     }
 }
