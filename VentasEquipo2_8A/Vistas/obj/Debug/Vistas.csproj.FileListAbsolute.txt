@@ -228,3 +228,8 @@ C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEqu
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources

@@ -21,7 +21,7 @@ namespace Vistas
 
         int VarPagInicio = 1;
         int VarPagIndice = 0;
-        int TotalFilasAMostrar = 10;
+        int TotalFilasAMostrar = 2;
         int VarPagFinal;
 
 

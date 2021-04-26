@@ -83,3 +83,6 @@ C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEqu
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll.config
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.pdb

@@ -39,6 +39,8 @@
             this.btnmaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btncerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txttime = new System.Windows.Forms.Label();
             this.btnparcelas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btndireccionescliente = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btncliente = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -51,10 +53,14 @@
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
-            this.txttime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.label1 = new System.Windows.Forms.Label();
+            this.btnasesorias = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnmantenimientos = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btncontactoscliente = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
+            this.btncerrarsesion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnprincipal.SuspendLayout();
+            this.panelcontenedor.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnrestaurar)).BeginInit();
@@ -62,6 +68,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.btncerrar)).BeginInit();
             this.panelsidebar.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // pnprincipal
@@ -79,14 +86,13 @@
             // 
             // panelcontenedor
             // 
-            this.panelcontenedor.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.panelcontenedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.panelcontenedor.Location = new System.Drawing.Point(356, 106);
+            this.panelcontenedor.Controls.Add(this.bunifuImageButton1);
+            this.panelcontenedor.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelcontenedor.Location = new System.Drawing.Point(349, 100);
             this.panelcontenedor.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panelcontenedor.Name = "panelcontenedor";
-            this.panelcontenedor.Size = new System.Drawing.Size(1496, 676);
+            this.panelcontenedor.Size = new System.Drawing.Size(1518, 686);
             this.panelcontenedor.TabIndex = 3;
             // 
             // panelinferior
@@ -185,6 +191,10 @@
             // panelsidebar
             // 
             this.panelsidebar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.panelsidebar.Controls.Add(this.btncerrarsesion);
+            this.panelsidebar.Controls.Add(this.btnasesorias);
+            this.panelsidebar.Controls.Add(this.btnmantenimientos);
+            this.panelsidebar.Controls.Add(this.btncontactoscliente);
             this.panelsidebar.Controls.Add(this.label1);
             this.panelsidebar.Controls.Add(this.txttime);
             this.panelsidebar.Controls.Add(this.btnparcelas);
@@ -203,6 +213,28 @@
             this.panelsidebar.Size = new System.Drawing.Size(349, 886);
             this.panelsidebar.TabIndex = 0;
             this.panelsidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsidebar_Paint);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(241, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 20);
+            this.label1.TabIndex = 20;
+            // 
+            // txttime
+            // 
+            this.txttime.AutoSize = true;
+            this.txttime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txttime.ForeColor = System.Drawing.Color.White;
+            this.txttime.Location = new System.Drawing.Point(231, 9);
+            this.txttime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.txttime.Name = "txttime";
+            this.txttime.Size = new System.Drawing.Size(0, 25);
+            this.txttime.TabIndex = 19;
             // 
             // btnparcelas
             // 
@@ -502,32 +534,170 @@
             this.bunifuElipse2.ElipseRadius = 15;
             this.bunifuElipse2.TargetControl = this.panelcontenedor;
             // 
-            // txttime
-            // 
-            this.txttime.AutoSize = true;
-            this.txttime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txttime.ForeColor = System.Drawing.Color.White;
-            this.txttime.Location = new System.Drawing.Point(231, 9);
-            this.txttime.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.txttime.Name = "txttime";
-            this.txttime.Size = new System.Drawing.Size(0, 25);
-            this.txttime.TabIndex = 19;
-            // 
             // timer1
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // label1
+            // btnasesorias
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(241, 41);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(0, 20);
-            this.label1.TabIndex = 20;
+            this.btnasesorias.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnasesorias.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnasesorias.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnasesorias.BorderRadius = 7;
+            this.btnasesorias.ButtonText = "Asesorias ";
+            this.btnasesorias.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnasesorias.DisabledColor = System.Drawing.Color.Gray;
+            this.btnasesorias.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnasesorias.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnasesorias.Iconimage")));
+            this.btnasesorias.Iconimage_right = null;
+            this.btnasesorias.Iconimage_right_Selected = null;
+            this.btnasesorias.Iconimage_Selected = null;
+            this.btnasesorias.IconMarginLeft = 0;
+            this.btnasesorias.IconMarginRight = 0;
+            this.btnasesorias.IconRightVisible = true;
+            this.btnasesorias.IconRightZoom = 0D;
+            this.btnasesorias.IconVisible = true;
+            this.btnasesorias.IconZoom = 60D;
+            this.btnasesorias.IsTab = false;
+            this.btnasesorias.Location = new System.Drawing.Point(4, 757);
+            this.btnasesorias.Margin = new System.Windows.Forms.Padding(5);
+            this.btnasesorias.Name = "btnasesorias";
+            this.btnasesorias.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnasesorias.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnasesorias.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnasesorias.selected = false;
+            this.btnasesorias.Size = new System.Drawing.Size(341, 59);
+            this.btnasesorias.TabIndex = 23;
+            this.btnasesorias.Text = "Asesorias ";
+            this.btnasesorias.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnasesorias.Textcolor = System.Drawing.Color.White;
+            this.btnasesorias.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnasesorias.Click += new System.EventHandler(this.btnasesorias_Click);
+            // 
+            // btnmantenimientos
+            // 
+            this.btnmantenimientos.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnmantenimientos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnmantenimientos.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnmantenimientos.BorderRadius = 7;
+            this.btnmantenimientos.ButtonText = "Mantenimientos";
+            this.btnmantenimientos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnmantenimientos.DisabledColor = System.Drawing.Color.Gray;
+            this.btnmantenimientos.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnmantenimientos.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnmantenimientos.Iconimage")));
+            this.btnmantenimientos.Iconimage_right = null;
+            this.btnmantenimientos.Iconimage_right_Selected = null;
+            this.btnmantenimientos.Iconimage_Selected = null;
+            this.btnmantenimientos.IconMarginLeft = 0;
+            this.btnmantenimientos.IconMarginRight = 0;
+            this.btnmantenimientos.IconRightVisible = true;
+            this.btnmantenimientos.IconRightZoom = 0D;
+            this.btnmantenimientos.IconVisible = true;
+            this.btnmantenimientos.IconZoom = 60D;
+            this.btnmantenimientos.IsTab = false;
+            this.btnmantenimientos.Location = new System.Drawing.Point(5, 699);
+            this.btnmantenimientos.Margin = new System.Windows.Forms.Padding(5);
+            this.btnmantenimientos.Name = "btnmantenimientos";
+            this.btnmantenimientos.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnmantenimientos.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnmantenimientos.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnmantenimientos.selected = false;
+            this.btnmantenimientos.Size = new System.Drawing.Size(341, 59);
+            this.btnmantenimientos.TabIndex = 22;
+            this.btnmantenimientos.Text = "Mantenimientos";
+            this.btnmantenimientos.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnmantenimientos.Textcolor = System.Drawing.Color.White;
+            this.btnmantenimientos.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnmantenimientos.Click += new System.EventHandler(this.btnmantenimientos_Click);
+            // 
+            // btncontactoscliente
+            // 
+            this.btncontactoscliente.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncontactoscliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncontactoscliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncontactoscliente.BorderRadius = 7;
+            this.btncontactoscliente.ButtonText = "Contactos Cliente";
+            this.btncontactoscliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncontactoscliente.DisabledColor = System.Drawing.Color.Gray;
+            this.btncontactoscliente.Iconcolor = System.Drawing.Color.Transparent;
+            this.btncontactoscliente.Iconimage = ((System.Drawing.Image)(resources.GetObject("btncontactoscliente.Iconimage")));
+            this.btncontactoscliente.Iconimage_right = null;
+            this.btncontactoscliente.Iconimage_right_Selected = null;
+            this.btncontactoscliente.Iconimage_Selected = null;
+            this.btncontactoscliente.IconMarginLeft = 0;
+            this.btncontactoscliente.IconMarginRight = 0;
+            this.btncontactoscliente.IconRightVisible = true;
+            this.btncontactoscliente.IconRightZoom = 0D;
+            this.btncontactoscliente.IconVisible = true;
+            this.btncontactoscliente.IconZoom = 60D;
+            this.btncontactoscliente.IsTab = false;
+            this.btncontactoscliente.Location = new System.Drawing.Point(5, 631);
+            this.btncontactoscliente.Margin = new System.Windows.Forms.Padding(5);
+            this.btncontactoscliente.Name = "btncontactoscliente";
+            this.btncontactoscliente.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncontactoscliente.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncontactoscliente.OnHoverTextColor = System.Drawing.Color.White;
+            this.btncontactoscliente.selected = false;
+            this.btncontactoscliente.Size = new System.Drawing.Size(341, 59);
+            this.btncontactoscliente.TabIndex = 21;
+            this.btncontactoscliente.Text = "Contactos Cliente";
+            this.btncontactoscliente.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncontactoscliente.Textcolor = System.Drawing.Color.White;
+            this.btncontactoscliente.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncontactoscliente.Click += new System.EventHandler(this.btncontactoscliente_Click);
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuImageButton1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(0, 0);
+            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(1518, 686);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 4;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            // 
+            // btncerrarsesion
+            // 
+            this.btncerrarsesion.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncerrarsesion.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btncerrarsesion.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncerrarsesion.BorderRadius = 7;
+            this.btncerrarsesion.ButtonText = "Cerrar Sesion";
+            this.btncerrarsesion.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncerrarsesion.DisabledColor = System.Drawing.Color.Gray;
+            this.btncerrarsesion.Iconcolor = System.Drawing.Color.Transparent;
+            this.btncerrarsesion.Iconimage = null;
+            this.btncerrarsesion.Iconimage_right = null;
+            this.btncerrarsesion.Iconimage_right_Selected = null;
+            this.btncerrarsesion.Iconimage_Selected = null;
+            this.btncerrarsesion.IconMarginLeft = 0;
+            this.btncerrarsesion.IconMarginRight = 0;
+            this.btncerrarsesion.IconRightVisible = true;
+            this.btncerrarsesion.IconRightZoom = 0D;
+            this.btncerrarsesion.IconVisible = true;
+            this.btncerrarsesion.IconZoom = 60D;
+            this.btncerrarsesion.IsTab = false;
+            this.btncerrarsesion.Location = new System.Drawing.Point(138, 111);
+            this.btncerrarsesion.Margin = new System.Windows.Forms.Padding(5);
+            this.btncerrarsesion.Name = "btncerrarsesion";
+            this.btncerrarsesion.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncerrarsesion.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(214)))), ((int)(((byte)(61)))), ((int)(((byte)(92)))));
+            this.btncerrarsesion.OnHoverTextColor = System.Drawing.Color.White;
+            this.btncerrarsesion.selected = false;
+            this.btncerrarsesion.Size = new System.Drawing.Size(165, 37);
+            this.btncerrarsesion.TabIndex = 24;
+            this.btncerrarsesion.Text = "Cerrar Sesion";
+            this.btncerrarsesion.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btncerrarsesion.Textcolor = System.Drawing.Color.White;
+            this.btncerrarsesion.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncerrarsesion.Click += new System.EventHandler(this.btncerrarsesion_Click);
             // 
             // menu
             // 
@@ -542,6 +712,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "menu";
             this.pnprincipal.ResumeLayout(false);
+            this.panelcontenedor.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnminimizar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnrestaurar)).EndInit();
@@ -550,6 +721,7 @@
             this.panelsidebar.ResumeLayout(false);
             this.panelsidebar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -580,5 +752,10 @@
         private System.Windows.Forms.Label txttime;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label1;
+        private Bunifu.Framework.UI.BunifuFlatButton btnasesorias;
+        private Bunifu.Framework.UI.BunifuFlatButton btnmantenimientos;
+        private Bunifu.Framework.UI.BunifuFlatButton btncontactoscliente;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
+        private Bunifu.Framework.UI.BunifuFlatButton btncerrarsesion;
     }
 }

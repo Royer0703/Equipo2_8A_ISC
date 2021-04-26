@@ -153,6 +153,31 @@ namespace Vistas
             label1.Text = DateTime.Now.ToShortTimeString();
         }
 
+        private void btncontactoscliente_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<ContactoCliente>();
+        }
+
+        private void btnmantenimientos_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Mantenimiento>();
+        }
+
+        private void btnasesorias_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Asesorias>();
+        }
+
+        private void btncerrarsesion_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("¿Estas seguro de cerrar la sesion?", "¡Alerta!", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Hide();
+                Login l = new Login();
+                l.Show();
+            }
+        }
+
         private void btnunidadestransporte_Click(object sender, EventArgs e)
         {
             AbrirFormularios<UnidadesTransporte>();
