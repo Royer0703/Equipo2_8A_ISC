@@ -15,7 +15,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = ROGELIO\\MSSQLSERVERDEV; database = ERP;" +
+         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);
@@ -594,10 +594,24 @@ namespace Datos
         }
 
 
+        //////////////////TABLAS JOIN  de parcelas ////////////////////////////////////////
+
+        public DataTable ConsultarJoinParcelasDG()
+        {
+            string query = "select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente  JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
 
 
         /////////////PAGINACION DE PARCELAS /////////////////////////////////////////////////
-       
+
         public DataSet Lista_Parcelas(Class_Entidad obje)
         {
             SqlCommand cmd = new SqlCommand("sp_listar_SalesParcelas", con);

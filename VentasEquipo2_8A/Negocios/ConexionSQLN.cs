@@ -196,6 +196,16 @@ namespace Negocios
         }
 
 
+        //-*******************************JOIN DE PARCELAS****************
+        public DataTable ConsultarJoinParcelasDT()
+        {
+            return cn.ConsultarJoinParcelasDG();
+        }
+
+
+
+
+
         //********************** TABLA DIRECCIONES CLIENTES **************************
         public DataTable ConsultaDireccionCliente()
         {

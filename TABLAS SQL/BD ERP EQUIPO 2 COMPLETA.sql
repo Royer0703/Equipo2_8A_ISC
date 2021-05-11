@@ -85,6 +85,8 @@ tipo char not null,
 delete from SalesClientes where idCliente = 2
 select * from SalesClientes
 
+select idCliente, nombre from SalesClientes where nombre = 'ALEX'
+
 
 insert into SalesClientes values(3,'ALEX','VENTAS',500,'ABC680524','3512634896','alex@gmail.com','A')
 insert into SalesClientes values(4,'Gabino','VENTAS',800,'ABC680896','3512634239','gabino@gmail.com','A')
@@ -209,7 +211,16 @@ select * from SalesParcelas
 delete SalesParcelas where idParcela = 2
 ---JOIN -PARA PARCELAS
 select  SalesClientes.idCliente, SalesDireccionesCliente.idDireccion, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia
- from SalesDireccionesCliente INNER JOIN SalesClientes ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente
+ from SalesDireccionesCliente JOIN SalesClientes ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente
+         
+--JOIN CON LAS TABLAS SalePareclas, SalesClientes, SalesDireccionesCliente
+
+select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia
+from SalesParcelas inner JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente
+inner JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idCliente = SalesParcelas.idCliente
+
+select * from SalesParcelas
+
          
 
 
@@ -476,6 +487,7 @@ GO
 create proc sp_listar_SalesParcelas
 @tab_inicio int,
 @tab_final int
+
 as
 declare @tablita_SalesParcelas table
 (
@@ -490,14 +502,25 @@ insert into @tablita_SalesParcelas
 (
 idParcela,extension,idCliente,idCultivo,idDireccion,estatus
 )
-
 select ROW_NUMBER() over(order by idParcela asc)idParcela,extension,idCliente,idCultivo,idDireccion,estatus from SalesParcelas
 select count(*) as cantidad from @tablita_SalesParcelas
 select * from @tablita_SalesParcelas where idParcela between @tab_inicio and @tab_final
 
+
+select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas 
+JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente 
+JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion
+JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo
+
+select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente  JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo
+
+
+SELECT * FROM SalesParcelas
+
 go
 
 exec sp_listar_SalesParcelas 1,10
+
 
 
 --------------------------------------------------------------------sp_listar_SalesParcelas

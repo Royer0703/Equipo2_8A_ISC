@@ -47,29 +47,29 @@ namespace Vistas
             this.btnEditar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnGuardar = new Bunifu.Framework.UI.BunifuFlatButton();
             this.label7 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
             this.Cb_Estatus = new System.Windows.Forms.ComboBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
+            this.cb_Cliente_Nombre = new System.Windows.Forms.ComboBox();
             this.txtCantidadTotal = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.btn_adelante = new System.Windows.Forms.Button();
+            this.btn_atras = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.txt_DatosaMostar = new System.Windows.Forms.TextBox();
+            this.cb_cultivos_Nombre = new System.Windows.Forms.ComboBox();
+            this.cb_direccion_Nombre = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -77,7 +77,7 @@ namespace Vistas
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(487, 379);
+            this.dataGridView1.Size = new System.Drawing.Size(869, 379);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -137,15 +137,15 @@ namespace Vistas
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(906, 187);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 20);
+            this.label4.Size = new System.Drawing.Size(58, 20);
             this.label4.TabIndex = 11;
-            this.label4.Text = "idCliente";
+            this.label4.Text = "Cliente";
             // 
             // txt_idCliente
             // 
             this.txt_idCliente.Location = new System.Drawing.Point(907, 211);
             this.txt_idCliente.Name = "txt_idCliente";
-            this.txt_idCliente.Size = new System.Drawing.Size(115, 20);
+            this.txt_idCliente.Size = new System.Drawing.Size(36, 20);
             this.txt_idCliente.TabIndex = 12;
             this.txt_idCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idCliente_KeyPress);
             // 
@@ -156,15 +156,15 @@ namespace Vistas
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(906, 233);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(68, 20);
+            this.label5.Size = new System.Drawing.Size(56, 20);
             this.label5.TabIndex = 13;
-            this.label5.Text = "idCultivo";
+            this.label5.Text = "Cultivo";
             // 
             // txt_idCultivo
             // 
             this.txt_idCultivo.Location = new System.Drawing.Point(907, 256);
             this.txt_idCultivo.Name = "txt_idCultivo";
-            this.txt_idCultivo.Size = new System.Drawing.Size(115, 20);
+            this.txt_idCultivo.Size = new System.Drawing.Size(16, 20);
             this.txt_idCultivo.TabIndex = 14;
             this.txt_idCultivo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idCultivo_KeyPress);
             // 
@@ -175,16 +175,16 @@ namespace Vistas
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
             this.label6.Location = new System.Drawing.Point(906, 280);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(87, 20);
+            this.label6.Size = new System.Drawing.Size(75, 20);
             this.label6.TabIndex = 15;
-            this.label6.Text = "idDireccion";
+            this.label6.Text = "Direccion";
             this.label6.Click += new System.EventHandler(this.label6_Click);
             // 
             // txt_idDireccion
             // 
             this.txt_idDireccion.Location = new System.Drawing.Point(907, 303);
             this.txt_idDireccion.Name = "txt_idDireccion";
-            this.txt_idDireccion.Size = new System.Drawing.Size(115, 20);
+            this.txt_idDireccion.Size = new System.Drawing.Size(16, 20);
             this.txt_idDireccion.TabIndex = 16;
             this.txt_idDireccion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_idDireccion_KeyPress);
             // 
@@ -347,55 +347,6 @@ namespace Vistas
             this.label7.TabIndex = 21;
             this.label7.Text = "Estatus";
             // 
-            // dataGridView2
-            // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.AllowUserToDeleteRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(537, 95);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersWidth = 51;
-            this.dataGridView2.Size = new System.Drawing.Size(342, 181);
-            this.dataGridView2.TabIndex = 23;
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.AllowUserToDeleteRows = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(537, 316);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersWidth = 51;
-            this.dataGridView3.Size = new System.Drawing.Size(342, 158);
-            this.dataGridView3.TabIndex = 24;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.SystemColors.Control;
-            this.label8.Location = new System.Drawing.Point(533, 72);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(139, 20);
-            this.label8.TabIndex = 25;
-            this.label8.Text = "Listado De Cliente";
-            this.label8.Click += new System.EventHandler(this.label8_Click);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.SystemColors.Control;
-            this.label9.Location = new System.Drawing.Point(533, 293);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(137, 20);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Listado De Cultivo";
-            // 
             // Cb_Estatus
             // 
             this.Cb_Estatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -405,7 +356,7 @@ namespace Vistas
             "I"});
             this.Cb_Estatus.Location = new System.Drawing.Point(906, 348);
             this.Cb_Estatus.Name = "Cb_Estatus";
-            this.Cb_Estatus.Size = new System.Drawing.Size(115, 21);
+            this.Cb_Estatus.Size = new System.Drawing.Size(116, 21);
             this.Cb_Estatus.TabIndex = 27;
             // 
             // textBox1
@@ -434,73 +385,126 @@ namespace Vistas
             this.comboBox1.Items.AddRange(new object[] {
             "idParcela",
             "extension",
-            "idCliente",
-            "idCultivo",
-            "idDireccion",
-            "estatus"});
+            "SalesParcelas.idCliente",
+            "SalesParcelas.idCultivo",
+            "SalesParcelas.idDireccion",
+            "SalesParcelas.estatus",
+            "SalesClientes.nombre",
+            "calle",
+            "colonia",
+            "SalesCultivos.nombre"});
             this.comboBox1.Location = new System.Drawing.Point(319, 48);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(138, 21);
             this.comboBox1.TabIndex = 30;
+            // 
+            // cb_Cliente_Nombre
+            // 
+            this.cb_Cliente_Nombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_Cliente_Nombre.FormattingEnabled = true;
+            this.cb_Cliente_Nombre.Location = new System.Drawing.Point(906, 211);
+            this.cb_Cliente_Nombre.Name = "cb_Cliente_Nombre";
+            this.cb_Cliente_Nombre.Size = new System.Drawing.Size(116, 21);
+            this.cb_Cliente_Nombre.TabIndex = 37;
+            this.cb_Cliente_Nombre.SelectedIndexChanged += new System.EventHandler(this.cb_Cliente_Nombre_SelectedIndexChanged);
+            // 
+            // txtCantidadTotal
+            // 
+            this.txtCantidadTotal.Enabled = false;
+            this.txtCantidadTotal.Location = new System.Drawing.Point(656, 481);
+            this.txtCantidadTotal.Name = "txtCantidadTotal";
+            this.txtCantidadTotal.Size = new System.Drawing.Size(50, 20);
+            this.txtCantidadTotal.TabIndex = 38;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Enabled = false;
+            this.textBox3.Location = new System.Drawing.Point(849, 479);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(47, 20);
+            this.textBox3.TabIndex = 39;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.SystemColors.Control;
+            this.label8.Location = new System.Drawing.Point(533, 480);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(117, 20);
+            this.label8.TabIndex = 40;
+            this.label8.Text = "Total de Datos:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.SystemColors.Control;
+            this.label9.Location = new System.Drawing.Point(712, 480);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(131, 20);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Total de Paginas:";
+            // 
+            // btn_adelante
+            // 
+            this.btn_adelante.Location = new System.Drawing.Point(278, 477);
+            this.btn_adelante.Name = "btn_adelante";
+            this.btn_adelante.Size = new System.Drawing.Size(75, 23);
+            this.btn_adelante.TabIndex = 42;
+            this.btn_adelante.Text = ">>>";
+            this.btn_adelante.UseVisualStyleBackColor = true;
+            this.btn_adelante.Click += new System.EventHandler(this.btn_adelante_Click);
+            // 
+            // btn_atras
+            // 
+            this.btn_atras.Enabled = false;
+            this.btn_atras.Location = new System.Drawing.Point(435, 477);
+            this.btn_atras.Name = "btn_atras";
+            this.btn_atras.Size = new System.Drawing.Size(75, 23);
+            this.btn_atras.TabIndex = 43;
+            this.btn_atras.Text = "<<<";
+            this.btn_atras.UseVisualStyleBackColor = true;
+            this.btn_atras.Click += new System.EventHandler(this.btn_atras_Click);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.ForeColor = System.Drawing.SystemColors.Control;
-            this.label11.Location = new System.Drawing.Point(23, 477);
+            this.label11.Location = new System.Drawing.Point(23, 480);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 20);
-            this.label11.TabIndex = 31;
-            this.label11.Text = "Nro:";
+            this.label11.Size = new System.Drawing.Size(122, 20);
+            this.label11.TabIndex = 44;
+            this.label11.Text = "Datos a Mostar:";
             // 
-            // txtCantidadTotal
+            // txt_DatosaMostar
             // 
-            this.txtCantidadTotal.Enabled = false;
-            this.txtCantidadTotal.Location = new System.Drawing.Point(58, 479);
-            this.txtCantidadTotal.Name = "txtCantidadTotal";
-            this.txtCantidadTotal.Size = new System.Drawing.Size(51, 20);
-            this.txtCantidadTotal.TabIndex = 32;
+            this.txt_DatosaMostar.Location = new System.Drawing.Point(141, 479);
+            this.txt_DatosaMostar.Name = "txt_DatosaMostar";
+            this.txt_DatosaMostar.Size = new System.Drawing.Size(57, 20);
+            this.txt_DatosaMostar.TabIndex = 45;
+            this.txt_DatosaMostar.TextChanged += new System.EventHandler(this.txt_DatosaMostar_TextChanged_1);
             // 
-            // label12
+            // cb_cultivos_Nombre
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.Control;
-            this.label12.Location = new System.Drawing.Point(202, 479);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 20);
-            this.label12.TabIndex = 33;
-            this.label12.Text = "Pag:";
+            this.cb_cultivos_Nombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_cultivos_Nombre.FormattingEnabled = true;
+            this.cb_cultivos_Nombre.Location = new System.Drawing.Point(907, 256);
+            this.cb_cultivos_Nombre.Name = "cb_cultivos_Nombre";
+            this.cb_cultivos_Nombre.Size = new System.Drawing.Size(115, 21);
+            this.cb_cultivos_Nombre.TabIndex = 46;
+            this.cb_cultivos_Nombre.SelectedIndexChanged += new System.EventHandler(this.cb_cultivos_Nombre_SelectedIndexChanged);
             // 
-            // comboBox2
+            // cb_direccion_Nombre
             // 
-            this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(249, 480);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(91, 21);
-            this.comboBox2.TabIndex = 34;
-            this.comboBox2.SelectionChangeCommitted += new System.EventHandler(this.comboBox2_SelectionChangeCommitted);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Location = new System.Drawing.Point(463, 479);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(51, 20);
-            this.textBox3.TabIndex = 36;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.SystemColors.Control;
-            this.label13.Location = new System.Drawing.Point(428, 477);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(34, 20);
-            this.label13.TabIndex = 35;
-            this.label13.Text = "De:";
+            this.cb_direccion_Nombre.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cb_direccion_Nombre.FormattingEnabled = true;
+            this.cb_direccion_Nombre.Location = new System.Drawing.Point(907, 303);
+            this.cb_direccion_Nombre.Name = "cb_direccion_Nombre";
+            this.cb_direccion_Nombre.Size = new System.Drawing.Size(115, 21);
+            this.cb_direccion_Nombre.TabIndex = 47;
+            this.cb_direccion_Nombre.SelectedIndexChanged += new System.EventHandler(this.cb_direccion_Nombre_SelectedIndexChanged);
             // 
             // Parcelas
             // 
@@ -508,20 +512,21 @@ namespace Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1040, 569);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label13);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.txtCantidadTotal);
+            this.Controls.Add(this.cb_direccion_Nombre);
+            this.Controls.Add(this.cb_cultivos_Nombre);
+            this.Controls.Add(this.txt_DatosaMostar);
             this.Controls.Add(this.label11);
+            this.Controls.Add(this.btn_atras);
+            this.Controls.Add(this.btn_adelante);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.txtCantidadTotal);
+            this.Controls.Add(this.cb_Cliente_Nombre);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.Cb_Estatus);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.dataGridView3);
-            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.btnEditar);
@@ -547,8 +552,6 @@ namespace Vistas
             this.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.Parcelas_MouseDoubleClick);
             this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Parcelas_MouseMove);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -573,19 +576,20 @@ namespace Vistas
         private Bunifu.Framework.UI.BunifuFlatButton btnEditar;
         private Bunifu.Framework.UI.BunifuFlatButton btnGuardar;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DataGridView dataGridView2;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox Cb_Estatus;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox cb_Cliente_Nombre;
         private System.Windows.Forms.TextBox txtCantidadTotal;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.ComboBox comboBox2;
         private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Button btn_adelante;
+        private System.Windows.Forms.Button btn_atras;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txt_DatosaMostar;
+        private System.Windows.Forms.ComboBox cb_cultivos_Nombre;
+        private System.Windows.Forms.ComboBox cb_direccion_Nombre;
     }
 }
