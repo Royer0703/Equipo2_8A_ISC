@@ -607,6 +607,32 @@ namespace Datos
         }
 
 
+        //////////////////TABLAS JOIN  de MANTENIMIENTO ////////////////////////////////////////
+
+        public DataTable ConsultarJoinMantenimientoDG()
+        {
+            string query = "select SalesMantenimiento.idMantenimiento, SalesMantenimiento.fechaInicio, SalesMantenimiento.fechaFin,SalesMantenimiento.taller, SalesMantenimiento.costo,SalesMantenimiento.comentarios, SalesMantenimiento.tipo, SalesMantenimiento.idUnidadTransporte, SalesMantenimiento.estatus, SalesUnidadesTransporte.placas, SalesUnidadesTransporte.marca,SalesUnidadesTransporte.modelo  from SalesMantenimiento JOIN SalesUnidadesTransporte ON SalesMantenimiento.idUnidadTransporte = SalesUnidadesTransporte.idUnidadTransporte ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+        //////////////////TABLAS JOIN  de ContactoCliente ////////////////////////////////////////
+
+        public DataTable ConsultarJoinContactoClienteDG()
+        {
+            string query = "select SalesContactosCliente.idContacto, SalesClientes.nombre, SalesContactosCliente.telefono, SalesContactosCliente.email, SalesContactosCliente.idCliente, SalesContactosCliente.estatus from SalesContactosCliente JOIN SalesClientes ON SalesContactosCliente.idCliente = SalesClientes.idCliente ";
+            SqlCommand cmd = new SqlCommand(query, con);
+            SqlDataAdapter data = new SqlDataAdapter(cmd);
+            DataTable tabla = new DataTable();
+            data.Fill(tabla);
+            return tabla;
+        }
+
+
+
 
 
 

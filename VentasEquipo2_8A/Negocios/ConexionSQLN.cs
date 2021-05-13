@@ -196,12 +196,7 @@ namespace Negocios
         }
 
 
-        //-*******************************JOIN DE PARCELAS****************
-        public DataTable ConsultarJoinParcelasDT()
-        {
-            return cn.ConsultarJoinParcelasDG();
-        }
-
+     
 
 
 
@@ -323,6 +318,29 @@ namespace Negocios
         {
             return cn.ConsultarEmpleadosDG();
         }
+
+
+        //-*******************************JOIN DE PARCELAS****************
+        public DataTable ConsultarJoinParcelasDT()
+        {
+            return cn.ConsultarJoinParcelasDG();
+        }
+
+
+        //-*******************************JOIN DE MIEMBROS****************
+        public DataTable ConsultarJoinMiembrosDT()
+        {
+            return cn.ConsultarJoinMantenimientoDG();
+        }
+
+        //-*******************************JOIN DE ContactoCliente****************
+        public DataTable ConsultarJoinContactoClienteDT()
+        {
+            return cn.ConsultarJoinContactoClienteDG();
+        }
+
+
+
 
 
 

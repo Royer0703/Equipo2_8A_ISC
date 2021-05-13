@@ -221,7 +221,7 @@ namespace Vistas
             else
             {
 
-                MessageBox.Show("Falta seleccionar el Estatus o Cliente o Cultivo o Direccion !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Guardar los datos !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
@@ -232,13 +232,32 @@ namespace Vistas
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-
-
-
-            if (string.IsNullOrEmpty(txt_idParcelas.Text) || string.IsNullOrEmpty(txt_Extension.Text) || string.IsNullOrEmpty(txt_idCliente.Text) || string.IsNullOrEmpty(txt_idCultivo.Text) || string.IsNullOrEmpty(txt_idDireccion.Text))
+            if (string.IsNullOrEmpty(txt_idParcelas.Text) || string.IsNullOrEmpty(txt_Extension.Text))
             {
-                MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar de la tabla el dato!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            else if (Cb_Estatus.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Estatus !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_Cliente_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Nombre del Cliente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_cultivos_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar la Nombre de Cultivo !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_direccion_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar la Direccion !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+
+
             else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0 || cb_Cliente_Nombre.SelectedIndex > 0 || cb_Cliente_Nombre.SelectedIndex == 0 || cb_cultivos_Nombre.SelectedIndex > 0 || cb_cultivos_Nombre.SelectedIndex == 0 || cb_direccion_Nombre.SelectedIndex > 0 || cb_direccion_Nombre.SelectedIndex == 0)
             {
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
@@ -263,7 +282,7 @@ namespace Vistas
             else
             {
 
-                MessageBox.Show("Debe seleccionar el estatus!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Editar los datos!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
             }
 
@@ -271,9 +290,29 @@ namespace Vistas
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrEmpty(txt_idParcelas.Text) || string.IsNullOrEmpty(txt_Extension.Text) || string.IsNullOrEmpty(txt_idCliente.Text) || string.IsNullOrEmpty(txt_idCultivo.Text) || string.IsNullOrEmpty(txt_idDireccion.Text))
+            if (string.IsNullOrEmpty(txt_idParcelas.Text) || string.IsNullOrEmpty(txt_Extension.Text))
             {
-                MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar de la tabla el dato!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else if (Cb_Estatus.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Estatus !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_Cliente_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Nombre del Cliente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_cultivos_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar la Nombre de Cultivo !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_direccion_Nombre.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar la Direccion !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
             }
             else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0)
             {
@@ -298,7 +337,7 @@ namespace Vistas
             else
             {
 
-                MessageBox.Show("Debe seleccionar el estatus!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Eliminar los datos!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
 
             }
@@ -397,16 +436,26 @@ namespace Vistas
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-           // string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
-               // "integrated security = true";
-            SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
-            con.Open();
 
-           // SqlDataAdapter datos = new SqlDataAdapter("select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas  JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo where " + this.comboBox1.Text+ " like '%" + this.textBox1.Text + "%'", con);
-            SqlDataAdapter datos = new SqlDataAdapter ("select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente  JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo where " + this.comboBox1.Text + " like '%" + this.textBox1.Text + "%'", con);
-            DataSet ds = new DataSet();
-            datos.Fill(ds, "SalesParcelas");
-            this.dataGridView1.DataSource = ds.Tables[0];
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                ds.Clear();
+                loadData();
+            }
+            else
+            {
+                // string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+                // "integrated security = true";
+                SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
+                con.Open();
+
+                // SqlDataAdapter datos = new SqlDataAdapter("select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas  JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo where " + this.comboBox1.Text+ " like '%" + this.textBox1.Text + "%'", con);
+                SqlDataAdapter datos = new SqlDataAdapter("select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente  JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo where " + this.comboBox1.Text + " like '%" + this.textBox1.Text + "%'", con);
+                DataSet ds = new DataSet();
+                datos.Fill(ds, "SalesParcelas");
+                this.dataGridView1.DataSource = ds.Tables[0];
+            }
+                
         }
 
         private void Parcelas_MouseMove(object sender, MouseEventArgs e)

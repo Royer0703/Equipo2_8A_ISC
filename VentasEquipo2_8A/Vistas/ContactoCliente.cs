@@ -22,10 +22,15 @@ namespace Vistas
         DataSet dsTabla;
 
         int VarPagInicio = 1;
-        int VarPagIndice = 0;
+        //int VarPagIndice = 0;
         int TotalFilasAMostrar = 2;
         int VarPagFinal;
 
+        //conexio a mi base de datos
+        SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataSet ds = new DataSet();
+        int start;
 
         void Mostrar_datos()
         {
@@ -33,11 +38,11 @@ namespace Vistas
             obje.varDatoFinal = VarPagFinal;
             dsTabla = cn.N_listar_CONTACTOCLIENTE(obje);
 
-            dataGridView_UnidadesT.DataSource = dsTabla.Tables[1];
+            //dataGridView_UnidadesT.DataSource = dsTabla.Tables[1];
             txtCantidadTotal.Text = dsTabla.Tables[0].Rows[0][0].ToString();
 
             int cantidad = Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) / TotalFilasAMostrar;
-            comboBox2.Items.Clear();
+            //comboBox2.Items.Clear();
 
             if (Convert.ToInt32(dsTabla.Tables[0].Rows[0][0].ToString()) % TotalFilasAMostrar > 0)
             {
@@ -45,57 +50,84 @@ namespace Vistas
             }
 
             textBox3.Text = cantidad.ToString();
-            comboBox2.Items.Clear();
 
-            for (int x = 1; x <= cantidad; x++)
-            {
-                comboBox2.Items.Add(x.ToString());
-            }
-
-            comboBox2.SelectedIndex = VarPagIndice;
         }
 
+        private void loadData()
+        {
+            //Variable de Cantiada a mostrar
+            // int numMostra = (int.Parse(txt_DatosaMostar.Text));
 
 
+            SqlCommand cmd;
+            string sql = "select SalesContactosCliente.idContacto, SalesClientes.nombre, SalesContactosCliente.telefono, SalesContactosCliente.email, SalesContactosCliente.idCliente, SalesContactosCliente.estatus from SalesContactosCliente JOIN SalesClientes ON SalesContactosCliente.idCliente = SalesClientes.idCliente ";
+
+            cmd = new SqlCommand(sql, con);
+            adapter.SelectCommand = cmd;
+
+            //fill dataser
+            adapter.Fill(ds, start, 2, "SalesContactosCliente");
+            //DGVIEW
+            dataGridView_UnidadesT.DataSource = ds.Tables[0];
+            //habilita Boton 
+            btn_atras.Enabled = false;
 
 
+        }
+        public void Cargar_Datos_clienteNombre()
+        {
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPConexion);
+            con.Open();
+            string q = "select nombre from SalesClientes";
+            SqlCommand cmd = new SqlCommand(q, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                cb_Nombre_Cliente.Items.Add(dr["nombre"].ToString());
+                cb_Nombre_Cliente.DisplayMember = (dr["nombre"].ToString());
+                cb_Nombre_Cliente.ValueMember = (dr["nombre"].ToString());
+            }
 
-
-
+        }
 
         public ContactoCliente()
         {
             InitializeComponent();
-            //dataGridView_UnidadesT.DataSource = cn.ConsultaContactoClienteDT();
+            dataGridView_UnidadesT.DataSource = cn.ConsultarJoinContactoClienteDT();
             VarPagFinal = TotalFilasAMostrar;
             Mostrar_datos();
-            dataGridView2.DataSource = cn.ConsultaCliente();
+            start = 0;
+            loadData();
+            Cargar_Datos_clienteNombre();
         }
 
         private void dataGridView_UnidadesT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             txt_idContacto.Text = dataGridView_UnidadesT.CurrentRow.Cells[0].Value.ToString();
-            txt_nombre.Text = dataGridView_UnidadesT.CurrentRow.Cells[1].Value.ToString();
+            //txt_nombre.Text = dataGridView_UnidadesT.CurrentRow.Cells[1].Value.ToString();
             txt_telefono.Text = dataGridView_UnidadesT.CurrentRow.Cells[2].Value.ToString();
             txt_email.Text = dataGridView_UnidadesT.CurrentRow.Cells[3].Value.ToString();
             txt_idCliente.Text = dataGridView_UnidadesT.CurrentRow.Cells[4].Value.ToString();
             Cb_Estatus.Text = dataGridView_UnidadesT.CurrentRow.Cells[5].Value.ToString();
+            cb_Nombre_Cliente.Text = dataGridView_UnidadesT.CurrentRow.Cells[1].Value.ToString();
 
         }
 
         private void btnNuevo_Click(object sender, EventArgs e)
         {
-            //dataGridView_UnidadesT.DataSource = cn.ConsultaContactoClienteDT();
-            VarPagFinal = TotalFilasAMostrar;
-            Mostrar_datos();
-            dataGridView2.DataSource = cn.ConsultaCliente();
-
+           
             txt_idContacto.Text = "";
             txt_nombre.Text = "";
             txt_telefono.Text = "";
             txt_email.Text = "";
             txt_idCliente.Text = "";
-            Cb_Estatus.Text = "";
+            Cb_Estatus.SelectedIndex = -1;
+            cb_Nombre_Cliente.SelectedIndex = -1;
+
+            ds.Clear();
+            loadData();
+            VarPagFinal = TotalFilasAMostrar;
+            Mostrar_datos();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
@@ -106,22 +138,30 @@ namespace Vistas
                 MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            
-            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0)
+            else if (Cb_Estatus.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Estatus !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (cb_Nombre_Cliente.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Nombre del cliente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0 || cb_Nombre_Cliente.SelectedIndex > 0 || cb_Nombre_Cliente.SelectedIndex == 0)
             {
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
                 cn.InsertarContactoClienteDT(txt_idContacto.Text, txt_nombre.Text, txt_telefono.Text, txt_email.Text, txt_idCliente.Text, Estatus);
-                //dataGridView_UnidadesT.DataSource = cn.ConsultaContactoClienteDT();
-                VarPagFinal = TotalFilasAMostrar;
-                Mostrar_datos();
-                dataGridView2.DataSource = cn.ConsultaCliente();
+                ds.Clear();
+                loadData();
 
                 txt_idContacto.Text = "";
                 txt_nombre.Text = "";
                 txt_telefono.Text = "";
-                txt_email.Text = "";//
+                txt_email.Text = "";
                 txt_idCliente.Text = "";
-                Cb_Estatus.Text = "";
+                Cb_Estatus.SelectedIndex = -1;
+                cb_Nombre_Cliente.SelectedIndex = -1;
 
 
                 MessageBox.Show("Agregado Correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -129,7 +169,7 @@ namespace Vistas
 
             else
             {
-                MessageBox.Show("Debe seleccionar el estatus!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Guardar los datos!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
 
 
@@ -139,25 +179,33 @@ namespace Vistas
         {
             if (string.IsNullOrEmpty(txt_idContacto.Text) || string.IsNullOrEmpty(txt_nombre.Text) || string.IsNullOrEmpty(txt_telefono.Text) || string.IsNullOrEmpty(txt_email.Text) || string.IsNullOrEmpty(txt_idCliente.Text))
             {
-                MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar de la tabla el dato!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+            else if (Cb_Estatus.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Estatus !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0)
+            }
+            else if (cb_Nombre_Cliente.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Nombre del cliente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0 || cb_Nombre_Cliente.SelectedIndex > 0 || cb_Nombre_Cliente.SelectedIndex == 0)
             {
                 string Estatus = Cb_Estatus.SelectedItem.ToString();
                 cn.ModificarContactoClienteDT(txt_idContacto.Text, txt_nombre.Text, txt_telefono.Text, txt_email.Text, txt_idCliente.Text, Estatus);
-                //dataGridView_UnidadesT.DataSource = cn.ConsultaContactoClienteDT();
-                VarPagFinal = TotalFilasAMostrar;
-                Mostrar_datos();
-                dataGridView2.DataSource = cn.ConsultaCliente();
+                ds.Clear();
+                loadData();
 
                 txt_idContacto.Text = "";
                 txt_nombre.Text = "";
                 txt_telefono.Text = "";
                 txt_email.Text = "";//
                 txt_idCliente.Text = "";
-                Cb_Estatus.Text = "";
+                Cb_Estatus.SelectedIndex = -1;
+                cb_Nombre_Cliente.SelectedIndex = -1;
 
 
                 MessageBox.Show("Actualizado Correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -165,7 +213,7 @@ namespace Vistas
 
             else
             {
-                MessageBox.Show("Debe seleccionar el estatus!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Editar los datos!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -173,26 +221,33 @@ namespace Vistas
         {
             if (string.IsNullOrEmpty(txt_idContacto.Text) || string.IsNullOrEmpty(txt_nombre.Text) || string.IsNullOrEmpty(txt_telefono.Text) || string.IsNullOrEmpty(txt_email.Text) || string.IsNullOrEmpty(txt_idCliente.Text))
             {
-                MessageBox.Show("Debe llenar todos los campos!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Debe seleccionar de la tabla el dato!!", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
+            else if (Cb_Estatus.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Estatus !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0)
+            }
+            else if (cb_Nombre_Cliente.SelectedIndex <= -1)
+            {
+                MessageBox.Show("Falta seleccionar el Nombre del cliente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            }
+            else if (Cb_Estatus.SelectedIndex > 0 || Cb_Estatus.SelectedIndex == 0 || cb_Nombre_Cliente.SelectedIndex > 0 || cb_Nombre_Cliente.SelectedIndex == 0)
             {
                 Cb_Estatus.Text = "I";
                 cn.ModificarContactoClienteDT(txt_idContacto.Text, txt_nombre.Text, txt_telefono.Text, txt_email.Text, txt_idCliente.Text, Cb_Estatus.Text);
-                //dataGridView_UnidadesT.DataSource = cn.ConsultaContactoClienteDT();
-                VarPagFinal = TotalFilasAMostrar;
-                Mostrar_datos();
-                dataGridView2.DataSource = cn.ConsultaCliente();
-
+                ds.Clear();
+                loadData();
 
                 txt_idContacto.Text = "";
                 txt_nombre.Text = "";
                 txt_telefono.Text = "";
-                txt_email.Text = "";//
+                txt_email.Text = "";
                 txt_idCliente.Text = "";
-                Cb_Estatus.Text = "";
+                Cb_Estatus.SelectedIndex = -1;
+                cb_Nombre_Cliente.SelectedIndex = -1;
 
 
                 MessageBox.Show("Eliminado Correctamente!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -200,7 +255,7 @@ namespace Vistas
 
             else
             {
-                MessageBox.Show("Debe seleccionar el estatus!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Error al Eliminar los datos!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         //VALIDAR SOLO NUMERO INGRESADAS EN LOS CAMPOS DE TEXTO
@@ -262,23 +317,62 @@ namespace Vistas
         private void ContactoCliente_MouseMove(object sender, MouseEventArgs e)
         {
            
-            dataGridView2.DataSource = cn.ConsultaCliente();
+            
         }
 
         private void ContactoCliente_MouseClick(object sender, MouseEventArgs e)
         {
-            VarPagFinal = TotalFilasAMostrar;
-            Mostrar_datos();
-            dataGridView2.DataSource = cn.ConsultaCliente();
+           
         }
 
         private void comboBox2_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            int pagina = Convert.ToInt32(comboBox2.Text);
-            VarPagIndice = pagina - 1;
-            VarPagInicio = (pagina - 1) * TotalFilasAMostrar + 1;
-            VarPagFinal = pagina * TotalFilasAMostrar;
-            Mostrar_datos();
+            
+        }
+
+        private void cb_Nombre_Cliente_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            con.Open();
+            string q = "select idCliente from SalesClientes where nombre ='" + cb_Nombre_Cliente.SelectedItem + "'";
+            SqlCommand cmd = new SqlCommand(q, con);
+            SqlDataReader dr = cmd.ExecuteReader();
+            while (dr.Read())
+            {
+                //string idCliente = (string)dr["idCliente"].ToString();
+                txt_idCliente.Text = dr[0].ToString();
+                txt_nombre.Text = cb_Nombre_Cliente.Text;
+            }
+
+            con.Close();
+        }
+
+        private void txt_DatosaMostar_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_DatosaMostar.Text))
+            {
+                ds.Clear();
+                loadData();
+            }
+            else
+            {
+                string id = txt_DatosaMostar.Text;
+                int numMostar = Int32.Parse(id);
+                ds.Clear();
+
+                SqlCommand cmd;
+                string sql = "select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente  JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idDireccion = SalesParcelas.idDireccion JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo";
+
+                cmd = new SqlCommand(sql, con);
+                adapter.SelectCommand = cmd;
+
+                //fill dataser
+                adapter.Fill(ds, start, numMostar, "SalesParcelas");
+                //DGVIEW
+                dataGridView_UnidadesT.DataSource = ds.Tables[0];
+                //habilita Boton 
+                btn_atras.Enabled = false;
+
+            }
         }
     }
 }
