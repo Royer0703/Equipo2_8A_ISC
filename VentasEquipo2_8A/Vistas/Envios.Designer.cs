@@ -60,6 +60,10 @@ namespace Vistas
             this.txt_capacidadTransporte = new System.Windows.Forms.TextBox();
             this.Cb_idEnvios = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.Cb_Estatus = new System.Windows.Forms.ComboBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.txt_idEnvios = new System.Windows.Forms.TextBox();
+            this.txt_idEnvioDetalle = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +73,8 @@ namespace Vistas
             this.txt_DatosaMostar.Name = "txt_DatosaMostar";
             this.txt_DatosaMostar.Size = new System.Drawing.Size(57, 20);
             this.txt_DatosaMostar.TabIndex = 62;
+            this.txt_DatosaMostar.TextChanged += new System.EventHandler(this.txt_DatosaMostar_TextChanged);
+            this.txt_DatosaMostar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatosaMostar_KeyPress);
             // 
             // label11
             // 
@@ -90,6 +96,7 @@ namespace Vistas
             this.btn_atras.TabIndex = 60;
             this.btn_atras.Text = "<<<";
             this.btn_atras.UseVisualStyleBackColor = true;
+            this.btn_atras.Click += new System.EventHandler(this.btn_atras_Click);
             // 
             // btn_adelante
             // 
@@ -99,6 +106,7 @@ namespace Vistas
             this.btn_adelante.TabIndex = 59;
             this.btn_adelante.Text = ">>>";
             this.btn_adelante.UseVisualStyleBackColor = true;
+            this.btn_adelante.Click += new System.EventHandler(this.btn_adelante_Click);
             // 
             // label9
             // 
@@ -142,19 +150,20 @@ namespace Vistas
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "idParcela",
-            "extension",
-            "SalesParcelas.idCliente",
-            "SalesParcelas.idCultivo",
-            "SalesParcelas.idDireccion",
-            "SalesParcelas.estatus",
-            "SalesClientes.nombre",
-            "calle",
-            "colonia",
-            "SalesCultivos.nombre"});
+            "SalesEnvios.idEnvio",
+            "SalesEnvios.fechaInicio",
+            "SalesEnvios.fechaFin",
+            "SalesEnvios.idUnidadTransporte",
+            "SalesUnidadesTransporte.placas",
+            "SalesUnidadesTransporte.capacidad",
+            "SalesUnidadesTransporte.marca",
+            "SalesEnvios.pesoTotal",
+            "SalesEnvios.estatus",
+            "SalesDetallesEnvio.idContacto",
+            "SalesContactosCliente.nombre"});
             this.comboBox1.Location = new System.Drawing.Point(308, 42);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(138, 21);
+            this.comboBox1.Size = new System.Drawing.Size(267, 21);
             this.comboBox1.TabIndex = 54;
             // 
             // label10
@@ -174,6 +183,7 @@ namespace Vistas
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(265, 20);
             this.textBox1.TabIndex = 52;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // btnGuardar
             // 
@@ -210,6 +220,7 @@ namespace Vistas
             this.btnGuardar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnGuardar.Textcolor = System.Drawing.Color.White;
             this.btnGuardar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnEditar
             // 
@@ -246,6 +257,7 @@ namespace Vistas
             this.btnEditar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEditar.Textcolor = System.Drawing.Color.White;
             this.btnEditar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 
@@ -282,6 +294,7 @@ namespace Vistas
             this.btnEliminar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnEliminar.Textcolor = System.Drawing.Color.White;
             this.btnEliminar.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // btnNuevo
             // 
@@ -318,6 +331,7 @@ namespace Vistas
             this.btnNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnNuevo.Textcolor = System.Drawing.Color.White;
             this.btnNuevo.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
             // 
             // label1
             // 
@@ -344,10 +358,12 @@ namespace Vistas
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(869, 379);
             this.dataGridView1.TabIndex = 46;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txt_FechaIni
             // 
-            this.txt_FechaIni.Location = new System.Drawing.Point(899, 159);
+            this.txt_FechaIni.Enabled = false;
+            this.txt_FechaIni.Location = new System.Drawing.Point(899, 151);
             this.txt_FechaIni.Name = "txt_FechaIni";
             this.txt_FechaIni.Size = new System.Drawing.Size(115, 20);
             this.txt_FechaIni.TabIndex = 65;
@@ -357,7 +373,7 @@ namespace Vistas
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.Control;
-            this.label3.Location = new System.Drawing.Point(895, 139);
+            this.label3.Location = new System.Drawing.Point(895, 128);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(95, 20);
             this.label3.TabIndex = 64;
@@ -365,7 +381,7 @@ namespace Vistas
             // 
             // txt_FechaFin
             // 
-            this.txt_FechaFin.Location = new System.Drawing.Point(899, 233);
+            this.txt_FechaFin.Location = new System.Drawing.Point(899, 213);
             this.txt_FechaFin.Name = "txt_FechaFin";
             this.txt_FechaFin.Size = new System.Drawing.Size(115, 20);
             this.txt_FechaFin.TabIndex = 67;
@@ -375,7 +391,7 @@ namespace Vistas
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.SystemColors.Control;
-            this.label2.Location = new System.Drawing.Point(895, 213);
+            this.label2.Location = new System.Drawing.Point(895, 193);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(80, 20);
             this.label2.TabIndex = 66;
@@ -383,15 +399,18 @@ namespace Vistas
             // 
             // txt_idunidadTransporte
             // 
-            this.txt_idunidadTransporte.Location = new System.Drawing.Point(899, 22);
+            this.txt_idunidadTransporte.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idunidadTransporte.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_idunidadTransporte.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idunidadTransporte.Location = new System.Drawing.Point(732, 42);
             this.txt_idunidadTransporte.Name = "txt_idunidadTransporte";
-            this.txt_idunidadTransporte.Size = new System.Drawing.Size(100, 20);
+            this.txt_idunidadTransporte.Size = new System.Drawing.Size(100, 13);
             this.txt_idunidadTransporte.TabIndex = 68;
             // 
             // Cb_unidadTransporte
             // 
             this.Cb_unidadTransporte.FormattingEnabled = true;
-            this.Cb_unidadTransporte.Location = new System.Drawing.Point(895, 318);
+            this.Cb_unidadTransporte.Location = new System.Drawing.Point(895, 283);
             this.Cb_unidadTransporte.Name = "Cb_unidadTransporte";
             this.Cb_unidadTransporte.Size = new System.Drawing.Size(121, 21);
             this.Cb_unidadTransporte.TabIndex = 69;
@@ -402,7 +421,7 @@ namespace Vistas
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
-            this.label4.Location = new System.Drawing.Point(895, 295);
+            this.label4.Location = new System.Drawing.Point(895, 260);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(94, 20);
             this.label4.TabIndex = 70;
@@ -410,7 +429,8 @@ namespace Vistas
             // 
             // txt_pesoTotal
             // 
-            this.txt_pesoTotal.Location = new System.Drawing.Point(895, 406);
+            this.txt_pesoTotal.Enabled = false;
+            this.txt_pesoTotal.Location = new System.Drawing.Point(895, 356);
             this.txt_pesoTotal.Name = "txt_pesoTotal";
             this.txt_pesoTotal.Size = new System.Drawing.Size(119, 20);
             this.txt_pesoTotal.TabIndex = 71;
@@ -420,7 +440,7 @@ namespace Vistas
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
-            this.label5.Location = new System.Drawing.Point(895, 383);
+            this.label5.Location = new System.Drawing.Point(895, 333);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 20);
             this.label5.TabIndex = 72;
@@ -431,7 +451,7 @@ namespace Vistas
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.Control;
-            this.label6.Location = new System.Drawing.Point(895, 462);
+            this.label6.Location = new System.Drawing.Point(895, 401);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(85, 20);
             this.label6.TabIndex = 74;
@@ -439,7 +459,8 @@ namespace Vistas
             // 
             // txt_capacidadTransporte
             // 
-            this.txt_capacidadTransporte.Location = new System.Drawing.Point(895, 485);
+            this.txt_capacidadTransporte.Enabled = false;
+            this.txt_capacidadTransporte.Location = new System.Drawing.Point(895, 424);
             this.txt_capacidadTransporte.Name = "txt_capacidadTransporte";
             this.txt_capacidadTransporte.Size = new System.Drawing.Size(119, 20);
             this.txt_capacidadTransporte.TabIndex = 73;
@@ -464,12 +485,59 @@ namespace Vistas
             this.label7.TabIndex = 76;
             this.label7.Text = "Envios";
             // 
+            // Cb_Estatus
+            // 
+            this.Cb_Estatus.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cb_Estatus.FormattingEnabled = true;
+            this.Cb_Estatus.Items.AddRange(new object[] {
+            "A",
+            "I"});
+            this.Cb_Estatus.Location = new System.Drawing.Point(899, 481);
+            this.Cb_Estatus.Name = "Cb_Estatus";
+            this.Cb_Estatus.Size = new System.Drawing.Size(121, 21);
+            this.Cb_Estatus.TabIndex = 91;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.Control;
+            this.label12.Location = new System.Drawing.Point(895, 458);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(64, 20);
+            this.label12.TabIndex = 90;
+            this.label12.Text = "Estatus";
+            // 
+            // txt_idEnvios
+            // 
+            this.txt_idEnvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idEnvios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_idEnvios.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idEnvios.Location = new System.Drawing.Point(895, 42);
+            this.txt_idEnvios.Name = "txt_idEnvios";
+            this.txt_idEnvios.Size = new System.Drawing.Size(100, 13);
+            this.txt_idEnvios.TabIndex = 92;
+            // 
+            // txt_idEnvioDetalle
+            // 
+            this.txt_idEnvioDetalle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idEnvioDetalle.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txt_idEnvioDetalle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.txt_idEnvioDetalle.Location = new System.Drawing.Point(895, 16);
+            this.txt_idEnvioDetalle.Name = "txt_idEnvioDetalle";
+            this.txt_idEnvioDetalle.Size = new System.Drawing.Size(100, 13);
+            this.txt_idEnvioDetalle.TabIndex = 93;
+            // 
             // Envios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1024, 569);
+            this.Controls.Add(this.txt_idEnvioDetalle);
+            this.Controls.Add(this.txt_idEnvios);
+            this.Controls.Add(this.Cb_Estatus);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.Cb_idEnvios);
             this.Controls.Add(this.label6);
@@ -541,5 +609,9 @@ namespace Vistas
         private System.Windows.Forms.TextBox txt_capacidadTransporte;
         private System.Windows.Forms.ComboBox Cb_idEnvios;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox Cb_Estatus;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox txt_idEnvios;
+        private System.Windows.Forms.TextBox txt_idEnvioDetalle;
     }
 }
