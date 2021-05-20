@@ -15,7 +15,7 @@ namespace Datos
     public class ConexionSQL
     {
 
-         static string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERPVENTA;" +
+         static string conexionstring = "server = LAPTOP-F9L9LB1B\\SQLEXPRESS; database = ERPVENTA;" +
               "integrated security = true";
 
          SqlConnection con = new SqlConnection(conexionstring);

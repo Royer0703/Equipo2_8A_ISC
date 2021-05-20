@@ -364,3 +364,13 @@ C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources

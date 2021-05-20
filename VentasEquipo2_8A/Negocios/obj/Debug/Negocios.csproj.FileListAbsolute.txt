@@ -122,3 +122,6 @@ C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll.config
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.pdb
