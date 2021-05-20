@@ -1,0 +1,417 @@
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\rogel\Downloads\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Documents\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\zinzun\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\FINAL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Vistas.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asesorias.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Asociaciones.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Clientes.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ContactoCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cultivos.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DireccionesCliente.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Login.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Mantenimiento.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.menu.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Miembros.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.PaginaPrincipal.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Parcelas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Properties.Resources.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.UnidadesTransporte.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.GenerateResource.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.exe
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V3 NUEVA TABLA SQL\GITHUB  3ENTREGA\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.pdb
