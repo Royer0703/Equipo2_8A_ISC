@@ -374,3 +374,8 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Cobros.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.DetallesEnvio.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Envios.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.Ventas.resources
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Vistas\obj\Debug\Vistas.ventasDetalle.resources

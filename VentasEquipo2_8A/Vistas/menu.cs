@@ -178,6 +178,31 @@ namespace Vistas
             }
         }
 
+        private void btnventas_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Ventas>();
+        }
+
+        private void btnenvios_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Envios>();
+        }
+
+        private void btncobros_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<Cobros>();
+        }
+
+        private void btnventasdetalles_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<ventasDetalle>();
+        }
+
+        private void btndetallesenvios_Click(object sender, EventArgs e)
+        {
+            AbrirFormularios<DetallesEnvio>();
+        }
+
         private void btnunidadestransporte_Click(object sender, EventArgs e)
         {
             AbrirFormularios<UnidadesTransporte>();
