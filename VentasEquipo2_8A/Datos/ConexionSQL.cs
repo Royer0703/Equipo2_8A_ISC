@@ -25,7 +25,7 @@ namespace Datos
         {
             int count;
             con.Open();
-            string Query = "Select Count(*) From Usuarios where usuario = '" + Usuario + "'" +
+            string Query = "Select Count(*) From Usuarios where Empleados  = '" + Usuario + "'" +
                 "and contrasena = '" + Contrasena + "'";
 
             SqlCommand cmd = new SqlCommand(Query, con);
