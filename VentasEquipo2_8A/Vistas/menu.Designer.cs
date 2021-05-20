@@ -40,6 +40,11 @@
             this.btnmaximizar = new Bunifu.Framework.UI.BunifuImageButton();
             this.btncerrar = new Bunifu.Framework.UI.BunifuImageButton();
             this.panelsidebar = new System.Windows.Forms.Panel();
+            this.btndetallesenvios = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnenvios = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btncobros = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnventasdetalles = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnventas = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btncerrarsesion = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnasesorias = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnmantenimientos = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -59,11 +64,6 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.btnenvios = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btncobros = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnventasdetalles = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnventas = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btndetallesenvios = new Bunifu.Framework.UI.BunifuFlatButton();
             this.pnprincipal.SuspendLayout();
             this.panelcontenedor.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -239,6 +239,186 @@
             this.panelsidebar.Size = new System.Drawing.Size(349, 886);
             this.panelsidebar.TabIndex = 0;
             this.panelsidebar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelsidebar_Paint);
+            // 
+            // btndetallesenvios
+            // 
+            this.btndetallesenvios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btndetallesenvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btndetallesenvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btndetallesenvios.BorderRadius = 7;
+            this.btndetallesenvios.ButtonText = "Detalles Envio";
+            this.btndetallesenvios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btndetallesenvios.DisabledColor = System.Drawing.Color.Gray;
+            this.btndetallesenvios.Iconcolor = System.Drawing.Color.Transparent;
+            this.btndetallesenvios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btndetallesenvios.Iconimage")));
+            this.btndetallesenvios.Iconimage_right = null;
+            this.btndetallesenvios.Iconimage_right_Selected = null;
+            this.btndetallesenvios.Iconimage_Selected = null;
+            this.btndetallesenvios.IconMarginLeft = 0;
+            this.btndetallesenvios.IconMarginRight = 0;
+            this.btndetallesenvios.IconRightVisible = true;
+            this.btndetallesenvios.IconRightZoom = 0D;
+            this.btndetallesenvios.IconVisible = true;
+            this.btndetallesenvios.IconZoom = 60D;
+            this.btndetallesenvios.IsTab = false;
+            this.btndetallesenvios.Location = new System.Drawing.Point(-1, 801);
+            this.btndetallesenvios.Margin = new System.Windows.Forms.Padding(5);
+            this.btndetallesenvios.Name = "btndetallesenvios";
+            this.btndetallesenvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btndetallesenvios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btndetallesenvios.OnHoverTextColor = System.Drawing.Color.White;
+            this.btndetallesenvios.selected = false;
+            this.btndetallesenvios.Size = new System.Drawing.Size(341, 37);
+            this.btndetallesenvios.TabIndex = 29;
+            this.btndetallesenvios.Text = "Detalles Envio";
+            this.btndetallesenvios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btndetallesenvios.Textcolor = System.Drawing.Color.White;
+            this.btndetallesenvios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btndetallesenvios.Click += new System.EventHandler(this.btndetallesenvios_Click);
+            // 
+            // btnenvios
+            // 
+            this.btnenvios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnenvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnenvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnenvios.BorderRadius = 7;
+            this.btnenvios.ButtonText = "Envios";
+            this.btnenvios.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnenvios.DisabledColor = System.Drawing.Color.Gray;
+            this.btnenvios.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnenvios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnenvios.Iconimage")));
+            this.btnenvios.Iconimage_right = null;
+            this.btnenvios.Iconimage_right_Selected = null;
+            this.btnenvios.Iconimage_Selected = null;
+            this.btnenvios.IconMarginLeft = 0;
+            this.btnenvios.IconMarginRight = 0;
+            this.btnenvios.IconRightVisible = true;
+            this.btnenvios.IconRightZoom = 0D;
+            this.btnenvios.IconVisible = true;
+            this.btnenvios.IconZoom = 60D;
+            this.btnenvios.IsTab = false;
+            this.btnenvios.Location = new System.Drawing.Point(-1, 756);
+            this.btnenvios.Margin = new System.Windows.Forms.Padding(5);
+            this.btnenvios.Name = "btnenvios";
+            this.btnenvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnenvios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnenvios.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnenvios.selected = false;
+            this.btnenvios.Size = new System.Drawing.Size(341, 35);
+            this.btnenvios.TabIndex = 28;
+            this.btnenvios.Text = "Envios";
+            this.btnenvios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnenvios.Textcolor = System.Drawing.Color.White;
+            this.btnenvios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnenvios.Click += new System.EventHandler(this.btnenvios_Click);
+            // 
+            // btncobros
+            // 
+            this.btncobros.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncobros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncobros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btncobros.BorderRadius = 7;
+            this.btncobros.ButtonText = "Cobros";
+            this.btncobros.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btncobros.DisabledColor = System.Drawing.Color.Gray;
+            this.btncobros.Iconcolor = System.Drawing.Color.Transparent;
+            this.btncobros.Iconimage = ((System.Drawing.Image)(resources.GetObject("btncobros.Iconimage")));
+            this.btncobros.Iconimage_right = null;
+            this.btncobros.Iconimage_right_Selected = null;
+            this.btncobros.Iconimage_Selected = null;
+            this.btncobros.IconMarginLeft = 0;
+            this.btncobros.IconMarginRight = 0;
+            this.btncobros.IconRightVisible = true;
+            this.btncobros.IconRightZoom = 0D;
+            this.btncobros.IconVisible = true;
+            this.btncobros.IconZoom = 60D;
+            this.btncobros.IsTab = false;
+            this.btncobros.Location = new System.Drawing.Point(0, 711);
+            this.btncobros.Margin = new System.Windows.Forms.Padding(5);
+            this.btncobros.Name = "btncobros";
+            this.btncobros.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btncobros.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btncobros.OnHoverTextColor = System.Drawing.Color.White;
+            this.btncobros.selected = false;
+            this.btncobros.Size = new System.Drawing.Size(341, 35);
+            this.btncobros.TabIndex = 27;
+            this.btncobros.Text = "Cobros";
+            this.btncobros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btncobros.Textcolor = System.Drawing.Color.White;
+            this.btncobros.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btncobros.Click += new System.EventHandler(this.btncobros_Click);
+            // 
+            // btnventasdetalles
+            // 
+            this.btnventasdetalles.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnventasdetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnventasdetalles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnventasdetalles.BorderRadius = 7;
+            this.btnventasdetalles.ButtonText = "Ventas Detalle";
+            this.btnventasdetalles.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnventasdetalles.DisabledColor = System.Drawing.Color.Gray;
+            this.btnventasdetalles.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnventasdetalles.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnventasdetalles.Iconimage")));
+            this.btnventasdetalles.Iconimage_right = null;
+            this.btnventasdetalles.Iconimage_right_Selected = null;
+            this.btnventasdetalles.Iconimage_Selected = null;
+            this.btnventasdetalles.IconMarginLeft = 0;
+            this.btnventasdetalles.IconMarginRight = 0;
+            this.btnventasdetalles.IconRightVisible = true;
+            this.btnventasdetalles.IconRightZoom = 0D;
+            this.btnventasdetalles.IconVisible = true;
+            this.btnventasdetalles.IconZoom = 60D;
+            this.btnventasdetalles.IsTab = false;
+            this.btnventasdetalles.Location = new System.Drawing.Point(-1, 666);
+            this.btnventasdetalles.Margin = new System.Windows.Forms.Padding(5);
+            this.btnventasdetalles.Name = "btnventasdetalles";
+            this.btnventasdetalles.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnventasdetalles.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnventasdetalles.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnventasdetalles.selected = false;
+            this.btnventasdetalles.Size = new System.Drawing.Size(341, 35);
+            this.btnventasdetalles.TabIndex = 26;
+            this.btnventasdetalles.Text = "Ventas Detalle";
+            this.btnventasdetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnventasdetalles.Textcolor = System.Drawing.Color.White;
+            this.btnventasdetalles.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventasdetalles.Click += new System.EventHandler(this.btnventasdetalles_Click);
+            // 
+            // btnventas
+            // 
+            this.btnventas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnventas.BorderRadius = 7;
+            this.btnventas.ButtonText = "Ventas";
+            this.btnventas.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnventas.DisabledColor = System.Drawing.Color.Gray;
+            this.btnventas.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnventas.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnventas.Iconimage")));
+            this.btnventas.Iconimage_right = null;
+            this.btnventas.Iconimage_right_Selected = null;
+            this.btnventas.Iconimage_Selected = null;
+            this.btnventas.IconMarginLeft = 0;
+            this.btnventas.IconMarginRight = 0;
+            this.btnventas.IconRightVisible = true;
+            this.btnventas.IconRightZoom = 0D;
+            this.btnventas.IconVisible = true;
+            this.btnventas.IconZoom = 60D;
+            this.btnventas.IsTab = false;
+            this.btnventas.Location = new System.Drawing.Point(-1, 621);
+            this.btnventas.Margin = new System.Windows.Forms.Padding(5);
+            this.btnventas.Name = "btnventas";
+            this.btnventas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
+            this.btnventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
+            this.btnventas.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnventas.selected = false;
+            this.btnventas.Size = new System.Drawing.Size(341, 35);
+            this.btnventas.TabIndex = 25;
+            this.btnventas.Text = "Ventas";
+            this.btnventas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnventas.Textcolor = System.Drawing.Color.White;
+            this.btnventas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
             // 
             // btncerrarsesion
             // 
@@ -708,186 +888,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // btnenvios
-            // 
-            this.btnenvios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnenvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnenvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnenvios.BorderRadius = 7;
-            this.btnenvios.ButtonText = "Envios";
-            this.btnenvios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnenvios.DisabledColor = System.Drawing.Color.Gray;
-            this.btnenvios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnenvios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnenvios.Iconimage")));
-            this.btnenvios.Iconimage_right = null;
-            this.btnenvios.Iconimage_right_Selected = null;
-            this.btnenvios.Iconimage_Selected = null;
-            this.btnenvios.IconMarginLeft = 0;
-            this.btnenvios.IconMarginRight = 0;
-            this.btnenvios.IconRightVisible = true;
-            this.btnenvios.IconRightZoom = 0D;
-            this.btnenvios.IconVisible = true;
-            this.btnenvios.IconZoom = 60D;
-            this.btnenvios.IsTab = false;
-            this.btnenvios.Location = new System.Drawing.Point(-1, 756);
-            this.btnenvios.Margin = new System.Windows.Forms.Padding(5);
-            this.btnenvios.Name = "btnenvios";
-            this.btnenvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnenvios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnenvios.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnenvios.selected = false;
-            this.btnenvios.Size = new System.Drawing.Size(341, 35);
-            this.btnenvios.TabIndex = 28;
-            this.btnenvios.Text = "Envios";
-            this.btnenvios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnenvios.Textcolor = System.Drawing.Color.White;
-            this.btnenvios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnenvios.Click += new System.EventHandler(this.btnenvios_Click);
-            // 
-            // btncobros
-            // 
-            this.btncobros.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btncobros.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btncobros.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btncobros.BorderRadius = 7;
-            this.btncobros.ButtonText = "Cobros";
-            this.btncobros.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btncobros.DisabledColor = System.Drawing.Color.Gray;
-            this.btncobros.Iconcolor = System.Drawing.Color.Transparent;
-            this.btncobros.Iconimage = ((System.Drawing.Image)(resources.GetObject("btncobros.Iconimage")));
-            this.btncobros.Iconimage_right = null;
-            this.btncobros.Iconimage_right_Selected = null;
-            this.btncobros.Iconimage_Selected = null;
-            this.btncobros.IconMarginLeft = 0;
-            this.btncobros.IconMarginRight = 0;
-            this.btncobros.IconRightVisible = true;
-            this.btncobros.IconRightZoom = 0D;
-            this.btncobros.IconVisible = true;
-            this.btncobros.IconZoom = 60D;
-            this.btncobros.IsTab = false;
-            this.btncobros.Location = new System.Drawing.Point(0, 711);
-            this.btncobros.Margin = new System.Windows.Forms.Padding(5);
-            this.btncobros.Name = "btncobros";
-            this.btncobros.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btncobros.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btncobros.OnHoverTextColor = System.Drawing.Color.White;
-            this.btncobros.selected = false;
-            this.btncobros.Size = new System.Drawing.Size(341, 35);
-            this.btncobros.TabIndex = 27;
-            this.btncobros.Text = "Cobros";
-            this.btncobros.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btncobros.Textcolor = System.Drawing.Color.White;
-            this.btncobros.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btncobros.Click += new System.EventHandler(this.btncobros_Click);
-            // 
-            // btnventasdetalles
-            // 
-            this.btnventasdetalles.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnventasdetalles.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnventasdetalles.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnventasdetalles.BorderRadius = 7;
-            this.btnventasdetalles.ButtonText = "Ventas Detalle";
-            this.btnventasdetalles.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnventasdetalles.DisabledColor = System.Drawing.Color.Gray;
-            this.btnventasdetalles.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnventasdetalles.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnventasdetalles.Iconimage")));
-            this.btnventasdetalles.Iconimage_right = null;
-            this.btnventasdetalles.Iconimage_right_Selected = null;
-            this.btnventasdetalles.Iconimage_Selected = null;
-            this.btnventasdetalles.IconMarginLeft = 0;
-            this.btnventasdetalles.IconMarginRight = 0;
-            this.btnventasdetalles.IconRightVisible = true;
-            this.btnventasdetalles.IconRightZoom = 0D;
-            this.btnventasdetalles.IconVisible = true;
-            this.btnventasdetalles.IconZoom = 60D;
-            this.btnventasdetalles.IsTab = false;
-            this.btnventasdetalles.Location = new System.Drawing.Point(-1, 666);
-            this.btnventasdetalles.Margin = new System.Windows.Forms.Padding(5);
-            this.btnventasdetalles.Name = "btnventasdetalles";
-            this.btnventasdetalles.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnventasdetalles.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnventasdetalles.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnventasdetalles.selected = false;
-            this.btnventasdetalles.Size = new System.Drawing.Size(341, 35);
-            this.btnventasdetalles.TabIndex = 26;
-            this.btnventasdetalles.Text = "Ventas Detalle";
-            this.btnventasdetalles.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnventasdetalles.Textcolor = System.Drawing.Color.White;
-            this.btnventasdetalles.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventasdetalles.Click += new System.EventHandler(this.btnventasdetalles_Click);
-            // 
-            // btnventas
-            // 
-            this.btnventas.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnventas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnventas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnventas.BorderRadius = 7;
-            this.btnventas.ButtonText = "Ventas";
-            this.btnventas.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnventas.DisabledColor = System.Drawing.Color.Gray;
-            this.btnventas.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnventas.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnventas.Iconimage")));
-            this.btnventas.Iconimage_right = null;
-            this.btnventas.Iconimage_right_Selected = null;
-            this.btnventas.Iconimage_Selected = null;
-            this.btnventas.IconMarginLeft = 0;
-            this.btnventas.IconMarginRight = 0;
-            this.btnventas.IconRightVisible = true;
-            this.btnventas.IconRightZoom = 0D;
-            this.btnventas.IconVisible = true;
-            this.btnventas.IconZoom = 60D;
-            this.btnventas.IsTab = false;
-            this.btnventas.Location = new System.Drawing.Point(-1, 621);
-            this.btnventas.Margin = new System.Windows.Forms.Padding(5);
-            this.btnventas.Name = "btnventas";
-            this.btnventas.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btnventas.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btnventas.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnventas.selected = false;
-            this.btnventas.Size = new System.Drawing.Size(341, 35);
-            this.btnventas.TabIndex = 25;
-            this.btnventas.Text = "Ventas";
-            this.btnventas.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnventas.Textcolor = System.Drawing.Color.White;
-            this.btnventas.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnventas.Click += new System.EventHandler(this.btnventas_Click);
-            // 
-            // btndetallesenvios
-            // 
-            this.btndetallesenvios.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btndetallesenvios.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btndetallesenvios.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btndetallesenvios.BorderRadius = 7;
-            this.btndetallesenvios.ButtonText = "Detalles Envio";
-            this.btndetallesenvios.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btndetallesenvios.DisabledColor = System.Drawing.Color.Gray;
-            this.btndetallesenvios.Iconcolor = System.Drawing.Color.Transparent;
-            this.btndetallesenvios.Iconimage = ((System.Drawing.Image)(resources.GetObject("btndetallesenvios.Iconimage")));
-            this.btndetallesenvios.Iconimage_right = null;
-            this.btndetallesenvios.Iconimage_right_Selected = null;
-            this.btndetallesenvios.Iconimage_Selected = null;
-            this.btndetallesenvios.IconMarginLeft = 0;
-            this.btndetallesenvios.IconMarginRight = 0;
-            this.btndetallesenvios.IconRightVisible = true;
-            this.btndetallesenvios.IconRightZoom = 0D;
-            this.btndetallesenvios.IconVisible = true;
-            this.btndetallesenvios.IconZoom = 60D;
-            this.btndetallesenvios.IsTab = false;
-            this.btndetallesenvios.Location = new System.Drawing.Point(-1, 801);
-            this.btndetallesenvios.Margin = new System.Windows.Forms.Padding(5);
-            this.btndetallesenvios.Name = "btndetallesenvios";
-            this.btndetallesenvios.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(34)))), ((int)(((byte)(39)))));
-            this.btndetallesenvios.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
-            this.btndetallesenvios.OnHoverTextColor = System.Drawing.Color.White;
-            this.btndetallesenvios.selected = false;
-            this.btndetallesenvios.Size = new System.Drawing.Size(341, 35);
-            this.btndetallesenvios.TabIndex = 29;
-            this.btndetallesenvios.Text = "Detalles Envio";
-            this.btndetallesenvios.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btndetallesenvios.Textcolor = System.Drawing.Color.White;
-            this.btndetallesenvios.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btndetallesenvios.Click += new System.EventHandler(this.btndetallesenvios_Click);
             // 
             // menu
             // 
