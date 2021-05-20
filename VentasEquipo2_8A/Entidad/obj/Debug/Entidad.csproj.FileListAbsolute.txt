@@ -1,0 +1,12 @@
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\DESMADRE\2 VERSION GIT\NUEVO V2\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.pdb
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.dll
+C:\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.pdb
