@@ -53,7 +53,9 @@ namespace Vistas
             this.Cb_idEmpleado = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_Rol = new System.Windows.Forms.TextBox();
+            this.Cb_RolTripulacion = new System.Windows.Forms.ComboBox();
+            this.txt_conductor = new System.Windows.Forms.TextBox();
+            this.txt_idempleadoTripulacio = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -376,6 +378,7 @@ namespace Vistas
             this.txt_idEmpleado.Name = "txt_idEmpleado";
             this.txt_idEmpleado.Size = new System.Drawing.Size(25, 20);
             this.txt_idEmpleado.TabIndex = 185;
+            this.txt_idEmpleado.Visible = false;
             // 
             // Cb_idEmpleado
             // 
@@ -386,6 +389,7 @@ namespace Vistas
             this.Cb_idEmpleado.Size = new System.Drawing.Size(124, 21);
             this.Cb_idEmpleado.TabIndex = 184;
             this.Cb_idEmpleado.SelectedIndexChanged += new System.EventHandler(this.Cb_idEmpleado_SelectedIndexChanged);
+            this.Cb_idEmpleado.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Cb_idEmpleado_MouseClick);
             // 
             // label16
             // 
@@ -409,13 +413,36 @@ namespace Vistas
             this.label2.TabIndex = 187;
             this.label2.Text = "Rol";
             // 
-            // txt_Rol
+            // Cb_RolTripulacion
             // 
-            this.txt_Rol.Location = new System.Drawing.Point(911, 271);
-            this.txt_Rol.Name = "txt_Rol";
-            this.txt_Rol.Size = new System.Drawing.Size(151, 20);
-            this.txt_Rol.TabIndex = 186;
-            this.txt_Rol.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Rol_KeyPress);
+            this.Cb_RolTripulacion.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Cb_RolTripulacion.FormattingEnabled = true;
+            this.Cb_RolTripulacion.Items.AddRange(new object[] {
+            "CONDUCTOR",
+            "PASAJERO"});
+            this.Cb_RolTripulacion.Location = new System.Drawing.Point(909, 271);
+            this.Cb_RolTripulacion.Name = "Cb_RolTripulacion";
+            this.Cb_RolTripulacion.Size = new System.Drawing.Size(153, 21);
+            this.Cb_RolTripulacion.TabIndex = 188;
+            this.Cb_RolTripulacion.SelectedIndexChanged += new System.EventHandler(this.Cb_RolTripulacion_SelectedIndexChanged);
+            // 
+            // txt_conductor
+            // 
+            this.txt_conductor.Enabled = false;
+            this.txt_conductor.Location = new System.Drawing.Point(958, 250);
+            this.txt_conductor.Name = "txt_conductor";
+            this.txt_conductor.Size = new System.Drawing.Size(106, 20);
+            this.txt_conductor.TabIndex = 189;
+            this.txt_conductor.Visible = false;
+            // 
+            // txt_idempleadoTripulacio
+            // 
+            this.txt_idempleadoTripulacio.Enabled = false;
+            this.txt_idempleadoTripulacio.Location = new System.Drawing.Point(1070, 250);
+            this.txt_idempleadoTripulacio.Name = "txt_idempleadoTripulacio";
+            this.txt_idempleadoTripulacio.Size = new System.Drawing.Size(25, 20);
+            this.txt_idempleadoTripulacio.TabIndex = 190;
+            this.txt_idempleadoTripulacio.Visible = false;
             // 
             // Tripulacion
             // 
@@ -423,8 +450,10 @@ namespace Vistas
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(69)))), ((int)(((byte)(76)))));
             this.ClientSize = new System.Drawing.Size(1114, 569);
+            this.Controls.Add(this.txt_idempleadoTripulacio);
+            this.Controls.Add(this.txt_conductor);
+            this.Controls.Add(this.Cb_RolTripulacion);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txt_Rol);
             this.Controls.Add(this.txt_idEmpleado);
             this.Controls.Add(this.Cb_idEmpleado);
             this.Controls.Add(this.label16);
@@ -481,6 +510,8 @@ namespace Vistas
         private System.Windows.Forms.ComboBox Cb_idEmpleado;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_Rol;
+        private System.Windows.Forms.ComboBox Cb_RolTripulacion;
+        private System.Windows.Forms.TextBox txt_conductor;
+        private System.Windows.Forms.TextBox txt_idempleadoTripulacio;
     }
 }

@@ -16,3 +16,10 @@ C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entida
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.dll
 C:\Users\aleja\OneDrive\Documentos\GitHub\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.dll
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\bin\Debug\Entidad.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csprojAssemblyReference.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csproj.ResolveComReference.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.csproj.CoreCompileInputs.cache
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.dll
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Entidad\obj\Debug\Entidad.pdb

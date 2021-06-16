@@ -149,6 +149,19 @@ C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEq
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Negocios.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.pdb
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.dll
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Datos.dll.config
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\bin\Debug\Entidad.pdb
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Negocios\obj\Debug\Negocios.csproj.ResolveComReference.cache

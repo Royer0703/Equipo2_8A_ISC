@@ -115,7 +115,18 @@ C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEq
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.dll
 C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\v4\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.dll.config
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Entidad.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Entidad.pdb
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CoreCompileInputs.cache
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.dll
+C:\Users\ADRIAN\Desktop\Laptop\DESMADRE\2 VERSION GIT\V6\new login\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.pdb
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Datos.dll.config
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Entidad.dll
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\bin\Debug\Entidad.pdb
 C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\rogel\OneDrive\Escritorio\Equipo2_8A_ISC\VentasEquipo2_8A\Datos\obj\Debug\Datos.csproj.ResolveComReference.cache

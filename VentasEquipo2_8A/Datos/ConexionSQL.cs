@@ -820,7 +820,7 @@ namespace Datos
         {
             int flag = 0;
             con.Open();
-            string query = "Update SalesTripulacion set idEmpleado ='" + idEmpleado + "',rol ='" + rol + "', estatus ='" + estatus + "'where idEnvio ='" + idEnvio + "'";
+            string query = "Update SalesTripulacion set idEnvio ='" + idEnvio + "',rol ='" + rol + "', estatus ='" + estatus + "'where idEmpleado ='" + idEmpleado + "'";
             SqlCommand cmd = new SqlCommand(query, con);
             flag = cmd.ExecuteNonQuery();
             con.Close();

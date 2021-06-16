@@ -842,6 +842,7 @@ namespace Vistas
             this.btn_EDITARDetalleventa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btn_EDITARDetalleventa.Textcolor = System.Drawing.Color.White;
             this.btn_EDITARDetalleventa.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_EDITARDetalleventa.Visible = false;
             this.btn_EDITARDetalleventa.Click += new System.EventHandler(this.bunifuFlatButton2_Click);
             // 
             // btn_ELIMINARDetalleventa
@@ -950,6 +951,7 @@ namespace Vistas
             this.txt_idSucursal.Name = "txt_idSucursal";
             this.txt_idSucursal.Size = new System.Drawing.Size(25, 13);
             this.txt_idSucursal.TabIndex = 181;
+            this.txt_idSucursal.Visible = false;
             // 
             // txt_idEmpleado
             // 
@@ -961,6 +963,7 @@ namespace Vistas
             this.txt_idEmpleado.Name = "txt_idEmpleado";
             this.txt_idEmpleado.Size = new System.Drawing.Size(25, 13);
             this.txt_idEmpleado.TabIndex = 182;
+            this.txt_idEmpleado.Visible = false;
             // 
             // txt_idCliente
             // 
@@ -971,6 +974,7 @@ namespace Vistas
             this.txt_idCliente.Name = "txt_idCliente";
             this.txt_idCliente.Size = new System.Drawing.Size(19, 13);
             this.txt_idCliente.TabIndex = 183;
+            this.txt_idCliente.Visible = false;
             // 
             // txt_idproducto
             // 
@@ -993,6 +997,7 @@ namespace Vistas
             this.txt_idPresentacionVentadetalle.Name = "txt_idPresentacionVentadetalle";
             this.txt_idPresentacionVentadetalle.Size = new System.Drawing.Size(23, 13);
             this.txt_idPresentacionVentadetalle.TabIndex = 185;
+            this.txt_idPresentacionVentadetalle.Visible = false;
             // 
             // txt_idventaDetalle
             // 
@@ -1059,6 +1064,7 @@ namespace Vistas
             this.txt_idExistenciaSucursal.Name = "txt_idExistenciaSucursal";
             this.txt_idExistenciaSucursal.Size = new System.Drawing.Size(25, 13);
             this.txt_idExistenciaSucursal.TabIndex = 192;
+            this.txt_idExistenciaSucursal.Visible = false;
             // 
             // txt_cantidadActualTabla
             // 
@@ -1076,7 +1082,7 @@ namespace Vistas
             this.btnExcel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(53)))));
             this.btnExcel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btnExcel.BorderRadius = 3;
-            this.btnExcel.ButtonText = "EXCEL";
+            this.btnExcel.ButtonText = "Doc. Export";
             this.btnExcel.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExcel.DisabledColor = System.Drawing.Color.Gray;
             this.btnExcel.Enabled = false;
@@ -1102,7 +1108,7 @@ namespace Vistas
             this.btnExcel.selected = false;
             this.btnExcel.Size = new System.Drawing.Size(149, 50);
             this.btnExcel.TabIndex = 211;
-            this.btnExcel.Text = "EXCEL";
+            this.btnExcel.Text = "Doc. Export";
             this.btnExcel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.btnExcel.Textcolor = System.Drawing.Color.White;
             this.btnExcel.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1153,6 +1159,7 @@ namespace Vistas
             this.txt_idpreOferta.Name = "txt_idpreOferta";
             this.txt_idpreOferta.Size = new System.Drawing.Size(56, 20);
             this.txt_idpreOferta.TabIndex = 216;
+            this.txt_idpreOferta.Visible = false;
             // 
             // txt_CantOferta
             // 
@@ -1161,6 +1168,7 @@ namespace Vistas
             this.txt_CantOferta.Name = "txt_CantOferta";
             this.txt_CantOferta.Size = new System.Drawing.Size(56, 20);
             this.txt_CantOferta.TabIndex = 217;
+            this.txt_CantOferta.Visible = false;
             // 
             // txt_fechaFinOferta
             // 
@@ -1169,6 +1177,7 @@ namespace Vistas
             this.txt_fechaFinOferta.Name = "txt_fechaFinOferta";
             this.txt_fechaFinOferta.Size = new System.Drawing.Size(56, 20);
             this.txt_fechaFinOferta.TabIndex = 218;
+            this.txt_fechaFinOferta.Visible = false;
             // 
             // txt_descuentosOferta
             // 
@@ -1177,6 +1186,7 @@ namespace Vistas
             this.txt_descuentosOferta.Name = "txt_descuentosOferta";
             this.txt_descuentosOferta.Size = new System.Drawing.Size(56, 20);
             this.txt_descuentosOferta.TabIndex = 219;
+            this.txt_descuentosOferta.Visible = false;
             // 
             // txt_subOferta
             // 

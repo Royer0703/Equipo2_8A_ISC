@@ -160,6 +160,7 @@ namespace Vistas
             this.txt_idUnidadTransporte.Name = "txt_idUnidadTransporte";
             this.txt_idUnidadTransporte.Size = new System.Drawing.Size(28, 13);
             this.txt_idUnidadTransporte.TabIndex = 119;
+            this.txt_idUnidadTransporte.Visible = false;
             // 
             // label4
             // 
@@ -388,6 +389,7 @@ namespace Vistas
             this.txt_idPresenta2.Size = new System.Drawing.Size(44, 20);
             this.txt_idPresenta2.TabIndex = 166;
             this.txt_idPresenta2.Text = "2";
+            this.txt_idPresenta2.Visible = false;
             // 
             // txt_idPresenta1
             // 
@@ -399,6 +401,7 @@ namespace Vistas
             this.txt_idPresenta1.Size = new System.Drawing.Size(44, 20);
             this.txt_idPresenta1.TabIndex = 165;
             this.txt_idPresenta1.Text = "1";
+            this.txt_idPresenta1.Visible = false;
             // 
             // pesoIdpre2
             // 
@@ -409,6 +412,7 @@ namespace Vistas
             this.pesoIdpre2.Name = "pesoIdpre2";
             this.pesoIdpre2.Size = new System.Drawing.Size(44, 20);
             this.pesoIdpre2.TabIndex = 164;
+            this.pesoIdpre2.Visible = false;
             // 
             // pesoIdpre1
             // 
@@ -419,6 +423,7 @@ namespace Vistas
             this.pesoIdpre1.Name = "pesoIdpre1";
             this.pesoIdpre1.Size = new System.Drawing.Size(44, 20);
             this.pesoIdpre1.TabIndex = 163;
+            this.pesoIdpre1.Visible = false;
             // 
             // txt_cantidpresenta2
             // 
@@ -429,6 +434,7 @@ namespace Vistas
             this.txt_cantidpresenta2.Name = "txt_cantidpresenta2";
             this.txt_cantidpresenta2.Size = new System.Drawing.Size(44, 20);
             this.txt_cantidpresenta2.TabIndex = 162;
+            this.txt_cantidpresenta2.Visible = false;
             // 
             // txt_cantidpresenta1
             // 
@@ -439,6 +445,7 @@ namespace Vistas
             this.txt_cantidpresenta1.Name = "txt_cantidpresenta1";
             this.txt_cantidpresenta1.Size = new System.Drawing.Size(44, 20);
             this.txt_cantidpresenta1.TabIndex = 161;
+            this.txt_cantidpresenta1.Visible = false;
             // 
             // label6
             // 
@@ -459,6 +466,7 @@ namespace Vistas
             this.txt_ContactoCliente.Name = "txt_ContactoCliente";
             this.txt_ContactoCliente.Size = new System.Drawing.Size(19, 20);
             this.txt_ContactoCliente.TabIndex = 159;
+            this.txt_ContactoCliente.Visible = false;
             this.txt_ContactoCliente.TextChanged += new System.EventHandler(this.txt_ContactoCliente_TextChanged);
             // 
             // label8
@@ -520,6 +528,7 @@ namespace Vistas
             this.txt_Direccion_cliente.Name = "txt_Direccion_cliente";
             this.txt_Direccion_cliente.Size = new System.Drawing.Size(18, 20);
             this.txt_Direccion_cliente.TabIndex = 153;
+            this.txt_Direccion_cliente.Visible = false;
             this.txt_Direccion_cliente.TextChanged += new System.EventHandler(this.txt_Direccion_cliente_TextChanged);
             // 
             // label11
@@ -627,6 +636,7 @@ namespace Vistas
             this.txt_idventaEnvio.Name = "txt_idventaEnvio";
             this.txt_idventaEnvio.Size = new System.Drawing.Size(42, 13);
             this.txt_idventaEnvio.TabIndex = 182;
+            this.txt_idventaEnvio.Visible = false;
             // 
             // txt_PesoEmpaque
             // 
@@ -637,6 +647,7 @@ namespace Vistas
             this.txt_PesoEmpaque.Name = "txt_PesoEmpaque";
             this.txt_PesoEmpaque.Size = new System.Drawing.Size(100, 13);
             this.txt_PesoEmpaque.TabIndex = 181;
+            this.txt_PesoEmpaque.Visible = false;
             // 
             // txt_DatosaMostar
             // 
@@ -892,6 +903,7 @@ namespace Vistas
             this.txt_idPresenta3.Size = new System.Drawing.Size(44, 20);
             this.txt_idPresenta3.TabIndex = 204;
             this.txt_idPresenta3.Text = "3";
+            this.txt_idPresenta3.Visible = false;
             // 
             // pesoIdpre3
             // 
@@ -902,6 +914,7 @@ namespace Vistas
             this.pesoIdpre3.Name = "pesoIdpre3";
             this.pesoIdpre3.Size = new System.Drawing.Size(44, 20);
             this.pesoIdpre3.TabIndex = 203;
+            this.pesoIdpre3.Visible = false;
             // 
             // txt_cantidpresenta3
             // 
@@ -912,6 +925,7 @@ namespace Vistas
             this.txt_cantidpresenta3.Name = "txt_cantidpresenta3";
             this.txt_cantidpresenta3.Size = new System.Drawing.Size(44, 20);
             this.txt_cantidpresenta3.TabIndex = 202;
+            this.txt_cantidpresenta3.Visible = false;
             // 
             // txt_idPresenta4
             // 
@@ -923,6 +937,7 @@ namespace Vistas
             this.txt_idPresenta4.Size = new System.Drawing.Size(44, 20);
             this.txt_idPresenta4.TabIndex = 209;
             this.txt_idPresenta4.Text = "4";
+            this.txt_idPresenta4.Visible = false;
             // 
             // pesoIdpre4
             // 
@@ -933,6 +948,7 @@ namespace Vistas
             this.pesoIdpre4.Name = "pesoIdpre4";
             this.pesoIdpre4.Size = new System.Drawing.Size(44, 20);
             this.pesoIdpre4.TabIndex = 208;
+            this.pesoIdpre4.Visible = false;
             // 
             // txt_cantidpresenta4
             // 
@@ -943,6 +959,7 @@ namespace Vistas
             this.txt_cantidpresenta4.Name = "txt_cantidpresenta4";
             this.txt_cantidpresenta4.Size = new System.Drawing.Size(44, 20);
             this.txt_cantidpresenta4.TabIndex = 207;
+            this.txt_cantidpresenta4.Visible = false;
             // 
             // txt_nombreDirreccion
             // 
@@ -1009,6 +1026,7 @@ namespace Vistas
             this.pesoUnidadTransporet.Name = "pesoUnidadTransporet";
             this.pesoUnidadTransporet.Size = new System.Drawing.Size(80, 13);
             this.pesoUnidadTransporet.TabIndex = 214;
+            this.pesoUnidadTransporet.Visible = false;
             // 
             // pesoTotalventaNoguarda
             // 
@@ -1020,6 +1038,7 @@ namespace Vistas
             this.pesoTotalventaNoguarda.Name = "pesoTotalventaNoguarda";
             this.pesoTotalventaNoguarda.Size = new System.Drawing.Size(80, 13);
             this.pesoTotalventaNoguarda.TabIndex = 215;
+            this.pesoTotalventaNoguarda.Visible = false;
             // 
             // txt_fechaMasAlta
             // 
@@ -1053,6 +1072,7 @@ namespace Vistas
             this.Estatusdeenvio.Name = "Estatusdeenvio";
             this.Estatusdeenvio.Size = new System.Drawing.Size(23, 13);
             this.Estatusdeenvio.TabIndex = 224;
+            this.Estatusdeenvio.Visible = false;
             // 
             // dataGridView2
             // 

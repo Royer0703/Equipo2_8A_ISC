@@ -63,7 +63,7 @@ namespace Vistas
 
             SqlCommand cmd;
 
-            string sql = "select SalesOfertasAsociacion.idAsosiacion,SalesAsociaciones.nombre,SalesOfertasAsociacion.idOferta,Ofertas.nombre,SalesOfertasAsociacion.estatus from SalesOfertasAsociacion JOIN  SalesAsociaciones ON SalesAsociaciones.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN Ofertas ON Ofertas.idOferta = SalesOfertasAsociacion.idOferta";
+            string sql = "select SalesOfertasAsociacion.idAsosiacion,SalesMiembros.idCliente,SalesClientes.nombre,SalesAsociaciones.nombre,SalesOfertasAsociacion.idOferta,Ofertas.nombre,Productos.idProducto,Productos.nombre,PresentacionesProducto.idPresentacion,Empaques.nombre,Ofertas.canMinProductos,Ofertas.porDescuento,Ofertas.fechaInicio,Ofertas.fechaFin,SalesOfertasAsociacion.estatus from SalesOfertasAsociacion JOIN  SalesAsociaciones ON SalesAsociaciones.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN Ofertas ON Ofertas.idOferta = SalesOfertasAsociacion.idOferta JOIN SalesMiembros ON SalesMiembros.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN SalesClientes ON SalesClientes.idCliente = SalesMiembros.idCliente JOIN PresentacionesProducto ON PresentacionesProducto.idPresentacion = Ofertas.idPresentacion JOIN Productos ON Productos.idProducto = PresentacionesProducto.idProducto JOIN Empaques ON Empaques.idEmpaque = PresentacionesProducto.idEmpaque ";
 
             cmd = new SqlCommand(sql, con);
             adapter.SelectCommand = cmd;
@@ -254,6 +254,10 @@ namespace Vistas
                 txt_idAsociacion.Text = "";
                 txt_idOferta.Text = "";
 
+                Cb_nombreAsociacion.Enabled = true;
+                btnGuardar.Enabled = true;
+                btnEditar.Enabled = false;
+                btnEliminar.Enabled = false;
                 MessageBox.Show("Actualizado Correctamente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
@@ -285,7 +289,148 @@ namespace Vistas
                 txt_idAsociacion.Text = "";
                 txt_idOferta.Text = "";
 
+                Cb_nombreAsociacion.Enabled = true;
+                btnGuardar.Enabled = true;
+                btnEditar.Enabled = false;
+                btnEliminar.Enabled = false;
                 MessageBox.Show("Eliminado Correctamente !!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void btn_adelante_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_DatosaMostar.Text))
+            {
+                int num = (int.Parse(txtCantidadTotal.Text));
+                start = start + 2;
+                btn_atras.Enabled = true;
+                if (start > num)
+                {
+                    start = 0;
+                }
+
+                ds.Clear();
+                adapter.Fill(ds, start, 2, "SalesOfertasAsociacion");
+            }
+            else
+            {
+
+                string id = txt_DatosaMostar.Text;
+                int numMostar = Int32.Parse(id);
+
+                int num = (int.Parse(txtCantidadTotal.Text));
+                start = start + numMostar;
+                btn_atras.Enabled = true;
+                if (start > num)
+                {
+                    start = 0;
+                }
+
+                ds.Clear();
+                adapter.Fill(ds, start, numMostar, "SalesOfertasAsociacion");
+            }
+        }
+
+        private void btn_atras_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_DatosaMostar.Text))
+            {
+                start = start - 2;
+                if (start < 0)
+                {
+                    start = 0;
+                    btn_atras.Enabled = false;
+                }
+                ds.Clear();
+                adapter.Fill(ds, start, 2, "SalesOfertasAsociacion");
+            }
+            else
+            {
+                string id = txt_DatosaMostar.Text;
+                int numMostar = Int32.Parse(id);
+                start = start - numMostar;
+                if (start < 0)
+                {
+                    start = 0;
+                    btn_atras.Enabled = false;
+                }
+                ds.Clear();
+                adapter.Fill(ds, start, numMostar, "SalesOfertasAsociacion");
+            }
+        }
+
+        private void txt_DatosaMostar_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txt_DatosaMostar.Text))
+            {
+                ds.Clear();
+                loadData();
+            }
+            else
+            {
+                string id = txt_DatosaMostar.Text;
+                int numMostar = Int32.Parse(id);
+                ds.Clear();
+
+                SqlCommand cmd;
+                string sql = "select SalesOfertasAsociacion.idAsosiacion,SalesMiembros.idCliente,SalesClientes.nombre,SalesAsociaciones.nombre,SalesOfertasAsociacion.idOferta,Ofertas.nombre,Productos.idProducto,Productos.nombre,PresentacionesProducto.idPresentacion,Empaques.nombre,Ofertas.canMinProductos,Ofertas.porDescuento,Ofertas.fechaInicio,Ofertas.fechaFin,SalesOfertasAsociacion.estatus from SalesOfertasAsociacion JOIN  SalesAsociaciones ON SalesAsociaciones.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN Ofertas ON Ofertas.idOferta = SalesOfertasAsociacion.idOferta JOIN SalesMiembros ON SalesMiembros.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN SalesClientes ON SalesClientes.idCliente = SalesMiembros.idCliente JOIN PresentacionesProducto ON PresentacionesProducto.idPresentacion = Ofertas.idPresentacion JOIN Productos ON Productos.idProducto = PresentacionesProducto.idProducto JOIN Empaques ON Empaques.idEmpaque = PresentacionesProducto.idEmpaque ";
+
+
+                cmd = new SqlCommand(sql, con);
+                adapter.SelectCommand = cmd;
+
+                //fill dataser
+                adapter.Fill(ds, start, numMostar, "SalesOfertasAsociacion");
+                //DGVIEW
+                dataGridView1.DataSource = ds.Tables[0];
+                //habilita Boton 
+                btn_atras.Enabled = false;
+
+            }
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Cb_nombreAsociacion.SelectedItem = dataGridView1.CurrentRow.Cells[3].Value.ToString();
+            Cb_nombreOferta.SelectedItem = dataGridView1.CurrentRow.Cells[5].Value.ToString();
+
+            Cb_nombreAsociacion.Enabled = false;
+            btnGuardar.Enabled = false;
+            btnEditar.Enabled = true;
+            btnEliminar.Enabled = true;
+        }
+
+        private void txt_DatosaMostar_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((e.KeyChar >= 32 && e.KeyChar <= 47) || (e.KeyChar >= 58 && e.KeyChar <= 255))
+            {
+
+                MessageBox.Show("SOLO NUMERO!!", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                e.Handled = true;
+                return;
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(textBox1.Text))
+            {
+                ds.Clear();
+                loadData();
+            }
+            else
+            {
+                // string conexionstring = "server = DESKTOP-IP4QBPJ\\SQLEXPRESS; database = ERP;" +
+                // "integrated security = true";
+                SqlConnection con = new SqlConnection(Properties.Settings.Default.ERPVENTAConnectionString);
+                con.Open();
+
+                // SqlDataAdapter datos = new SqlDataAdapter("select SalesParcelas.idParcela, SalesParcelas.extension, SalesParcelas.idCliente, SalesParcelas.idCultivo, SalesParcelas.idDireccion, SalesParcelas.estatus, SalesClientes.nombre, SalesDireccionesCliente.calle, SalesDireccionesCliente.colonia, SalesCultivos.nombre from SalesParcelas  JOIN SalesClientes ON SalesParcelas.idCliente = SalesClientes.idCliente JOIN SalesDireccionesCliente ON SalesDireccionesCliente.idCliente = SalesClientes.idCliente JOIN SalesCultivos ON SalesCultivos.idCultivo = SalesParcelas.idCultivo where " + this.comboBox1.Text+ " like '%" + this.textBox1.Text + "%'", con);
+
+                SqlDataAdapter datos = new SqlDataAdapter("select SalesOfertasAsociacion.idAsosiacion,SalesMiembros.idCliente,SalesClientes.nombre,SalesAsociaciones.nombre,SalesOfertasAsociacion.idOferta,Ofertas.nombre,Productos.idProducto,Productos.nombre,PresentacionesProducto.idPresentacion,Empaques.nombre,Ofertas.canMinProductos,Ofertas.porDescuento,Ofertas.fechaInicio,Ofertas.fechaFin,SalesOfertasAsociacion.estatus from SalesOfertasAsociacion JOIN  SalesAsociaciones ON SalesAsociaciones.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN Ofertas ON Ofertas.idOferta = SalesOfertasAsociacion.idOferta JOIN SalesMiembros ON SalesMiembros.idAsosiacion = SalesOfertasAsociacion.idAsosiacion JOIN SalesClientes ON SalesClientes.idCliente = SalesMiembros.idCliente JOIN PresentacionesProducto ON PresentacionesProducto.idPresentacion = Ofertas.idPresentacion JOIN Productos ON Productos.idProducto = PresentacionesProducto.idProducto JOIN Empaques ON Empaques.idEmpaque = PresentacionesProducto.idEmpaque where " + this.comboBox1.Text + " like '%" + this.textBox1.Text + "%'", con);
+                DataSet ds = new DataSet();
+                datos.Fill(ds, "SalesOfertasAsociacion");
+                this.dataGridView1.DataSource = ds.Tables[0];
             }
         }
     }

@@ -65,6 +65,7 @@ namespace Vistas
             this.txt_idOferta.Name = "txt_idOferta";
             this.txt_idOferta.Size = new System.Drawing.Size(25, 20);
             this.txt_idOferta.TabIndex = 209;
+            this.txt_idOferta.Visible = false;
             // 
             // Cb_nombreOferta
             // 
@@ -117,6 +118,7 @@ namespace Vistas
             this.btnEliminar.ButtonText = "ELIMINAR";
             this.btnEliminar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEliminar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEliminar.Enabled = false;
             this.btnEliminar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEliminar.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEliminar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEliminar.Iconimage")));
@@ -154,6 +156,7 @@ namespace Vistas
             this.btnEditar.ButtonText = "EDITAR";
             this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnEditar.DisabledColor = System.Drawing.Color.Gray;
+            this.btnEditar.Enabled = false;
             this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEditar.Iconcolor = System.Drawing.Color.Transparent;
             this.btnEditar.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnEditar.Iconimage")));
@@ -262,6 +265,8 @@ namespace Vistas
             this.txt_DatosaMostar.Name = "txt_DatosaMostar";
             this.txt_DatosaMostar.Size = new System.Drawing.Size(57, 20);
             this.txt_DatosaMostar.TabIndex = 200;
+            this.txt_DatosaMostar.TextChanged += new System.EventHandler(this.txt_DatosaMostar_TextChanged);
+            this.txt_DatosaMostar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_DatosaMostar_KeyPress);
             // 
             // label11
             // 
@@ -283,6 +288,7 @@ namespace Vistas
             this.btn_atras.TabIndex = 198;
             this.btn_atras.Text = "<<<";
             this.btn_atras.UseVisualStyleBackColor = true;
+            this.btn_atras.Click += new System.EventHandler(this.btn_atras_Click);
             // 
             // btn_adelante
             // 
@@ -292,6 +298,7 @@ namespace Vistas
             this.btn_adelante.TabIndex = 197;
             this.btn_adelante.Text = ">>>";
             this.btn_adelante.UseVisualStyleBackColor = true;
+            this.btn_adelante.Click += new System.EventHandler(this.btn_adelante_Click);
             // 
             // label9
             // 
@@ -335,15 +342,18 @@ namespace Vistas
             // 
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
-            "SalesTripulacion.idEmpleado",
-            "Empleados.nombre",
-            "SalesTripulacion.idEnvio",
-            "SalesEnvios.idUnidadTransporte",
-            "SalesUnidadesTransporte.placas",
-            "SalesEnvios.fechaInicio",
-            "SalesEnvios.fechaFin",
-            "SalesTripulacion.rol",
-            "SalesTripulacion.estatus"});
+            "SalesOfertasAsociacion.idAsosiacion",
+            "SalesMiembros.idCliente",
+            "SalesClientes.nombre",
+            "SalesOfertasAsociacion.idOferta",
+            "PresentacionesProducto.idProducto",
+            "Productos.nombre",
+            "PresentacionesProducto.idPresentacion",
+            "Empaques.nombre,Ofertas.nombre",
+            "Ofertas.canMinProductos",
+            "Ofertas.fechaInicio",
+            "Ofertas.fechaFin",
+            "Ofertas.porDescuento"});
             this.comboBox1.Location = new System.Drawing.Point(304, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(271, 21);
@@ -366,6 +376,7 @@ namespace Vistas
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(265, 20);
             this.textBox1.TabIndex = 190;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label1
             // 
@@ -382,7 +393,7 @@ namespace Vistas
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(61)))), ((int)(((byte)(69)))));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -392,6 +403,7 @@ namespace Vistas
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(869, 379);
             this.dataGridView1.TabIndex = 188;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // txt_idAsociacion
             // 
@@ -400,6 +412,7 @@ namespace Vistas
             this.txt_idAsociacion.Name = "txt_idAsociacion";
             this.txt_idAsociacion.Size = new System.Drawing.Size(25, 20);
             this.txt_idAsociacion.TabIndex = 212;
+            this.txt_idAsociacion.Visible = false;
             // 
             // idAsosiacionEnTabla
             // 
@@ -408,6 +421,7 @@ namespace Vistas
             this.idAsosiacionEnTabla.Name = "idAsosiacionEnTabla";
             this.idAsosiacionEnTabla.Size = new System.Drawing.Size(54, 20);
             this.idAsosiacionEnTabla.TabIndex = 213;
+            this.idAsosiacionEnTabla.Visible = false;
             // 
             // idOfertaEnTabla
             // 
@@ -416,6 +430,7 @@ namespace Vistas
             this.idOfertaEnTabla.Name = "idOfertaEnTabla";
             this.idOfertaEnTabla.Size = new System.Drawing.Size(56, 20);
             this.idOfertaEnTabla.TabIndex = 214;
+            this.idOfertaEnTabla.Visible = false;
             // 
             // OfertaAsociacion
             // 
